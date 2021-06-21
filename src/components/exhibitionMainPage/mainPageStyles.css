@@ -1,0 +1,468 @@
+/* exhibition title */
+.title-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant', serif;
+}
+
+.title-container2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.title-style {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.title-dates {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 60px;
+    letter-spacing: 0;
+}
+
+/* default text block  */
+.defaultstyle {
+    padding: 0 30%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+
+/* large image */
+.large-image-container {
+    width: 94vw;
+    margin: 20px auto 60px;
+    text-align: center;
+}
+
+.large-image-style {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.large-image-caption {
+    width: 60%;
+    margin: auto;
+    padding-top: 5px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    color: grey;
+    letter-spacing: 0;
+    line-height: 1.4;
+}
+
+.large-image-caption-jp {
+    width: 60%;
+    margin: auto;
+    padding-top: 5px;
+    text-align: left;
+    font-size: 0.75rem;
+    color: grey;
+    letter-spacing: 0;
+    line-height: 1.4;
+}
+
+/* full width image */
+.fullwidthContainerstyle {
+    background-color: white;
+    width: 94vw;
+    margin: 20px auto 60px;
+    text-align: center;
+}
+
+.fullwidthImageStyle {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* two images */
+.two-images-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 80px;
+}
+
+.two-images-container1 {
+    width: 30vw;
+    margin-bottom: 2rem;
+}
+
+.two-images-container2 {
+    width: 30vw;
+    margin-bottom: 2rem;
+}
+
+.two-images-imagestyle {
+    width: 30vw;
+}
+
+.two-images-caption {
+    text-align: left;
+    color: grey;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.two-images-caption-jp {
+    text-align: left;
+    color: grey;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+
+/* two images variation */
+.TIV-flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 120px;
+}
+
+.TIV-imageContainer1 {
+    width: 65%;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+.TIV-imageContainer2 {
+    width: 35%;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.TIV-imageSubcontainer {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.TIV-imageStyle {
+    width: 100%;
+}
+
+
+/* text left image right */
+.text-left-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 80px;
+}
+
+.text-left-container {
+    width: 30vw;
+}
+
+.text-left-image {
+    width: 30vw;
+}
+
+.text-left-left-column {
+    width: 30vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+.TLIR-TRIL-caption {
+    text-align: left;
+    color: grey;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+
+/* text right image left */
+.text-right-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 80px;
+}
+
+.text-right-container {
+    width: 30vw;
+}
+
+.text-right-image {
+    width: 30vw;
+}
+
+.text-right-left-column {
+    width: 30vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+
+/* timeline */
+.timeline-container {
+    width: 55vw;
+    margin: 4rem auto 8rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+
+.timeline-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.timeline-leftcolumn {
+    width: 15%;
+}
+
+.timeline-rightcolumn {
+    width: 85%;
+}
+
+/* parts */
+.parts-header {
+    font-family: 'Cormorant', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 3rem;
+    padding: 40px 30% 0;
+}
+
+/* section header */
+.section-header {
+    font-family: 'Cormorant', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+    padding: 40px 30% 0;
+}
+
+/* quick link */
+.quicklink {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    display: flex;
+    margin-bottom: 2.5rem;
+    padding: 0 20% 0 30%;
+}
+
+.quicklink-p {
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.endnotes {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    padding: 0 30%;
+}
+
+.read-more-less {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #c0c0c0;
+    background: none;
+    margin: 7px 30% 3rem;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 99;
+}
+
+/* intro to essay */
+.essay-intro-container {
+    margin: 2rem 0 3rem;
+}
+
+.essay-intro {
+    padding: 0 30%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: grey;
+}
+
+.essay-intro-note {
+    padding: 0 30%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: grey;
+}
+
+/* pullquote */
+.pullquote {
+    font-family: 'Cormorant', serif;
+    font-size: 3.8rem;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 0 30%;
+    margin: 40px 0 10px -80px;
+}
+
+.pullquote2 {
+    font-family: 'Cormorant', serif;
+    font-size: 3.8rem;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 0 20% 0 30%;
+    margin: 40px -120px 10px 120px;
+}
+
+/* navigation */
+.sidemenuContainer {
+    position: fixed;
+    background-color: white;
+    display: block;
+    width: 70px;
+    height: 160px;
+    left: -10px;
+    top: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 5px 0px rgba(194,194,194,0.33);
+    font-family: Quicksand, sans-serif;
+    z-index: 999;
+    transition: 0.3s;
+    letter-spacing: 0px;
+}
+
+.sidemenuUL {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.sidemenuLI {
+    line-height: 2;
+    cursor: pointer;
+}
+
+/* video */
+.iframe {
+    display: block;
+    margin: 2rem auto;
+}
+
+
+/* quote */
+.quoteStyle {
+    padding: 0 32.5%;
+    font-family: Quicksand, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 13px;
+}
+
+
+/* represented works */
+.rep-container {
+    display: block;
+    margin: auto;
+    width: calc(75vw + 2rem);
+}
+
+.rep-row {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rep-row:first-child {
+    margin-bottom: 2rem;
+}
+
+.rep-imgstyle {
+    width: 31%;
+    height: auto;
+}
+
+.rep-defaultstyle {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.rep-defaultstyleJP {
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.rep-defaultstyle_mobile {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 12px;
+    display: none;
+    color: gray;
+}
+
+.rep-defaultstyleJP_mobile {
+    line-height: 1.6;
+    letter-spacing: 0;
+    font-size: 12px;
+    display: none;
+    color: gray;
+}
+
+.exInfoDesktopEN {
+    display: inline;
+}
+
+.exInfoPhoneEN {
+    display: none;
+}
+
+/* link for work list */
+.listlink {
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.listcontainer {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}

@@ -1,0 +1,149 @@
+/* tablet */
+/* @media screen and (max-width: 768px) {
+    .defaultstyleJP {
+        padding: 0 20%;
+    }
+} */
+
+
+/* tablet */
+/* 768px is the breakpoint the Shibunkaku homepage uses to switch to mobile menu */
+
+/* below: */
+/* iPad 1st + 2nd gen, iPad Mini 1 */
+/* iPad 7th, 8th gen */
+/* iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4   */
+
+
+
+/* iPad 1st + 2nd gen, iPad Mini 1 */
+@media screen and (max-width: 768px) {
+    .defaultstyleJP {
+        padding: 0 20%;
+    }
+    .parts-headerJP {
+        padding: 40px 20% 0;
+    }
+    .essay-introJP {
+        padding: 0 20%;
+    }
+
+    .essay-intro-containerJP {
+        padding: 0;
+    }
+    
+    .section-headerJP {
+        padding: 40px 20% 0;
+    }
+
+    .quicklinkJP {
+        padding: 0 10% 0 20%;
+    }
+
+    .endnotesJP {
+        padding: 0 25%;
+    }
+
+    .read-more-or-lessJP {
+        margin: 0.5rem 20% 1.5rem;
+    }
+}
+
+/* iPad 7th, 8th gen */
+@media only screen
+and (min-device-width: 810px)
+and (max-device-width: 810px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .defaultstyleJP {
+        padding: 0 20%;
+    }
+    .parts-headerJP {
+        padding: 40px 20% 0;
+    }
+    .essay-introJP {
+        padding: 0 20%;
+    }
+
+    .essay-intro-containerJP {
+        padding: 0;
+    }
+    
+    .section-headerJP {
+        padding: 40px 20% 0;
+    }
+    .quicklinkJP {
+        padding: 0 10% 0 20%;
+    }
+
+    .endnotesJP {
+        padding: 0 25%;
+    }
+
+    .read-more-or-lessJP {
+        margin: 0.5rem 20% 1.5rem;
+    }
+}
+
+@media only screen
+and (min-device-width: 810px)
+and (max-device-width: 810px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .quicklinkJP {
+        padding: 0 10% 0 30%;
+        /* allow to overflow to the right */
+    }
+}
+
+
+/* iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4   */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 768px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .defaultstyleJP {
+        padding: 0 20%;
+    }
+    .parts-headerJP {
+        padding: 40px 20% 0;
+    }
+    .essay-introJP {
+        padding: 0 20%;
+    }
+
+    .essay-intro-containerJP {
+        padding: 0;
+    }
+    
+    .section-headerJP {
+        padding: 40px 20% 0;
+    }
+    .quicklinkJP {
+        padding: 0 10% 0 20%;
+    }
+
+    .endnotesJP {
+        padding: 0 25%;
+    }
+
+    .read-more-or-lessJP {
+        margin: 0.5rem 20% 1.5rem;
+    }
+}
+
+@media only screen
+and (min-device-width: 810px)
+and (max-device-width: 810px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .quicklinkJP {
+        padding: 0 10% 0 30%;
+        /* allow to overflow to the right */
+    }
+}

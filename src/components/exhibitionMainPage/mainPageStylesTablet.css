@@ -1,0 +1,135 @@
+/* tablet */
+/* 768px is the breakpoint the Shibunkaku homepage uses to switch to mobile menu */
+
+/* below: */
+/* iPad 1st + 2nd gen, iPad Mini 1 */
+/* iPad 7th, 8th gen */
+/* iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4   */
+
+
+
+/* iPad 1st + 2nd gen, iPad Mini 1 */
+@media screen and (max-width: 768px) {
+    .defaultstyle {
+        padding: 0 20%;
+    }
+    .parts-header {
+        padding: 40px 20% 0;
+    }
+    .essay-intro {
+        padding: 0 20%;
+    }
+    
+    .essay-intro-note {
+        padding: 0 20%;
+    }
+    .section-header {
+        padding: 40px 20% 0;
+    }
+    .quicklink {
+        padding: 0 10% 0 20%;
+    }
+    .quoteStyle {
+        padding: 0 25%; 
+    }
+    .endnotes {
+        padding: 0 25%;
+    }
+}
+
+/* iPad 7th, 8th gen */
+@media only screen
+and (min-device-width: 810px)
+and (max-device-width: 810px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .defaultstyle {
+        padding: 0 20%;
+    }
+    .parts-header {
+        padding: 40px 20% 0;
+    }
+    .essay-intro {
+        padding: 0 20%;
+    }
+    
+    .essay-intro-note {
+        padding: 0 20%;
+    }
+    .section-header {
+        padding: 40px 20% 0;
+    }
+    .quicklink {
+        padding: 0 10% 0 20%;
+        /* allow to overflow to the right */
+    }
+    .quoteStyle {
+        padding: 0 25%; 
+        /* note: this should have a bit of indentation, hence not 20 but 25% */
+    }
+    .endnotes {
+        padding: 0 25%;
+        /* like quoteStyle */
+    }
+}
+@media only screen
+and (min-device-width: 810px)
+and (max-device-width: 810px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .quicklink {
+        padding: 0 10% 0 30%;
+        /* allow to overflow to the right */
+    }
+}
+
+
+/* iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4   */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 768px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .defaultstyle {
+        padding: 0 20%;
+    }
+    .parts-header {
+        padding: 40px 20% 0;
+    }
+    .essay-intro {
+        padding: 0 20%;
+    }
+    
+    .essay-intro-note {
+        padding: 0 20%;
+    }
+    .section-header {
+        padding: 40px 20% 0;
+    }
+    .quicklink {
+        padding: 0 10% 0 20%;
+        /* allow to overflow to the right */
+    }
+    .quoteStyle {
+        padding: 0 25%; 
+        /* note: this should have a bit of indentation, hence not 20 but 25% */
+    }
+    .endnotes {
+        padding: 0 25%;
+        /* like quoteStyle */
+    }
+}
+@media only screen
+and (min-device-width: 810px)
+and (max-device-width: 810px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .quicklink {
+        padding: 0 10% 0 30%;
+        /* allow to overflow to the right */
+    }
+}

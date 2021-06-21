@@ -1,0 +1,45 @@
+.grid-container {
+    width: 100%;
+    margin: auto;
+}
+
+.grid-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    /* background-color: green; */
+}
+
+.grid-col6 {
+    width: 50%;
+    margin: auto;
+    /* background-color: hotpink; */
+}
+
+.grid-inner-left {
+    margin: 2rem 1rem 2rem 2rem;
+    text-align: center;
+    /* background-color: indigo; */
+}
+
+.grid-inner-right {
+    margin: 2rem 2rem 2rem 1rem;
+    text-align: center;
+    /* background-color: khaki; */
+}
+
+.grid-img {
+    margin: 2rem 0 1rem;
+}
+
+.grid-img-vert {
+    margin: 2rem 0 1rem;
+    text-align: right;
+}
+
+.grid-halfwidth-caption {
+    text-align: left;
+    margin: 0 auto 2rem;
+    padding-bottom: 2rem;
+}
