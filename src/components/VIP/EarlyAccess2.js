@@ -1,7 +1,5 @@
-import React from 'react';
 import './vip.css';
 import './vipPhone.css';
-
 
 import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
 import FullwidthWithText from './vipComponents/FullwidthWithText';
@@ -17,7 +15,7 @@ import { Ki_shikkin1964, Ki1963, En1963, Monoui1963, Kanzan_shikkin1964,Asa1970,
 import { enVIPtext } from '../../data/TextConstants';
 
 
-export default function EarlyAccess2() {
+const EarlyAccess2 = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}}>
@@ -62,4 +60,6 @@ export default function EarlyAccess2() {
             </a>
         </>
     )
-}
+};
+
+export default EarlyAccess2;

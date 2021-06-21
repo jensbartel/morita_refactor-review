@@ -1,7 +1,5 @@
-import React from 'react';
 import './vip.css';
 import './vipPhone.css';
-
 
 import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
 import FullwidthWithText from './vipComponents/FullwidthWithText';
@@ -17,7 +15,7 @@ import { KanzanScreen1969JP, Ryu1965JP, Shizuka1969JP, Miraiken1949JP, So1954JP,
 import { kanzanVIPtextJP, soVIPtextJP } from '../../data/TextConstantsJP';
 
 
-export default function EarlyAccessJP() {
+const EarlyAccessJP = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}} >
@@ -91,4 +89,6 @@ export default function EarlyAccessJP() {
 
         </>
     )
-}
+};
+
+export default EarlyAccessJP;
