@@ -1,12 +1,13 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom"; 
 import "./App.css";
-import EarlyAccess from "./components/vipPage/EarlyAccess";
-import EarlyAccess2 from "./components/vipPage/EarlyAccess2";
-import EarlyAccessJP from "./components/vipPage/EarlyAccessJP";
-import EarlyAccess2JP from "./components/vipPage/EarlyAccess2JP";
-import Morita from "./components/exhibitionMainPage/Morita";
-import MoritaJP from "./components/exhibitionMainPageJP/MoritaJP";
+
+import EarlyAccess from "./components/VIP/EarlyAccess";
+import EarlyAccess2 from "./components/VIP/EarlyAccess2";
+import EarlyAccessJP from "./components/VIP/EarlyAccessJP";
+import EarlyAccess2JP from "./components/VIP/EarlyAccess2JP";
+import Morita from "./components/English/Morita_English";
+import MoritaJP from "./components/Japanese/Morita_Japanese";
 
 
 class App extends Component {
