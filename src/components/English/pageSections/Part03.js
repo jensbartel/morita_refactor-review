@@ -1,5 +1,3 @@
-import Fade from 'react-reveal/Fade'
-
 import EssayBlock7 from '../layout/essay/EssayBlock7'
 import LargeImage from '../layout/image/LargeImage'
 import TwoImages from '../layout/image/TwoImages'
@@ -10,9 +8,9 @@ import { essay21, essay25, essay26 } from '../../../data/ImageConstantsEssay'
 const Part03 = () => {
     return (
         <>
-            <Fade bottom><EssayBlock7 /></Fade>
+            <EssayBlock7 />
             <LargeImage item={essay21} />
-            <Fade bottom><SelectedExhibitions /></Fade>
+            <SelectedExhibitions />
             <TwoImages item1={essay25} item2={essay26} />
         </>
     )

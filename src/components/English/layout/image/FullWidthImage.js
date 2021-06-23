@@ -1,4 +1,3 @@
-import Fade from "react-reveal/Fade";
 import ReactHtmlParser from 'react-html-parser'
 import '../../styles/stylesEnglish.css'
 import '../../styles/stylesEnglishPhone.css';
@@ -19,7 +18,6 @@ const FullWidthImage = (props) => {
     }
 
     return (
-        <Fade>
             <div className='fullwidthContainerstyle'>
                 <img src={item.img} className='fullwidthImageStyle' alt="" />
                 <div className={langStyle}>
@@ -28,7 +26,6 @@ const FullWidthImage = (props) => {
                     </span>
                 </div>
             </div>
-        </Fade>
     );
 };
 

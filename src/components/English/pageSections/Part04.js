@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import ReactHtmlParser from 'react-html-parser'
-import Fade from 'react-reveal/Fade'
 
 import DefaultTextBlock from '../layout/textOnly/DefaultTextBlock'
 import DefaultTextBlock2 from '../layout/textOnly/DefaultTextBlock2'
@@ -38,16 +37,14 @@ export class Part04 extends Component {
 
         return (
             <>
-                {/* Chapter 1 */}
-                <Fade bottom>
-                    <EssayBlock1 />
-                    <EssayBlock2 />
-                </Fade>
-                <FullWidthImage item={wanobi01} />
+                {/* Chapter 1 */}                
+                <EssayBlock1 />
+                <EssayBlock2 />                
+                <FullWidthImage item={wanobi01} />            
 
 
                 {/* Chapter 2 */}
-                <Fade bottom><EssayBlock3 /></Fade>
+                <EssayBlock3 />
                 <LargeImage item={essay1} />
                 <DefaultTextBlock text={ReactHtmlParser(morita02a)} />
                 <TwoImages item1={essay2} item2={essay3} />
@@ -55,32 +52,30 @@ export class Part04 extends Component {
                 {/* Read more section of Chapter 2 */}
                 { this.state.visible1 ?
                     <>
-                        <DefaultTextBlock2 text={ReactHtmlParser(morita03)} />
-                        <Fade><Quote text={ReactHtmlParser(morita04)} /></Fade>
-                        <TextLeftImageRight text={morita05} item={essay4} />
-                        <DefaultTextBlock2 text={ReactHtmlParser(morita06)} />
-                        <TwoImages item1={essay5} item2={essay6} />
-                        <br/><br/><DefaultTextBlock2 text={ReactHtmlParser(morita07)} />
-                        <br/><br/><DefaultTextBlock2 text={ReactHtmlParser(morita08)} />
-                        <Pullquote2 />
-                        <br/><br/><DefaultTextBlock2 text={ReactHtmlParser(morita09)} />
-                        <TextRightImageLeft text={morita09a} item={essay10} />
+                    <DefaultTextBlock2 text={ReactHtmlParser(morita03)} />
+                    <Quote text={ReactHtmlParser(morita04)} />
+                    <TextLeftImageRight text={morita05} item={essay4} />
+                    <DefaultTextBlock2 text={ReactHtmlParser(morita06)} />
+                    <TwoImages item1={essay5} item2={essay6} />
+                    <br/><br/><DefaultTextBlock2 text={ReactHtmlParser(morita07)} />
+                    <br/><br/><DefaultTextBlock2 text={ReactHtmlParser(morita08)} />
+                    <Pullquote2 />
+                    <br/><br/><DefaultTextBlock2 text={ReactHtmlParser(morita09)} />
+                    <TextRightImageLeft text={morita09a} item={essay10} />
                     </> : null
                 }
 
-                <Fade bottom>
-                    <button 
-                        className="read-more-less"
-                        onClick={() => {this.setState({visible1: !this.state.visible1});}}
-                    >{btnText1}
-                    </button>
-                </Fade>
-
+                <button 
+                    className="read-more-less"
+                    onClick={() => {this.setState({visible1: !this.state.visible1});}}
+                >{btnText1}
+                </button>
+                
 
                 {/* Chapter 3 */}
-                <Fade bottom><EssayBlock4 /></Fade>
+                <EssayBlock4 />
                 <LargeImage item={essay11} />
-                <DefaultTextBlock text={morita11} />
+                <DefaultTextBlock text={ReactHtmlParser(morita11)} />
 
                 {/* Read more section of Chapter 3 */}
                 { this.state.visible2 ? 
@@ -91,21 +86,19 @@ export class Part04 extends Component {
                     <DefaultTextBlock2 text={ReactHtmlParser (morita13)} />
                     </> : null
                 }
+                               
+                <button 
+                    className="read-more-less"
+                    onClick={() => {this.setState({visible2: !this.state.visible2});}}
+                >{btnText2}
+                </button>
                 
-                <Fade bottom>
-                    <button 
-                        className="read-more-less"
-                        onClick={() => {this.setState({visible2: !this.state.visible2});}}
-                    >{btnText2}
-                    </button>
-                </Fade>
-
                 <LargeImage item={essay17} />
                 <TwoImagesVariation item1={essay18} item2={essay19} />
 
 
                 {/* Chapter 4 */}
-                <Fade bottom><EssayBlock5 /></Fade>
+                <EssayBlock5 />
                 <TextRightImageLeft text={morita14a} item={essay20} />
 
                 {/* Read more section of Chapter 4 */}
@@ -118,14 +111,13 @@ export class Part04 extends Component {
                         <Endnotes text={ReactHtmlParser (moritaEndnotes)} />
                     </> : null
                 }
-
-                <Fade bottom>
-                    <button 
-                        className="read-more-less"
-                        onClick={() => {this.setState({visible3: !this.state.visible3});}}
-                    >{btnText3}
-                    </button>
-                </Fade>
+            
+                <button 
+                    className="read-more-less"
+                    onClick={() => {this.setState({visible3: !this.state.visible3});}}
+                >{btnText3}
+                </button>
+                
 
                 {/* 'Closing' images and acknowledgments */}
                 <LargeImage item={essay27} />
@@ -137,4 +129,4 @@ export class Part04 extends Component {
     }
 }
 
-export default Part04
+export default Part04;

@@ -1,5 +1,4 @@
 import ReactHtmlParser from 'react-html-parser'
-import Fade from 'react-reveal/Fade'
 import Iframe from 'react-iframe'
 
 import DefaultTextBlock from '../layout/textOnly/DefaultTextBlock';
@@ -14,13 +13,11 @@ import { workSelection4 } from '../../../data/TextConstants'
 const Part02 = () => {
     return (
         <>
-            <Fade bottom><EssayBlock6/></Fade>
-            <Fade bottom>
-                <RepresentedWorks />  
-                <div className='listcontainer'>
-                    <a href="http://exh.shibunkaku.co.jp/MoritaShiryu_ListofWorks.pdf" download className='listlink'><u>Download work list</u></a>
-                </div>   
-            </Fade>  
+            <EssayBlock6/>            
+            <RepresentedWorks />  
+            <div className='listcontainer'>
+                <a href="http://exh.shibunkaku.co.jp/MoritaShiryu_ListofWorks.pdf" download className='listlink'><u>Download work list</u></a>
+            </div>                 
             <DefaultTextBlock item={ReactHtmlParser(workSelection4)} />
             <TwoImages item1={essay24} item2={essay23} />
             <div style={thevideo}>

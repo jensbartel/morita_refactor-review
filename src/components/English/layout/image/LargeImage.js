@@ -1,4 +1,3 @@
-import Fade from 'react-reveal/Fade'
 import ReactHtmlParser from 'react-html-parser'
 import '../../styles/stylesEnglish.css';
 import '../../styles/stylesEnglishPhone.css';
@@ -20,16 +19,14 @@ const LargeImage = (props) => {
     }
 
     return (
-        <Fade bottom>
-            <div className="large-image-container">
-                <img src={img} className="large-image-style" alt="" />
-                <div style={{ marginBottom: "1rem" }}>
-                    <p className={langStyle}>
-                        <strong>{emphasisText}</strong>{ ReactHtmlParser(captionText) }
-                    </p>
-                </div>
+        <div className="large-image-container">
+            <img src={img} className="large-image-style" alt="" />
+            <div style={{ marginBottom: "1rem" }}>
+                <p className={langStyle}>
+                    <strong>{emphasisText}</strong>{ ReactHtmlParser(captionText) }
+                </p>
             </div>
-        </Fade>
+        </div>
     );
 };
 

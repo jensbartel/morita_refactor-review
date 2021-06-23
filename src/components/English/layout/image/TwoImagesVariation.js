@@ -1,6 +1,4 @@
-import Fade from 'react-reveal/Fade'
 import ReactHtmlParser from 'react-html-parser'
-
 import '../../styles/stylesEnglish.css';
 import '../../styles/stylesEnglishPhone.css';
 import '../../styles/stylesEnglishTablet.css';
@@ -23,26 +21,23 @@ const TwoImagesVariation = (props) => {
         emphasisText2 = item2.emphasis;
         captionText1 = item1.text;
         captionText2 = item2.text;
-
     }
 
     return (
-        <Fade bottom>
-            <div className="TIV-flexContainer">
-                <div className="TIV-imageContainer1">
-                    <div className="TIV-imageSubcontainer">
-                            <img src={item1.img} className="TIV-imageStyle" alt=""/><br/>
-                            <p className={langStyle}><strong>{emphasisText1}</strong>{ReactHtmlParser(captionText1)}</p>                        
-                    </div>
+        <div className="TIV-flexContainer">
+            <div className="TIV-imageContainer1">
+                <div className="TIV-imageSubcontainer">
+                        <img src={item1.img} className="TIV-imageStyle" alt=""/><br/>
+                        <p className={langStyle}><strong>{emphasisText1}</strong>{ReactHtmlParser(captionText1)}</p>                        
                 </div>
-                <div className="TIV-imageContainer2">
-                    <div className="TIV-imageSubcontainer">
-                        <img src={item2.img} className="TIV-imageStyle" alt=""/>
-                        <p className={langStyle}><strong>{emphasisText2}</strong>{ReactHtmlParser(captionText2)}</p>
-                    </div>
-                </div>            
             </div>
-        </Fade>
+            <div className="TIV-imageContainer2">
+                <div className="TIV-imageSubcontainer">
+                    <img src={item2.img} className="TIV-imageStyle" alt=""/>
+                    <p className={langStyle}><strong>{emphasisText2}</strong>{ReactHtmlParser(captionText2)}</p>
+                </div>
+            </div>            
+        </div>
     )    
 };
 

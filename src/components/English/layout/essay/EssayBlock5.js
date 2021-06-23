@@ -17,7 +17,7 @@ const EssayBlock5 = () => {
                 item1Link={essayQuickLink[1].quickLink} 
                 item2Link={essayQuickLink[2].quickLink} 
                 item3Link={essayQuickLink[3].quickLink} />
-            {/* <DefaultTextBlock text={ReactHtmlParser (morita14)} /> */}
+            <DefaultTextBlock text={ReactHtmlParser (morita14)} />
         </>
     );
 };
