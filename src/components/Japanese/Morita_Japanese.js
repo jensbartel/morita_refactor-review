@@ -9,13 +9,13 @@ import SelectedExhibitionsJP from './textOnlyJP/SelectedExhibitionsJP';
 import TextLeftImageRightJP from './textAndImageJP/TextLeftImageRightJP';
 import TextRightImageLeftJP from './textAndImageJP/TextRightImageLeftJP';
 
-import FullWidthImage from '../English/image/FullWidthImage';
-import LargeImage from '../English/image/LargeImage';
-import MainVisual from '../English/image/MainVisual';
-import Navigation from '../English/textOnly/Navigation';
-import TwoImages from '../English/image/TwoImages';
-import TwoImagesVariation from '../English/image/TwoImagesVariation';
-import RepresentedWorks from '../English/image/RepresentedWorks';
+import FullWidthImage from '../English/layout/image/FullWidthImage';
+import LargeImage from '../English/layout/image/LargeImage';
+import MainVisual from '../English/layout/image/MainVisual';
+import Navigation from '../English/layout/textOnly/Navigation';
+import TwoImages from '../English/layout/image/TwoImages';
+import TwoImagesVariation from '../English/layout/image/TwoImagesVariation';
+import RepresentedWorks from '../English/layout/image/RepresentedWorks';
 
 import EssayBlock1JP from "./essayJP/EssayBlock1JP";
 import EssayBlock2JP from "./essayJP/EssayBlock2JP";
