@@ -1,9 +1,9 @@
 import MainVisual from "./layout/image/MainVisual";
 import Navigation from "./layout/textOnly/Navigation";
-import Part01 from "./pageSections/Part01";
-import Part02 from "./pageSections/Part02";
-import Part03 from "./pageSections/Part03";
-import Part04 from "./pageSections/Part04";
+import Part01 from "./Part01";
+import Part02 from "./Part02";
+import Part03 from "./Part03";
+import Part04 from "./Part04";
 
 const Morita = () => {            
     return (

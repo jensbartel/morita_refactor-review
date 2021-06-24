@@ -29,9 +29,13 @@ button:focus {
 }
 
 .title-style {
-  font-size: 3.8rem;
-  margin-bottom: 20px;
   text-align: center;
+  font-family: "Cormorant", serif;
+  font-size: 3.8rem;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #000;
+  line-height: 1.6;
   letter-spacing: 0;
 }
 
@@ -43,20 +47,28 @@ button:focus {
 }
 
 .defaultstyle {
-  padding: 0 30%;
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
+  margin: 0;
+  padding: 0 30%;
+  color: #000;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 .large-image-container {
+  width: 94vw;
+  margin: 20px auto 60px;
+  text-align: center;
+}
+
+.large-image-caption {
   width: 60%;
-  margin: auto;
-  padding-top: 5px;
   text-align: left;
   font-family: "Quicksand", sans-serif;
   font-size: 0.75rem;
+  margin: auto;
+  padding: 5px 0 0 0;
   color: grey;
   line-height: 1.4;
   letter-spacing: 0;
@@ -65,18 +77,6 @@ button:focus {
 .large-image-style {
   width: 60%;
   margin: 0 auto;
-}
-
-.large-image-caption {
-  widows: 60%;
-  margin: auto;
-  padding-top: 5px;
-  text-align: left;
-  font-size: "Quicksand", sans-serif;
-  font-size: 0.75rem;
-  color: grey;
-  line-height: 1.4;
-  letter-spacing: 0;
 }
 
 .large-image-caption-jp {
@@ -119,16 +119,17 @@ button:focus {
   margin-bottom: 2rem;
 }
 
-.two.images.imagestyle {
+.two-images-imagestyle {
   width: 30vw;
 }
 
 .two-images-caption {
   text-align: left;
-  color: grey;
   font-family: "Quicksand", sans-serif;
   font-size: 0.75rem;
-  margin-top: 5px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  color: grey;
   line-height: 1.4;
   letter-spacing: 0;
 }
@@ -209,9 +210,11 @@ button:focus {
 
 .timeline-container {
   width: 55vw;
-  margin: 4rem auto 8rem;
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
+  margin: 4rem auto 8rem;
+  padding: 0;
+  color: #000;
   line-height: 1.6;
   letter-spacing: 0;
 }
@@ -234,43 +237,53 @@ button:focus {
 .parts-header {
   font-family: "Cormorant", serif;
   font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0;
+  margin: 0 0 3rem 0;
   padding: 40px 30% 0;
-  margin-bottom: 3rem;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 500;
 }
 
 .section-header {
   font-family: "Cormorant", serif;
   font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0;
+  margin: 0 0 1rem 0;
   padding: 40px 30% 0;
-  margin-bottom: 1rem;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 500;
 }
 
 .quicklink {
+  display: flex;
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
-  display: flex;
-  margin-bottom: 2.5rem;
+  margin: 0 0 2.5rem 0;
   padding: 0 20% 0 30%;
+  color: #000;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
 .quicklink-p {
-  font-size: 12px;
-  color: grey;
   cursor: pointer;
-  margin-right: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  margin: 0 20px 0 0;
+  padding: 0;
+  color: grey;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .endnotes {
   font-family: "Quicksand", sans-serif;
   font-size: 11px;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   padding: 0 30%;
+  color: #000;
   line-height: 1.6;
   letter-spacing: 0;
 }
@@ -278,12 +291,14 @@ button:focus {
 .read-more-less {
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
-  color: #c0c0c0;
-  background: none;
   margin: 7px 30% 3rem;
+  padding: 0;
+  color: #c0c0c0;
+  line-height: 1;
+  letter-spacing: 0;
+  background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
   position: relative;
   z-index: 99;
 }
@@ -293,18 +308,20 @@ button:focus {
 }
 
 .essay-intro {
-  padding: 0 30%;
   font-family: "Quicksand", sans-serif;
   font-size: 13px;
+  margin: 0;
+  padding: 0 30%;
   color: grey;
   line-height: 1.4;
   letter-spacing: 0;
 }
 
 .essay-intro-note {
-  padding: 0 30%;
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
+  margin: 0;
+  padding: 0 30%;
   color: grey;
   line-height: 1.4;
   letter-spacing: 0;
@@ -313,19 +330,21 @@ button:focus {
 .pullquote {
   font-family: "Cormorant", serif;
   font-size: 3.8rem;
-  letter-spacing: 0;
-  line-height: 1;
-  padding: 0 30%;
   margin: 40px 0 10px -80px;
+  padding: 0 30%;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .pullquote2 {
   font-family: "Cormorant", serif;
   font-size: 3.8rem;
-  letter-spacing: 0;
-  line-height: 1;
-  padding: 0 20% 0 30%;
   margin: 40px -120px 10px 120px;
+  padding: 0 20% 0 30%;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .sidemenuContainer {
@@ -360,9 +379,11 @@ button:focus {
 }
 
 .quoteStyle {
-  padding: 0 32.5%;
   font-family: "Quicksand", sans-serif;
   font-size: 13px;
+  margin: 0;
+  padding: 0 32.5%;
+  color: #000;
   line-height: 1.6;
   letter-spacing: 0;
 }
@@ -388,49 +409,42 @@ button:focus {
   height: auto;
 }
 
-.rep-defaultstyle {
-  font-family: "Quicksand", sans-serif;
-  font-size: 12px;
-  color: grey;
-  line-height: 1.6;
-  letter-spacing: 0;
-}
-
-.rep-defaultstyleJP {
-  font-size: 12px;
-  color: grey;
-  line-height: 1.6;
-  letter-spacing: 0;
-}
-
+.rep-defaultstyle,
 .rep-defaultstyle_mobile {
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
-  display: none;
+  margin: 0;
+  padding: 0;
   color: grey;
   line-height: 1.6;
   letter-spacing: 0;
 }
 
+.rep-defaultstyleJP,
 .rep-defaultstyleJP_mobile {
   font-size: 12px;
-  display: none;
   color: grey;
   line-height: 1.6;
   letter-spacing: 0;
+}
+
+.rep-defaultstyle_mobile,
+.rep-defaultstyleJP_mobile,
+.exInfoPhoneEN {
+  display: none;
 }
 
 .exInfoDesktopEN {
   display: inline;
 }
 
-.exInfoPhoneEN {
-  display: none;
-}
-
 .listlink {
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  line-height: 1;
   letter-spacing: 0;
   text-align: center;
 }

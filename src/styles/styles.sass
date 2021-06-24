@@ -4,24 +4,22 @@ $font-header: 'Cormorant', serif
 $color-grey: grey
 
 // MIXINS
-=text-spacing-defaults
-    line-height: 1.4
+=text-spacing($lineheight)
+    line-height: $lineheight
     letter-spacing: 0
 
-=text-spacing-wider
-    line-height: 1.6
+=standard-text($font, $size, $margin, $padding, $color, $line)
+    font-family: $font
+    font-size: $size
+    margin: $margin
+    padding: $padding
+    color: $color
+    line-height: $line
     letter-spacing: 0
 
 =flexbox-centered
     display: flex
     justify-content: center
-
-=header
-    font-family: $font-header
-    font-size: 1.6rem
-    font-weight: 500
-    letter-spacing: 0
-    padding: 40px 30% 0
 
 =TIV-imageContainer($width)
     width: $width
@@ -54,48 +52,34 @@ button:focus
     text-align: center
 
 .title-style
-    font-size: 3.8rem
-    margin-bottom: 20px
     text-align: center
-    letter-spacing: 0
+    +standard-text($font-header, 3.8rem, 0 0 20px 0, 0, #000, 1.6 )
+    
 
 .title-dates
     margin-bottom: 60px
     font-size: 1rem
-    +text-spacing-defaults
+    +text-spacing(1.4)
 
 // default text block
 .defaultstyle
-    padding: 0 30%
-    font-family: $font-default
-    font-size: 14px
-    +text-spacing-wider
+    +standard-text($font-default, 14px, 0, 0 30%, #000, 1.6)
 
 // large image
 .large-image-container
+    width: 94vw
+    margin: 20px auto 60px
+    text-align: center
+
+.large-image-caption
     width: 60%
-    margin: auto
-    padding-top: 5px
     text-align: left
-    font-family: $font-default
-    font-size: 0.75rem
-    color: $color-grey
-    +text-spacing-defaults
+    +standard-text($font-default, 0.75rem, auto, 5px 0 0 0, grey, 1.4)    
 
 .large-image-style
     width: 60%
     margin: 0 auto
-
-.large-image-caption
-    widows: 60%
-    margin: auto
-    padding-top: 5px
-    text-align: left
-    font-size: $font-default
-    font-size: 0.75rem
-    color: $color-grey
-    +text-spacing-defaults
-
+    
 .large-image-caption-jp
     width: 60%
     margin: auto
@@ -103,7 +87,7 @@ button:focus
     text-align: left
     font-size: 0.75rem
     color: $color-grey
-    +text-spacing-defaults
+    +text-spacing(1.4)
 
 // fullwidth image
 .fullwidthContainerstyle
@@ -131,23 +115,19 @@ button:focus
     width: 30vw
     margin-bottom: 2rem
 
-.two.images.imagestyle
+.two-images-imagestyle
     width: 30vw
 
 .two-images-caption
     text-align: left
-    color: $color-grey
-    font-family: $font-default
-    font-size: 0.75rem
-    margin-top: 5px
-    +text-spacing-defaults
+    +standard-text($font-default, 0.75rem, 5px 0 0 0, 0, grey, 1.4)
 
 .two-images-caption-jp
     text-align: left
     color: $color-grey
     font-size: 0.75rem
     margin-top: 5px
-    +text-spacing-defaults
+    +text-spacing(1.4)
 
 // two images variation
 .TIV-flexContainer
@@ -190,7 +170,7 @@ button:focus
     width: 30vw
     font-family: $font-default
     font-size: 14px
-    +text-spacing-wider
+    +text-spacing(1.6)
 
 .TLIR-TRIL-caption
     margin-top: 5px
@@ -198,16 +178,13 @@ button:focus
     color: $color-grey
     font-family: $font-default
     font-size: 0.75rem
-    +text-spacing-defaults
+    +text-spacing(1.4)
 
 // timeline
 .timeline-container
     width: 55vw
-    margin: 4rem auto 8rem
-    font-family: $font-default
-    font-size: 14px
-    +text-spacing-wider
-
+    +standard-text($font-default, 14px, 4rem auto 8rem, 0, #000, 1.6)
+    
 .timeline-row
     width: 100%
     display: flex
@@ -222,82 +199,52 @@ button:focus
 
 // parts
 .parts-header
-    +header
-    margin-bottom: 3rem
+    +standard-text($font-header, 1.6rem, 0 0 3rem 0, 40px 30% 0, #000, 1)
+    font-weight: 500
 
 // section header
 .section-header
-    +header
-    margin-bottom: 1rem
+    +standard-text($font-header, 1.6rem, 0 0 1rem 0, 40px 30% 0, #000, 1)
+    font-weight: 500
 
 .quicklink
-    font-family: $font-default
-    font-size: 14px
     display: flex
-    margin-bottom: 2.5rem
-    padding: 0 20% 0 30%
-    +text-spacing-wider
+    +standard-text($font-default, 14px, 0 0 2.5rem 0, 0 20% 0 30%, #000, 1.6)
 
 .quicklink-p
-    font-size: 12px
-    color: $color-grey
     cursor: pointer
-    margin-right: 20px
-
+    +standard-text($font-default, 12px, 0 20px 0 0, 0, grey, 1)
+    
 .endnotes
-    font-family: $font-default
-    font-size: 11px
-    margin-bottom: 2rem
-    padding: 0 30%
-    +text-spacing-wider
-
+    +standard-text($font-default, 11px, 0 0 2rem 0, 0 30%, #000, 1.6)
+    
 .read-more-less
-    font-family: $font-default
-    font-size: 14px
-    color: #c0c0c0
+    +standard-text($font-default, 14px, 7px 30% 3rem, 0, #c0c0c0, 1)
     background: none
-    margin: 7px 30% 3rem
     border: none
     cursor: pointer
-    padding: 0
     position: relative
     z-index: 99
+    
 
 // intro to essay
 .essay-intro-container
     margin: 2rem 0 3rem
 
 .essay-intro
-    padding: 0 30%
-    font-family: $font-default
-    font-size: 13px
-    color: $color-grey
-    +text-spacing-defaults
+    +standard-text($font-default, 13px, 0, 0 30%, $color-grey, 1.4)
 
 .essay-intro-note
-    padding: 0 30%
-    font-family: $font-default
-    font-size: 12px
-    color: $color-grey
-    +text-spacing-defaults
+    +standard-text($font-default, 12px, 0, 0 30%, $color-grey, 1.4)
 
 
 // pullquote
 .pullquote
-    font-family: $font-header
-    font-size: 3.8rem
-    letter-spacing: 0
-    line-height: 1
-    padding: 0 30%
-    margin: 40px 0 10px -80px
+    +standard-text($font-header, 3.8rem , 40px 0 10px -80px, 0 30%, #000, 1)
 
 .pullquote2
-    font-family: $font-header
-    font-size: 3.8rem
-    letter-spacing: 0
-    line-height: 1
-    padding: 0 20% 0 30%
-    margin: 40px -120px 10px 120px
+    +standard-text($font-header, 3.8rem , 40px -120px 10px 120px, 0 20% 0 30%, #000, 1)
+
 
 // navigation
 .sidemenuContainer
@@ -330,10 +277,8 @@ button:focus
 
 // quote
 .quoteStyle 
-    padding: 0 32.5%
-    font-family: $font-default
-    font-size: 13px
-    +text-spacing-wider
+    +standard-text($font-default, 13px, 0, 0 32.5%, #000, 1.6)
+    
 
 // represented works
 .rep-container
@@ -353,42 +298,28 @@ button:focus
     width: 31%
     height: auto
 
-.rep-defaultstyle
-    font-family: $font-default
-    font-size: 12px
-    color: $color-grey
-    +text-spacing-wider
-
-.rep-defaultstyleJP
-    font-size: 12px
-    color: $color-grey
-    +text-spacing-wider
-
+.rep-defaultstyle,
 .rep-defaultstyle_mobile
-    font-family: $font-default
-    font-size: 12px
-    display: none
-    color: $color-grey
-    +text-spacing-wider
+    +standard-text($font-default, 12px, 0, 0, grey, 1.6)
 
+.rep-defaultstyleJP,
 .rep-defaultstyleJP_mobile
     font-size: 12px
+    color: grey
+    +text-spacing(1.6) 
+
+.rep-defaultstyle_mobile,
+.rep-defaultstyleJP_mobile,
+.exInfoPhoneEN
     display: none
-    color: $color-grey
-    +text-spacing-wider
 
 .exInfoDesktopEN
     display: inline
 
-.exInfoPhoneEN
-    display: none
-
 
 // link for work list
 .listlink
-    font-family: $font-default
-    font-size: 14px
-    letter-spacing: 0
+    +standard-text($font-default, 14px, 0, 0, #000, 1)
     text-align: center
 
 .listcontainer

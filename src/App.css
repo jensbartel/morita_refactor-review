@@ -48,11 +48,11 @@ button:focus {outline:0;}
 
 /* default text block  */
 .defaultstyle {
-  padding: 0 30%;
   font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0;
-  font-size: 14px;
+  padding: 0 30%;
 }
 
 /* large image */
@@ -403,7 +403,7 @@ button:focus {outline:0;}
 /* quote */
 .quoteStyle {
   padding: 0 32.5%;
-  font-family: Quicksand, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   letter-spacing: 0;
   font-size: 13px;

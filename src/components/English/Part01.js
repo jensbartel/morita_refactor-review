@@ -1,13 +1,13 @@
 import ReactHtmlParser from 'react-html-parser'
 
-import DefaultTextBlock from "../layout/textOnly/DefaultTextBlock"
-import ExhibitionTitle from "../layout/textOnly/ExhibitionTitle"
-import LargeImage from '../layout/image/LargeImage'
-import Pullquote from '../layout/textOnly/Pullquote'
-import TwoImages from '../layout/image/TwoImages'
+import DefaultTextBlock from "./layout/textOnly/DefaultTextBlock"
+import ExhibitionTitle from "./layout/textOnly/ExhibitionTitle"
+import LargeImage from './layout/image/LargeImage'
+import Pullquote from './layout/textOnly/Pullquote'
+import TwoImages from './layout/image/TwoImages'
 
-import { exhibitionInfo, preview, preview2, preview3, preview4 } from "../../../data/TextConstants"
-import { essay7, essay8, essay9 } from '../../../data/ImageConstantsEssay'
+import { exhibitionInfo, preview, preview2, preview3, preview4 } from "../../data/TextConstants"
+import { essay7, essay8, essay9 } from '../../data/ImageConstantsEssay'
 
 
 const Part01 = () => {

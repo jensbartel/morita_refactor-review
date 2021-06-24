@@ -1,14 +1,14 @@
 import ReactHtmlParser from 'react-html-parser'
 import Iframe from 'react-iframe'
 
-import DefaultTextBlock from '../layout/textOnly/DefaultTextBlock';
-import EssayBlock6 from '../layout/essay/EssayBlock6'
-import FullWidthImage from '../layout/image/FullWidthImage'
-import RepresentedWorks from '../layout/image/RepresentedWorks'
-import TwoImages from '../layout/image/TwoImages'
+import DefaultTextBlock from './layout/textOnly/DefaultTextBlock';
+import EssayBlock6 from './layout/essay/EssayBlock6'
+import FullWidthImage from './layout/image/FullWidthImage'
+import RepresentedWorks from './layout/image/RepresentedWorks'
+import TwoImages from './layout/image/TwoImages'
 
-import { essay23, essay24, wanobi02 } from '../../../data/ImageConstantsEssay'
-import { workSelection4 } from '../../../data/TextConstants'
+import { essay23, essay24, wanobi02 } from '../../data/ImageConstantsEssay'
+import { workSelection4 } from '../../data/TextConstants'
 
 const Part02 = () => {
     return (
