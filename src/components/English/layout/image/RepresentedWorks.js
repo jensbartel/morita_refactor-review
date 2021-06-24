@@ -10,11 +10,6 @@ import thumb6 from '../../../../assets/thumbs/Asa1970_thumb.jpg'
 import { repTextENG, repTextENG_mobile } from '../../../../data/TextConstants'
 import { repTextJP, repTextJP_mobile } from '../../../../data/TextConstantsJP'
 
-import '../../styles/stylesEnglish.css';
-import '../../styles/stylesEnglishPhone.css';
-import '../../styles/stylesEnglishTablet.css';
-
-
 const RepresentedWorks= (props) => {
 
     var langStyle, langStyleMobile, captionText, captionTextMobile;

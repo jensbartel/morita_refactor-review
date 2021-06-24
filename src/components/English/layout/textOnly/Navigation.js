@@ -1,8 +1,5 @@
 import { Component } from 'react'
 import { Link } from 'react-scroll'
-import '../../styles/stylesEnglish.css';
-import '../../styles/stylesEnglishPhone.css';
-// import '../../styles/stylesEnglishTablet.css';
 
 export default class Navigation extends Component {
     constructor(props) {

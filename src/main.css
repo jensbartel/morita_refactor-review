@@ -1,0 +1,630 @@
+.App {
+  overflow-x: hidden;
+}
+
+p .App {
+  all: unset;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.anchor div {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  font-family: "Cormorant", serif;
+}
+
+.title-container2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.title-style {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.title-dates {
+  margin-bottom: 60px;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.defaultstyle {
+  padding: 0 30%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.large-image-container {
+  width: 60%;
+  margin: auto;
+  padding-top: 5px;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  color: grey;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.large-image-style {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.large-image-caption {
+  widows: 60%;
+  margin: auto;
+  padding-top: 5px;
+  text-align: left;
+  font-size: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  color: grey;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.large-image-caption-jp {
+  width: 60%;
+  margin: auto;
+  padding-top: 5px;
+  text-align: left;
+  font-size: 0.75rem;
+  color: grey;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.fullwidthContainerstyle {
+  background-color: white;
+  width: 94vw;
+  margin: 20px auto 60px;
+  text-align: center;
+}
+
+.fullwidthImageStyle {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.two-images-flexbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 60px 80px;
+}
+
+.two-images-container1 {
+  width: 30vw;
+  margin-bottom: 2rem;
+}
+
+.two-images-container2 {
+  width: 30vw;
+  margin-bottom: 2rem;
+}
+
+.two.images.imagestyle {
+  width: 30vw;
+}
+
+.two-images-caption {
+  text-align: left;
+  color: grey;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.two-images-caption-jp {
+  text-align: left;
+  color: grey;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.TIV-flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 120px;
+}
+
+.TIV-imageContainer1 {
+  width: 65%;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-right: 2rem;
+}
+
+.TIV-imageContainer2 {
+  width: 35%;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-right: 2rem;
+}
+
+.TIV-imageSubcontainer {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.TIV-imageStyle {
+  width: 100%;
+}
+
+.text-left-flexbox,
+.text-right-flexbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 60px 80px;
+}
+
+.text-left-container,
+.text-left-image,
+.text-right-container,
+.text-right-image {
+  width: 30vw;
+}
+
+.text-left-left-column,
+.text-right-left-column {
+  width: 30vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.TLIR-TRIL-caption {
+  margin-top: 5px;
+  text-align: left;
+  color: grey;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.timeline-container {
+  width: 55vw;
+  margin: 4rem auto 8rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.timeline-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.timeline-leftcolumn {
+  width: 15%;
+}
+
+.timeline-rightcolumn {
+  width: 85%;
+}
+
+.parts-header {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 40px 30% 0;
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 40px 30% 0;
+  margin-bottom: 1rem;
+}
+
+.quicklink {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 2.5rem;
+  padding: 0 20% 0 30%;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.quicklink-p {
+  font-size: 12px;
+  color: grey;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.endnotes {
+  font-family: "Quicksand", sans-serif;
+  font-size: 11px;
+  margin-bottom: 2rem;
+  padding: 0 30%;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.read-more-less {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  color: #c0c0c0;
+  background: none;
+  margin: 7px 30% 3rem;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 99;
+}
+
+.essay-intro-container {
+  margin: 2rem 0 3rem;
+}
+
+.essay-intro {
+  padding: 0 30%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  color: grey;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.essay-intro-note {
+  padding: 0 30%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  color: grey;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.pullquote {
+  font-family: "Cormorant", serif;
+  font-size: 3.8rem;
+  letter-spacing: 0;
+  line-height: 1;
+  padding: 0 30%;
+  margin: 40px 0 10px -80px;
+}
+
+.pullquote2 {
+  font-family: "Cormorant", serif;
+  font-size: 3.8rem;
+  letter-spacing: 0;
+  line-height: 1;
+  padding: 0 20% 0 30%;
+  margin: 40px -120px 10px 120px;
+}
+
+.sidemenuContainer {
+  position: fixed;
+  background-color: white;
+  display: block;
+  width: 70px;
+  height: 160px;
+  left: -10px;
+  top: 300px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 5px 0px rgba(194, 194, 194, 0.33);
+  font-family: "Quicksand", sans-serif;
+  z-index: 999;
+  transition: 0.3s;
+  letter-spacing: 0;
+}
+
+.sidemenuUL {
+  list-style: none;
+  padding: 30px 0 0 20px;
+}
+
+.sidemenuLI {
+  line-height: 2;
+  cursor: pointer;
+}
+
+.iframe {
+  display: block;
+  margin: 2rem auto;
+}
+
+.quoteStyle {
+  padding: 0 32.5%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.rep-container {
+  display: block;
+  margin: auto;
+  width: calc( 75vw + 2rem );
+}
+
+.rep-row {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.rep-row:first-child {
+  margin-bottom: 2rem;
+}
+
+.rep-imgstyle {
+  width: 31%;
+  height: auto;
+}
+
+.rep-defaultstyle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  color: grey;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.rep-defaultstyleJP {
+  font-size: 12px;
+  color: grey;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.rep-defaultstyle_mobile {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  display: none;
+  color: grey;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.rep-defaultstyleJP_mobile {
+  font-size: 12px;
+  display: none;
+  color: grey;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.exInfoDesktopEN {
+  display: inline;
+}
+
+.exInfoPhoneEN {
+  display: none;
+}
+
+.listlink {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.listcontainer {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .defaultstyle,
+.essay-intro,
+.essay-intro-note {
+    padding: 0 20%;
+  }
+
+  .parts-header,
+.section-header {
+    padding: 40px 20% 0;
+  }
+
+  .quicklink {
+    padding: 0 10% 0 20%;
+  }
+
+  .quoteStyle,
+.endnotes {
+    padding: 0 25%;
+  }
+}
+@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .defaultstyle,
+.essay-intro,
+.essay-intro-note {
+    padding: 0 20%;
+  }
+
+  .parts-header,
+.section-header {
+    padding: 40px 20% 0;
+  }
+
+  .quicklink {
+    padding: 0 10% 0 20%;
+  }
+
+  .quoteStyle,
+.endnotes {
+    padding: 0 25%;
+  }
+}
+@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .quicklink {
+    padding: 0 10% 0 30%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .defaultstyle,
+.essay-intro,
+.essay-intro-note {
+    padding: 0 20%;
+  }
+
+  .parts-header,
+.section-header {
+    padding: 40px 20% 0;
+  }
+
+  .quicklink {
+    padding: 0 10% 0 20%;
+  }
+
+  .quoteStyle,
+.endnotes {
+    padding: 0 25%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .quicklink {
+    padding: 0 10% 0 30%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .title-style {
+    font-size: 2rem;
+  }
+
+  .title-dates {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .defaultstyle {
+    padding: 0 25%;
+    font-size: 13px;
+  }
+
+  .large-image-container {
+    width: 100vw;
+    margin: 0 auto 1.5rem;
+  }
+
+  .large-image-style {
+    width: 70%;
+  }
+
+  .large-image-caption {
+    width: 70%;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  .large-image-caption-jp {
+    width: 70%;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .fullwidthContainerstyle {
+    margin: 1.5rem auto 1.5rem;
+  }
+
+  .two-images-flexbox {
+    flex-direction: column;
+    width: 70vw;
+    margin: 0;
+  }
+
+  .two-images-container1,
+.two-images-container2 {
+    width: 70vw;
+    margin: 0 0 1.5rem 30vw;
+  }
+
+  .two-images-imagestyle {
+    width: 70vw;
+  }
+
+  .two-images-caption {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  .two-images-caption-jp {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .TIV-flexContainer {
+    flex-direction: column;
+    width: 70vw;
+    margin-top: 0;
+    margin: auto;
+  }
+
+  .TIV-imageContainer1 {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-right: 0;
+  }
+
+  .TIV-imageContainer2 {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .text-left-flexbox {
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    margin: 0 15%;
+  }
+
+  .text-left-container {
+    width: 100%;
+    margin-left: 30vw;
+  }
+
+  .text-left-image {
+    width: 70vw;
+  }
+
+  .text-left-left-column {
+    width: 70vw;
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+
+  .TLIR-TRIL-caption {
+    margin-bottom: 1.5rem;
+    width: 70vw;
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

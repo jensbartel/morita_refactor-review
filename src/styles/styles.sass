@@ -1,0 +1,397 @@
+// VARIABLES
+$font-default: 'Quicksand', sans-serif
+$font-header: 'Cormorant', serif
+$color-grey: grey
+
+// MIXINS
+=text-spacing-defaults
+    line-height: 1.4
+    letter-spacing: 0
+
+=text-spacing-wider
+    line-height: 1.6
+    letter-spacing: 0
+
+=flexbox-centered
+    display: flex
+    justify-content: center
+
+=header
+    font-family: $font-header
+    font-size: 1.6rem
+    font-weight: 500
+    letter-spacing: 0
+    padding: 40px 30% 0
+
+=TIV-imageContainer($width)
+    width: $width
+    margin-bottom: 2rem
+    text-align: center
+    padding-right: 2rem
+
+.App
+    overflow-x: hidden
+
+p .App
+    all: unset
+
+button:focus
+    outline: 0
+
+// Below what was in the original main css file
+.anchor div
+    padding-top: 100px
+    margin-top: -100px
+
+// exhibition title
+.title-container
+    +flexbox-centered
+    font-family: $font-header
+
+.title-container2
+    +flexbox-centered
+    font-family: $font-default
+    text-align: center
+
+.title-style
+    font-size: 3.8rem
+    margin-bottom: 20px
+    text-align: center
+    letter-spacing: 0
+
+.title-dates
+    margin-bottom: 60px
+    font-size: 1rem
+    +text-spacing-defaults
+
+// default text block
+.defaultstyle
+    padding: 0 30%
+    font-family: $font-default
+    font-size: 14px
+    +text-spacing-wider
+
+// large image
+.large-image-container
+    width: 60%
+    margin: auto
+    padding-top: 5px
+    text-align: left
+    font-family: $font-default
+    font-size: 0.75rem
+    color: $color-grey
+    +text-spacing-defaults
+
+.large-image-style
+    width: 60%
+    margin: 0 auto
+
+.large-image-caption
+    widows: 60%
+    margin: auto
+    padding-top: 5px
+    text-align: left
+    font-size: $font-default
+    font-size: 0.75rem
+    color: $color-grey
+    +text-spacing-defaults
+
+.large-image-caption-jp
+    width: 60%
+    margin: auto
+    padding-top: 5px
+    text-align: left
+    font-size: 0.75rem
+    color: $color-grey
+    +text-spacing-defaults
+
+// fullwidth image
+.fullwidthContainerstyle
+    background-color: white
+    width: 94vw
+    margin: 20px auto 60px
+    text-align: center
+
+.fullwidthImageStyle
+    width: 100%
+    margin: 0 auto
+
+// two images
+.two-images-flexbox
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin: 60px 80px
+
+.two-images-container1
+    width: 30vw
+    margin-bottom: 2rem
+
+.two-images-container2
+    width: 30vw
+    margin-bottom: 2rem
+
+.two.images.imagestyle
+    width: 30vw
+
+.two-images-caption
+    text-align: left
+    color: $color-grey
+    font-family: $font-default
+    font-size: 0.75rem
+    margin-top: 5px
+    +text-spacing-defaults
+
+.two-images-caption-jp
+    text-align: left
+    color: $color-grey
+    font-size: 0.75rem
+    margin-top: 5px
+    +text-spacing-defaults
+
+// two images variation
+.TIV-flexContainer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 100px 120px
+
+.TIV-imageContainer1
+    +TIV-imageContainer(65%)
+
+.TIV-imageContainer2
+    +TIV-imageContainer(35%)
+
+.TIV-imageSubcontainer
+    width: 100%
+    text-align: center
+    margin: auto
+
+.TIV-imageStyle
+    width: 100%
+
+// text left image right, text right image left
+.text-left-flexbox,
+.text-right-flexbox
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin: 60px 80px
+
+// note this was originally 30%, probably mistake?
+.text-left-container,
+.text-left-image,
+.text-right-container, 
+.text-right-image
+    width: 30vw
+
+.text-left-left-column,
+.text-right-left-column
+    width: 30vw
+    font-family: $font-default
+    font-size: 14px
+    +text-spacing-wider
+
+.TLIR-TRIL-caption
+    margin-top: 5px
+    text-align: left
+    color: $color-grey
+    font-family: $font-default
+    font-size: 0.75rem
+    +text-spacing-defaults
+
+// timeline
+.timeline-container
+    width: 55vw
+    margin: 4rem auto 8rem
+    font-family: $font-default
+    font-size: 14px
+    +text-spacing-wider
+
+.timeline-row
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+
+.timeline-leftcolumn
+    width: 15%
+
+.timeline-rightcolumn
+    width: 85%
+
+// parts
+.parts-header
+    +header
+    margin-bottom: 3rem
+
+// section header
+.section-header
+    +header
+    margin-bottom: 1rem
+
+.quicklink
+    font-family: $font-default
+    font-size: 14px
+    display: flex
+    margin-bottom: 2.5rem
+    padding: 0 20% 0 30%
+    +text-spacing-wider
+
+.quicklink-p
+    font-size: 12px
+    color: $color-grey
+    cursor: pointer
+    margin-right: 20px
+
+.endnotes
+    font-family: $font-default
+    font-size: 11px
+    margin-bottom: 2rem
+    padding: 0 30%
+    +text-spacing-wider
+
+.read-more-less
+    font-family: $font-default
+    font-size: 14px
+    color: #c0c0c0
+    background: none
+    margin: 7px 30% 3rem
+    border: none
+    cursor: pointer
+    padding: 0
+    position: relative
+    z-index: 99
+
+// intro to essay
+.essay-intro-container
+    margin: 2rem 0 3rem
+
+.essay-intro
+    padding: 0 30%
+    font-family: $font-default
+    font-size: 13px
+    color: $color-grey
+    +text-spacing-defaults
+
+.essay-intro-note
+    padding: 0 30%
+    font-family: $font-default
+    font-size: 12px
+    color: $color-grey
+    +text-spacing-defaults
+
+
+// pullquote
+.pullquote
+    font-family: $font-header
+    font-size: 3.8rem
+    letter-spacing: 0
+    line-height: 1
+    padding: 0 30%
+    margin: 40px 0 10px -80px
+
+.pullquote2
+    font-family: $font-header
+    font-size: 3.8rem
+    letter-spacing: 0
+    line-height: 1
+    padding: 0 20% 0 30%
+    margin: 40px -120px 10px 120px
+
+// navigation
+.sidemenuContainer
+    position: fixed
+    background-color: white
+    display: block
+    width: 70px
+    height: 160px
+    left: -10px
+    top: 300px
+    border-radius: 10px
+    box-shadow: 4px 6px 5px 0px rgba(194, 194, 194, 0.33)
+    font-family: $font-default
+    z-index: 999
+    transition: 0.3s
+    letter-spacing: 0
+
+.sidemenuUL
+    list-style: none
+    padding: 30px 0 0 20px
+
+.sidemenuLI
+    line-height: 2
+    cursor: pointer
+
+// video
+.iframe
+    display: block
+    margin: 2rem auto
+
+// quote
+.quoteStyle 
+    padding: 0 32.5%
+    font-family: $font-default
+    font-size: 13px
+    +text-spacing-wider
+
+// represented works
+.rep-container
+    display: block
+    margin: auto
+    width: calc( 75vw + 2rem )
+
+.rep-row
+    margin: 0.5rem 0
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &:first-child
+        margin-bottom: 2rem
+
+.rep-imgstyle
+    width: 31%
+    height: auto
+
+.rep-defaultstyle
+    font-family: $font-default
+    font-size: 12px
+    color: $color-grey
+    +text-spacing-wider
+
+.rep-defaultstyleJP
+    font-size: 12px
+    color: $color-grey
+    +text-spacing-wider
+
+.rep-defaultstyle_mobile
+    font-family: $font-default
+    font-size: 12px
+    display: none
+    color: $color-grey
+    +text-spacing-wider
+
+.rep-defaultstyleJP_mobile
+    font-size: 12px
+    display: none
+    color: $color-grey
+    +text-spacing-wider
+
+.exInfoDesktopEN
+    display: inline
+
+.exInfoPhoneEN
+    display: none
+
+
+// link for work list
+.listlink
+    font-family: $font-default
+    font-size: 14px
+    letter-spacing: 0
+    text-align: center
+
+.listcontainer
+    +flexbox-centered
+    margin: 4rem 0
+

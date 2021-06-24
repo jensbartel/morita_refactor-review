@@ -1,7 +1,3 @@
-import '../../styles/stylesEnglish.css';
-import '../../styles/stylesEnglishPhone.css';
-import '../../styles/stylesEnglishTablet.css';
-
 const Timeline = () => {
     return (
         <div className="timeline-container">

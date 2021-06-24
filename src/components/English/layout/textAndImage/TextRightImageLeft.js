@@ -1,7 +1,4 @@
 import ReactHTMLParser from 'react-html-parser'
-import '../../styles/stylesEnglish.css';
-import '../../styles/stylesEnglishPhone.css';
-import '../../styles/stylesEnglishTablet.css';
 
 const TextRightImageLeft = (props) => {
     const text = props.text;
