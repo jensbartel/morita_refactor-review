@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser'
+import html from 'react-html-parser'
 
 const LargeImage = (props) => {
     const { item: { emphasis, emphasisJP, text, textJP, img }, lang } = props;
@@ -20,7 +20,7 @@ const LargeImage = (props) => {
             <img src={img} alt="" />
             <div style={{ marginBottom: "1rem" }}>
                 <p className={langStyle}>
-                    <strong>{emphasisText}</strong>{ ReactHtmlParser(captionText) }
+                    <strong>{emphasisText}</strong>{ html(captionText) }
                 </p>
             </div>
         </div>

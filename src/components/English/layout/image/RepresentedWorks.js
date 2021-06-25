@@ -1,4 +1,4 @@
-import ReactHTMLParser from 'react-html-parser'
+import html from 'react-html-parser'
 
 import thumb1 from '../../../../assets/thumbs/Miraiken1949_thumb.jpg'
 import thumb2 from '../../../../assets/thumbs/So1954_thumb.jpg'
@@ -38,8 +38,8 @@ const RepresentedWorks= (props) => {
                 <img src={thumb6} alt=''/>
             </div>
             <div>
-                <p className={langStyle}>{ReactHTMLParser(captionText)}</p>
-                <p className={langStyleMobile}>{ReactHTMLParser(captionTextMobile)}</p>
+                <p className={langStyle}>{html(captionText)}</p>
+                <p className={langStyleMobile}>{html(captionTextMobile)}</p>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-import ReactHTMLParser from 'react-html-parser'
+import html from 'react-html-parser'
 
 const TextLeftImageRight = (props) => {
     const text = props.text;
@@ -7,11 +7,11 @@ const TextLeftImageRight = (props) => {
     return (
         <div className="text-image-flexbox">
             <div className="text-column">
-                {ReactHTMLParser (text)}    
+                {html(text)}    
             </div>
             <div className="image-column">
                 <img src={item.img} alt=""/>
-                <p><strong>{item.emphasis}</strong>{ReactHTMLParser(item.text)}</p>
+                <p><strong>{item.emphasis}</strong>{html(item.text)}</p>
             </div>
         </div>
     )

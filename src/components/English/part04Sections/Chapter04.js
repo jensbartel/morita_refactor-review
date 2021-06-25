@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import html from 'react-html-parser'
-import { essay20, essay22, essay27, essay28 } from '../../../data/ImageConstantsEssay';
-import { acknowledgments, morita14a, morita14b, morita14c, morita15, moritaEndnotes } from '../../../data/TextConstants';
-import EssayBlock5 from '../layout/essay/EssayBlock5';
+
 import LargeImage from '../layout/image/LargeImage';
 import TextRightImageLeft from '../layout/textAndImage/TextRightImageLeft';
 import DefaultTextBlock from '../layout/textOnly/DefaultTextBlock';
-import DefaultTextBlock2 from '../layout/textOnly/DefaultTextBlock2';
 import Endnotes from '../layout/textOnly/Endnotes';
+
+import { essay20, essay22, essay27, essay28 } from '../../../data/ImageConstantsEssay';
+import { acknowledgments, essayQuickLink, morita14, morita14a, morita14b, morita14c, morita15, moritaEndnotes, sectionLabel } from '../../../data/TextConstants';
+import SectionHeader from '../layout/textOnly/SectionHeader';
+import ChapterQuickLink from '../layout/textOnly/ChapterQuickLink';
 
 const Chapter04 = () => {
     const [ visible, setVisible ] = useState(false);
@@ -15,15 +17,27 @@ const Chapter04 = () => {
 
     return (
         <>
-            <EssayBlock5 />
+            {/* <EssayBlock5 /> */}
+            <div id='quicklink4' className='anchordiv'></div>
+            <SectionHeader text={sectionLabel[4]} />
+            <ChapterQuickLink
+                item1={essayQuickLink[1].text}
+                item2={essayQuickLink[2].text}
+                item3={essayQuickLink[3].text}
+                item1Link={essayQuickLink[1].quickLink}
+                item2Link={essayQuickLink[2].quickLink}
+                item3Link={essayQuickLink[3].quickLink}
+            />
+            <DefaultTextBlock text={html(morita14)} />
+
             <TextRightImageLeft text={morita14a} item={essay20} />
 
             { visible ? 
                 <>
-                    <DefaultTextBlock2 text={html(morita14b)} />
+                    <DefaultTextBlock text={html(morita14b)} />
                     <LargeImage item={essay22} />
-                    <DefaultTextBlock2 text={html(morita14c)} />
-                    <DefaultTextBlock2 text={html(morita15)} />
+                    <DefaultTextBlock text={html(morita14c)} />
+                    <DefaultTextBlock text={html(morita15)} />
                     <Endnotes text={html(moritaEndnotes)} />
                 </> : null
             }
@@ -43,6 +57,6 @@ const Chapter04 = () => {
             <br /><br /><br /><br /> 
         </>
     )
-}
+};
 
-export default Chapter04
+export default Chapter04;

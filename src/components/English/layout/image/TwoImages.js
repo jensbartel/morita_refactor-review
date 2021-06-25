@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser'
+import html from 'react-html-parser'
 
 const TwoImages = (props) => {
 
@@ -23,12 +23,12 @@ const TwoImages = (props) => {
         <div className="two-images-flexbox">
             <div>
                 <img src={item1.img} alt=""/><br/>
-                <p className={langStyle}><strong>{emphasisText1}</strong>{ReactHtmlParser(captionText1)}</p>
+                <p className={langStyle}><strong>{emphasisText1}</strong>{html(captionText1)}</p>
             </div>
 
             <div>
                 <img src={item2.img} alt=""/>
-                <p className={langStyle}><strong>{emphasisText2}</strong>{ReactHtmlParser(captionText2)}</p>
+                <p className={langStyle}><strong>{emphasisText2}</strong>{html(captionText2)}</p>
             </div>
         </div>
     )    

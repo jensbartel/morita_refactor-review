@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser'
+import html from 'react-html-parser'
 
 const FullWidthImage = (props) => {
     const item = props.item;
@@ -19,7 +19,7 @@ const FullWidthImage = (props) => {
                 <img src={item.img} alt="" />
                 <div className={langStyle}>
                     <span>
-                        <strong>{emphasisText}</strong>{ReactHtmlParser(captionText)}
+                        <strong>{emphasisText}</strong>{html(captionText)}
                     </span>
                 </div>
             </div>

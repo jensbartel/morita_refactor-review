@@ -1,4 +1,4 @@
-import ReactHtmlParser from 'react-html-parser'
+import html from 'react-html-parser'
 
 import DefaultTextBlock from "./layout/textOnly/DefaultTextBlock"
 import ExhibitionTitle from "./layout/textOnly/ExhibitionTitle"
@@ -14,13 +14,13 @@ const Part01 = () => {
     return (
         <>
             <ExhibitionTitle/>
-            <DefaultTextBlock text={ReactHtmlParser (preview)} />
+            <DefaultTextBlock text={html(preview)} />
             <LargeImage item={essay9} />
-            <DefaultTextBlock text={ReactHtmlParser (preview2)} />
-            <DefaultTextBlock text={ReactHtmlParser (preview3)} />
+            <DefaultTextBlock text={html(preview2)} />
+            <DefaultTextBlock text={html(preview3)} />
             <TwoImages item1={essay7} item2={essay8} />
-            <DefaultTextBlock text={ReactHtmlParser (preview4)} />
-            <DefaultTextBlock text={ReactHtmlParser (exhibitionInfo)} />
+            <DefaultTextBlock text={html(preview4)} />
+            <DefaultTextBlock text={html(exhibitionInfo)} />
             <Pullquote />
         </>
     )
