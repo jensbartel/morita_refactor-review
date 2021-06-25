@@ -1,7 +1,3 @@
-import '../stylesJapanese.css'
-import '../stylesJapanesePhone.css'
-import '../stylesJapaneseTablet.css'
-
 const IntroToEssayJP = () => {
     return (
         <div className='essay-intro-containerJP'>

@@ -1,0 +1,398 @@
+@charset "UTF-8";
+.anchordiv {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.title-containerJP {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container2JP {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-styleJP {
+  font-size: 3.8rem;
+  font-family: "FOT-筑紫オールド明朝 Pro R", serif;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.title-datesJP {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 60px;
+  letter-spacing: 0;
+}
+
+.defaultstyleJP {
+  padding-top: 0 30%;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.text-left-flexboxJP {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 60px 80px;
+}
+
+.text-left-containerJP,
+.text-left-imageJP,
+.text-right-containerJP {
+  width: 30vw;
+}
+
+.text-left-left-columnJP,
+.text-right-left-columnJP {
+  width: 30vw;
+  line-height: 1.6;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.text-left-captionJP {
+  text-align: left;
+  color: #525252;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+
+.parts-headerJP {
+  padding: 40px 30% 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.quicklinkJP {
+  padding-top: 0 30%;
+  line-height: 1, 0.6;
+  letter-spacing: 0;
+  font-size: 14px;
+  margin-bottom: 2.5rem;
+  display: flex;
+}
+
+.quicklink-pJP {
+  font-synthesis: 13px;
+  color: #525252;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.mobileJP {
+  display: none;
+}
+
+.read-more-or-lessJP {
+  margin: 7px 30% 3rem;
+  background: none;
+  color: grey;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  position: relative;
+  z-index: 99;
+}
+
+.endnotesJP {
+  padding: 0 30%;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-size: 12px;
+  margin-bottom: 2rem;
+}
+
+.essay-intro-containerJP {
+  line-height: 1.6;
+  font-size: 13px;
+  padding: 0 30%;
+  color: #525252;
+}
+
+.essay-introJP {
+  margin: 2rem 0 0;
+}
+
+.timeline-containerJP {
+  width: 55vw;
+  margin: 4rem auto 8rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+.timeline-rowJP {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.timeline-leftcolumnJP {
+  width: 15%;
+}
+
+.timeline-rightcolumnJP {
+  width: 85%;
+}
+
+.video-responsive2 {
+  margin-bottom: 6rem;
+}
+
+.section-headerJP {
+  font-size: 1.6;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  padding: 40px 30% 0;
+}
+
+.listcontainerJP {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.listlinkJP {
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .defaultstyleJP {
+    padding: 0 20%;
+  }
+
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
+  }
+
+  .essay-intoJP {
+    padding: 0 20%;
+  }
+
+  .essay-intro-containerJP {
+    padding: 0;
+  }
+
+  .quicklinkJP {
+    padding: 0 10% 0 20%;
+  }
+
+  .endnotesJP {
+    padding: 0 25%;
+  }
+
+  .read-more-or-lessJP {
+    margin: 0.5rem 20% 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .defaultstyleJP {
+    padding: 0 20%;
+  }
+
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
+  }
+
+  .essay-introJP {
+    padding: 0 20%;
+  }
+
+  .essay-intro-containerJP {
+    padding: 0;
+  }
+
+  .quicklinkJP {
+    padding: 0 10% 0 20%;
+  }
+
+  .endnotesJP {
+    padding: 0 25%;
+  }
+
+  .read-more-or-lessJP {
+    margin: 0.5rem 20% 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .quicklinkJP {
+    padding: 0 10% 0 30%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .defaultstyleJP {
+    padding: 0 20%;
+  }
+
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
+  }
+
+  .essay-introJP {
+    padding: 0 20%;
+  }
+
+  .essay-intro-containerJP {
+    padding: 0;
+  }
+
+  .quicklinkJP {
+    padding: 0 10% 0 20%;
+  }
+
+  .endnotesJP {
+    padding: 0 25%;
+  }
+
+  .read-more-or-lessJP {
+    margin: 0.5rem 20% 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .quicklinkJP {
+    padding: 0 10% 0 30%;
+  }
+}
+@media screen and (max-width: 567px) {
+  .title-styleJP {
+    font-size: 2rem;
+  }
+
+  .title-datesJP {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .defaultstyleJP {
+    padding: 0 15%;
+    letter-spacing: 0;
+  }
+
+  .video-responsive {
+    position: relative;
+    top: -5rem;
+  }
+
+  .video-responsive2 {
+    position: relative;
+    top: -6rem;
+    margin-bottom: 0;
+  }
+
+  .iframe {
+    margin-bottom: 0;
+  }
+
+  .text-left-flexboxJP {
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    margin: 0 15%;
+  }
+
+  .text-left-containerJP,
+.text-right-containerJP {
+    width: 100vw;
+    margin-left: 30vw;
+  }
+
+  .text-left-imageJP {
+    width: 70vw;
+  }
+
+  .text-left-left-columnJP {
+    width: 70vw;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+  }
+
+  .text-right-left-columnJP {
+    width: 70vw;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+
+  .text-left-captionJP {
+    width: 70vw;
+    margin-bottom: 1.5rem;
+  }
+
+  .parts-headerJP {
+    margin-bottom: 2rem;
+    padding: 40px 15% 10px;
+    font-size: 1.4rem;
+  }
+
+  .quicklinkJP {
+    padding: 0 15%;
+    flex-direction: column;
+  }
+
+  .quicklink-pJP {
+    margin-bottom: 0.2rem;
+  }
+
+  .not-mobileJP {
+    display: none;
+  }
+
+  .mobileJP {
+    display: inline;
+  }
+
+  .read-more-or-lessJP {
+    margin: 0 15% 3rem;
+  }
+
+  .endnotesJP {
+    padding: 0 15%;
+  }
+
+  .essay-intro-containerJP {
+    line-height: 1.6;
+    font-size: 13px;
+    color: grey;
+    padding: 0 15%;
+  }
+
+  .essay-introJP {
+    margin: 2rem 0 0;
+    padding: 0;
+  }
+
+  .timeline-containerJP {
+    width: 70vw;
+    font-size: 12px;
+    margin: 0 auto 2rem;
+  }
+
+  .section-headerJP {
+    margin-bottom: 1rem;
+    padding: 40px 15% 0;
+  }
+
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=AppJP.css.map */

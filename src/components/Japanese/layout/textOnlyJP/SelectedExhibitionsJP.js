@@ -1,7 +1,3 @@
-import '../stylesJapanese.css'
-import '../stylesJapanesePhone.css'
-import '../stylesJapaneseTablet.css'
-
 const SelectedExhibitionsJP = () => {
     return (
         <div className="timeline-containerJP">

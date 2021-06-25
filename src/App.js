@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom"; 
-import "./App.css";
+import "./styles/English/App.css";
+import "./styles/Japanese/AppJP.css";
 
 import EarlyAccess from "./components/VIP/EarlyAccess";
 import EarlyAccess2 from "./components/VIP/EarlyAccess2";

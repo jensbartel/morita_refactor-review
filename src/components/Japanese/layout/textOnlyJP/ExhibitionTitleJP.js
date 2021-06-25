@@ -1,7 +1,3 @@
-import '../stylesJapanese.css'
-import '../stylesJapanesePhone.css'
-import '../stylesJapaneseTablet.css'
-
 const ExhibitionTitleJP = () => {
     return (
         <div>
