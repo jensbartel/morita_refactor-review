@@ -5,18 +5,18 @@ const FullWidthImage = (props) => {
 
     var langStyle, captionText, emphasisText;
     if (props.lang) {
-        langStyle = "two-images-caption-jp";
+        langStyle = "fullwidth-image-caption-jp";
         captionText = item.textJP;
         emphasisText = item.emphasisJP;
     } else {
-        langStyle = "two-images-caption";
+        langStyle = "fullwidth-image-caption";
         captionText = item.text;
         emphasisText = item.emphasis;
     }
 
     return (
             <div className='fullwidthContainerstyle'>
-                <img src={item.img} className='fullwidthImageStyle' alt="" />
+                <img src={item.img} alt="" />
                 <div className={langStyle}>
                     <span>
                         <strong>{emphasisText}</strong>{ReactHtmlParser(captionText)}

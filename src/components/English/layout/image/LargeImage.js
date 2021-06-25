@@ -17,7 +17,7 @@ const LargeImage = (props) => {
 
     return (
         <div className="large-image-container">
-            <img src={img} className="large-image-style" alt="" />
+            <img src={img} alt="" />
             <div style={{ marginBottom: "1rem" }}>
                 <p className={langStyle}>
                     <strong>{emphasisText}</strong>{ ReactHtmlParser(captionText) }

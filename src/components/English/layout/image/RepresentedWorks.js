@@ -21,27 +21,26 @@ const RepresentedWorks= (props) => {
     } else {
         langStyle = 'rep-defaultstyle';
         captionText = repTextENG;
-        langStyleMobile = 'rep-defaultstyle_mobile';
+        langStyleMobile = 'rep-defaultstyle';
         captionTextMobile = repTextENG_mobile;
     }
 
     return (
         <div className='rep-container'>
-            <div className='rep-row'>
-                <img src={thumb1} className='rep-imgstyle' alt=''/>
-                <img src={thumb2} className='rep-imgstyle' alt=''/>
-                <img src={thumb3} className='rep-imgstyle' alt=''/>
+            <div>
+                <img src={thumb1} alt=''/>
+                <img src={thumb2} alt=''/>
+                <img src={thumb3} alt=''/>
             </div>
-            <div className='rep-row'>
-                <img src={thumb4} className='rep-imgstyle' alt=''/>
-                <img src={thumb5} className='rep-imgstyle' alt=''/>
-                <img src={thumb6} className='rep-imgstyle' alt=''/>
+            <div>
+                <img src={thumb4} alt=''/>
+                <img src={thumb5} alt=''/>
+                <img src={thumb6} alt=''/>
             </div>
-            <div className='rep-row'>
+            <div>
                 <p className={langStyle}>{ReactHTMLParser(captionText)}</p>
                 <p className={langStyleMobile}>{ReactHTMLParser(captionTextMobile)}</p>
             </div>
-            <br/><br/>
         </div>
     )
 };

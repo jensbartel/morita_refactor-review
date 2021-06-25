@@ -6,11 +6,11 @@ const ChapterQuickLink = (props) => {
     return (
             <div className="quicklink">
                 <Link to={item1Link} spy={true} smooth={true}>
-                    <p className="quicklink-p">{item1}</p></Link>
+                    <p>{item1}</p></Link>
                 <Link to={item2Link} spy={true} smooth={true}>
-                    <p className="quicklink-p">{item2}</p></Link>
+                    <p>{item2}</p></Link>
                 <Link to={item3Link} spy={true} smooth={true}>
-                    <p className="quicklink-p">{item3}</p></Link>
+                    <p>{item3}</p></Link>
             </div>
     );
 };

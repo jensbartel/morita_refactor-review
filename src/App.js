@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom"; 
-import "./main.css";
+import "./App.css";
 
 import EarlyAccess from "./components/VIP/EarlyAccess";
 import EarlyAccess2 from "./components/VIP/EarlyAccess2";

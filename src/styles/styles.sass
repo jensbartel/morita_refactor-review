@@ -1,13 +1,8 @@
 // VARIABLES
 $font-default: 'Quicksand', sans-serif
 $font-header: 'Cormorant', serif
-$color-grey: grey
 
 // MIXINS
-=text-spacing($lineheight)
-    line-height: $lineheight
-    letter-spacing: 0
-
 =standard-text($font, $size, $margin, $padding, $color, $line)
     font-family: $font
     font-size: $size
@@ -17,16 +12,15 @@ $color-grey: grey
     line-height: $line
     letter-spacing: 0
 
-=flexbox-centered
-    display: flex
-    justify-content: center
+=standard-text-jp($size, $margin, $padding, $color, $line)
+    font-size: $size
+    margin: $margin
+    padding: $padding
+    color: $color
+    line-height: $line
+    letter-spacing: 0
 
-=TIV-imageContainer($width)
-    width: $width
-    margin-bottom: 2rem
-    text-align: center
-    padding-right: 2rem
-
+// Original App.css
 .App
     overflow-x: hidden
 
@@ -36,69 +30,58 @@ p .App
 button:focus
     outline: 0
 
+
 // Below what was in the original main css file
 .anchor div
     padding-top: 100px
     margin-top: -100px
 
 // exhibition title
-.title-container
-    +flexbox-centered
-    font-family: $font-header
-
-.title-container2
-    +flexbox-centered
-    font-family: $font-default
+.exhibition-title
+    display: flex
+    justify-content: center
+    flex-direction: column
     text-align: center
+    span
+        +standard-text($font-header, 3.8rem, 0 0 20px 0, 0, #000, 1.6 )
+    p
+        +standard-text($font-default, 1rem, 0 0 60px 0, 0, #000, 1.4)
 
-.title-style
-    text-align: center
-    +standard-text($font-header, 3.8rem, 0 0 20px 0, 0, #000, 1.6 )
-    
-
-.title-dates
-    margin-bottom: 60px
-    font-size: 1rem
-    +text-spacing(1.4)
 
 // default text block
 .defaultstyle
     +standard-text($font-default, 14px, 0, 0 30%, #000, 1.6)
+
 
 // large image
 .large-image-container
     width: 94vw
     margin: 20px auto 60px
     text-align: center
+    img
+        width: 60%
+        margin: 0 auto
 
 .large-image-caption
     width: 60%
     text-align: left
     +standard-text($font-default, 0.75rem, auto, 5px 0 0 0, grey, 1.4)    
-
-.large-image-style
-    width: 60%
-    margin: 0 auto
     
 .large-image-caption-jp
     width: 60%
-    margin: auto
-    padding-top: 5px
     text-align: left
-    font-size: 0.75rem
-    color: $color-grey
-    +text-spacing(1.4)
+    +standard-text-jp(0.75rem, auto, 5px 0 0 0, grey, 1.4)
+
 
 // fullwidth image
 .fullwidthContainerstyle
-    background-color: white
     width: 94vw
     margin: 20px auto 60px
     text-align: center
+    img
+        width: 100%
+        margin: 0 auto
 
-.fullwidthImageStyle
-    width: 100%
-    margin: 0 auto
 
 // two images
 .two-images-flexbox
@@ -106,114 +89,98 @@ button:focus
     justify-content: space-evenly
     align-items: center
     margin: 60px 80px
+    div
+        width: 30vw
+        margin-bottom: 2rem
+        img
+            width: 30vw
 
-.two-images-container1
-    width: 30vw
-    margin-bottom: 2rem
-
-.two-images-container2
-    width: 30vw
-    margin-bottom: 2rem
-
-.two-images-imagestyle
-    width: 30vw
-
-.two-images-caption
+.two-images-caption,
+.fullwidth-image-caption
     text-align: left
     +standard-text($font-default, 0.75rem, 5px 0 0 0, 0, grey, 1.4)
 
-.two-images-caption-jp
+.two-images-caption-jp,
+.fullwidth-image-caption-jp
     text-align: left
-    color: $color-grey
-    font-size: 0.75rem
-    margin-top: 5px
-    +text-spacing(1.4)
+    +standard-text-jp(0.75rem, 5px 0 0 0, 0, grey, 1.4)
+    
 
 // two images variation
-.TIV-flexContainer
+.two-images-var
     display: flex
     justify-content: space-between
     align-items: center
-    margin: 100px 120px
+    margin: 100px 120px        
+    .image1
+        width: 65%
+        margin-bottom: 2rem
+        text-align: center
+        padding-right: 2rem
+    .image2
+        width: 35%
+        margin-bottom: 2rem
+        text-align: center
+        padding-right: 2rem
+    .image1, .image2
+        .imagesub
+            width: 100%
+            text-align: center
+            margin: auto
+            img
+                width: 100%
 
-.TIV-imageContainer1
-    +TIV-imageContainer(65%)
-
-.TIV-imageContainer2
-    +TIV-imageContainer(35%)
-
-.TIV-imageSubcontainer
-    width: 100%
-    text-align: center
-    margin: auto
-
-.TIV-imageStyle
-    width: 100%
 
 // text left image right, text right image left
-.text-left-flexbox,
-.text-right-flexbox
+.text-image-flexbox
     display: flex
     justify-content: space-evenly
     align-items: center
     margin: 60px 80px
+    .text-column
+        width: 30vw
+        +standard-text($font-default, 14px, 0, 0, #000, 1.6)
+    .image-column
+        width: 30vw
+        img
+            width: 30vw
+        p
+            text-align: left
+            +standard-text($font-default, 0.75rem, 5px 0 0 0, 0, grey, 1.4)
 
-// note this was originally 30%, probably mistake?
-.text-left-container,
-.text-left-image,
-.text-right-container, 
-.text-right-image
-    width: 30vw
-
-.text-left-left-column,
-.text-right-left-column
-    width: 30vw
-    font-family: $font-default
-    font-size: 14px
-    +text-spacing(1.6)
-
-.TLIR-TRIL-caption
-    margin-top: 5px
-    text-align: left
-    color: $color-grey
-    font-family: $font-default
-    font-size: 0.75rem
-    +text-spacing(1.4)
 
 // timeline
 .timeline-container
     width: 55vw
     +standard-text($font-default, 14px, 4rem auto 8rem, 0, #000, 1.6)
+    div
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-direction: row
+        div
+            display: block
+            &:first-child
+                width: 15%
+            &:last-child
+                width: 85%
+
     
-.timeline-row
-    width: 100%
-    display: flex
-    justify-content: flex-start
-    align-items: flex-start
-
-.timeline-leftcolumn
-    width: 15%
-
-.timeline-rightcolumn
-    width: 85%
-
-// parts
-.parts-header
-    +standard-text($font-header, 1.6rem, 0 0 3rem 0, 40px 30% 0, #000, 1)
-    font-weight: 500
-
-// section header
+// parts, section header
+.parts-header,
 .section-header
-    +standard-text($font-header, 1.6rem, 0 0 1rem 0, 40px 30% 0, #000, 1)
+    +standard-text($font-header, 1.6rem, 0 0 3rem 0, 40px 30% 0, #000, 1)
     font-weight: 500
 
 .quicklink
     display: flex
-    +standard-text($font-default, 14px, 0 0 2.5rem 0, 0 20% 0 30%, #000, 1.6)
-
-.quicklink-p
-    cursor: pointer
-    +standard-text($font-default, 12px, 0 20px 0 0, 0, grey, 1)
+    +standard-text($font-default, 12px, 0 0 2.5rem 0, 0 20% 0 30%, grey, 1.6)
+    a
+        p
+            cursor: pointer
+            margin: 0 20px 0 0
+            padding: 0
     
 .endnotes
     +standard-text($font-default, 11px, 0 0 2rem 0, 0 30%, #000, 1.6)
@@ -225,17 +192,18 @@ button:focus
     cursor: pointer
     position: relative
     z-index: 99
+    transition: 0.3s
+    &:hover
+        color: #383838
     
 
 // intro to essay
-.essay-intro-container
-    margin: 2rem 0 3rem
-
 .essay-intro
-    +standard-text($font-default, 13px, 0, 0 30%, $color-grey, 1.4)
-
-.essay-intro-note
-    +standard-text($font-default, 12px, 0, 0 30%, $color-grey, 1.4)
+    margin: 2rem 0 3rem
+    .text
+        +standard-text($font-default, 13px, 0, 0 30%, grey, 1.4)
+    .note
+        +standard-text($font-default, 12px, 0, 0 30%, grey, 1.4)
 
 
 // pullquote
@@ -247,9 +215,8 @@ button:focus
 
 
 // navigation
-.sidemenuContainer
+.sidemenu
     position: fixed
-    background-color: white
     display: block
     width: 70px
     height: 160px
@@ -261,14 +228,12 @@ button:focus
     z-index: 999
     transition: 0.3s
     letter-spacing: 0
-
-.sidemenuUL
-    list-style: none
-    padding: 30px 0 0 20px
-
-.sidemenuLI
-    line-height: 2
-    cursor: pointer
+    ul
+        list-style: none
+        padding: 30px 0 0 20px
+        li
+            line-height: 2
+            cursor: pointer
 
 // video
 .iframe
@@ -285,18 +250,17 @@ button:focus
     display: block
     margin: auto
     width: calc( 75vw + 2rem )
-
-.rep-row
-    margin: 0.5rem 0
-    display: flex
-    justify-content: space-between
-    align-items: flex-start
-    &:first-child
-        margin-bottom: 2rem
-
-.rep-imgstyle
-    width: 31%
-    height: auto
+    div
+        margin: 2rem 0 0 0
+        padding: 0
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &:last-child
+            margin: 0.5rem 0 4rem 0
+        img
+            width: 31%
+            height: auto
 
 .rep-defaultstyle,
 .rep-defaultstyle_mobile
@@ -304,9 +268,7 @@ button:focus
 
 .rep-defaultstyleJP,
 .rep-defaultstyleJP_mobile
-    font-size: 12px
-    color: grey
-    +text-spacing(1.6) 
+    +standard-text-jp(12px, 0, 0, grey, 1.6)    
 
 .rep-defaultstyle_mobile,
 .rep-defaultstyleJP_mobile,
@@ -323,6 +285,6 @@ button:focus
     text-align: center
 
 .listcontainer
-    +flexbox-centered
+    display: flex
+    justify-content: center
     margin: 4rem 0
-

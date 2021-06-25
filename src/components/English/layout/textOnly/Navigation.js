@@ -4,7 +4,6 @@ import { Link } from 'react-scroll'
 export default class Navigation extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              over: false
         }
@@ -15,7 +14,6 @@ export default class Navigation extends Component {
     }
 
     render() {
-
         let elementStyle;
         if (this.state.over) {
             elementStyle = {
@@ -28,12 +26,12 @@ export default class Navigation extends Component {
         }
 
         return (
-            <div className='sidemenuContainer' style={{...elementStyle}} onMouseOver={() => {this.mouseEvent()}} onMouseOut={() => {this.mouseEvent()}} >
-                <ul className='sidemenuUL'>
-                    <li className='sidemenuLI'><Link to="part1" spy={true} smooth={true}>Part I</Link></li>
-                    <li className='sidemenuLI'><Link to="part2" spy={true} smooth={true}>Part II</Link></li>
-                    <li className='sidemenuLI'><Link to="part3" spy={true} smooth={true}>Part III</Link></li>
-                    <li className='sidemenuLI'><Link to="part4" spy={true} smooth={true}>Part IV</Link></li>        
+            <div className='sidemenu' style={{...elementStyle}} onMouseOver={() => {this.mouseEvent()}} onMouseOut={() => {this.mouseEvent()}} >
+                <ul>
+                    <li><Link to="part1" spy={true} smooth={true}>Part I</Link></li>
+                    <li><Link to="part2" spy={true} smooth={true}>Part II</Link></li>
+                    <li><Link to="part3" spy={true} smooth={true}>Part III</Link></li>
+                    <li><Link to="part4" spy={true} smooth={true}>Part IV</Link></li>        
                 </ul>
             </div>
         )

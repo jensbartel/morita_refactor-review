@@ -21,16 +21,16 @@ const TwoImagesVariation = (props) => {
     }
 
     return (
-        <div className="TIV-flexContainer">
-            <div className="TIV-imageContainer1">
-                <div className="TIV-imageSubcontainer">
-                        <img src={item1.img} className="TIV-imageStyle" alt=""/><br/>
+        <div className="two-images-var">
+            <div className="image1">
+                <div className="imagesub">
+                        <img src={item1.img} alt=""/><br/>
                         <p className={langStyle}><strong>{emphasisText1}</strong>{ReactHtmlParser(captionText1)}</p>                        
                 </div>
             </div>
-            <div className="TIV-imageContainer2">
-                <div className="TIV-imageSubcontainer">
-                    <img src={item2.img} className="TIV-imageStyle" alt=""/>
+            <div className="image2">
+                <div className="imagesub">
+                    <img src={item2.img} alt=""/>
                     <p className={langStyle}><strong>{emphasisText2}</strong>{ReactHtmlParser(captionText2)}</p>
                 </div>
             </div>            

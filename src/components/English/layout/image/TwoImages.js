@@ -21,13 +21,13 @@ const TwoImages = (props) => {
 
     return (
         <div className="two-images-flexbox">
-            <div className="two-images-container1">
-                <img src={item1.img} className="two-images-imagestyle" alt=""/><br/>
+            <div>
+                <img src={item1.img} alt=""/><br/>
                 <p className={langStyle}><strong>{emphasisText1}</strong>{ReactHtmlParser(captionText1)}</p>
             </div>
 
-            <div className="two-images-container2">
-                <img src={item2.img} className="two-images-imagestyle" alt=""/>
+            <div>
+                <img src={item2.img} alt=""/>
                 <p className={langStyle}><strong>{emphasisText2}</strong>{ReactHtmlParser(captionText2)}</p>
             </div>
         </div>

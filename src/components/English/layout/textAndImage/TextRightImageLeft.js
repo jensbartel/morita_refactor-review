@@ -5,12 +5,12 @@ const TextRightImageLeft = (props) => {
     const item = props.item;
 
     return (
-        <div className="text-right-flexbox">
-            <div className="text-right-container">
-                <img src={item.img} className="text-right-image" alt=""/>
-                <p className="TLIR-TRIL-caption"><strong>{item.emphasis}</strong>{ReactHTMLParser(item.text)}</p>
+        <div className="text-image-flexbox">
+            <div className="image-column">
+                <img src={item.img} alt=""/>
+                <p><strong>{item.emphasis}</strong>{ReactHTMLParser(item.text)}</p>
             </div>
-            <div className="text-right-left-column">
+            <div className="text-column">
                 {ReactHTMLParser (text)}    
             </div>
         </div>
