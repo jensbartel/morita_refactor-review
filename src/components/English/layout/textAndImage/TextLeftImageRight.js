@@ -1,8 +1,7 @@
 import html from 'react-html-parser'
 
 const TextLeftImageRight = (props) => {
-    const text = props.text;
-    const item = props.item;
+    const { text, item } = props;
 
     return (
         <div className="text-image-flexbox">

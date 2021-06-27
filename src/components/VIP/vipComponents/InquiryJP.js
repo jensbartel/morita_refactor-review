@@ -1,6 +1,7 @@
 import React from 'react'
-import '../vip.css'
-import '../vipPhone.css'
+
+// import '../vipMain.css'
+// import '../vipPhone.css'
 
 export default function Inquiry() {
     return (

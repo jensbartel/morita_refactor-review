@@ -22,7 +22,7 @@ const Part02 = () => {
 
             <RepresentedWorks />  
             <div className='listcontainer'>
-                <a href="http://exh.shibunkaku.co.jp/MoritaShiryu_ListofWorks.pdf" download className='listlink'><u>Download work list</u></a>
+                <a href="http://exh.shibunkaku.co.jp/MoritaShiryu_ListofWorks.pdf" download ><u>Download work list</u></a>
             </div>                 
             <DefaultTextBlock item={html(workSelection4)} />
             <TwoImages item1={essay24} item2={essay23} />

@@ -1,44 +1,35 @@
-import React from 'react';
 import Fade from 'react-reveal/Fade';
-import ReactHTMLParser from 'react-html-parser';
-import '../vip.css'
-import '../vipPhone.css'
+import html from 'react-html-parser';
 
-export default function fullwidthHorizontal(props) {
+const FullwidthHorizontal = (props) => {
 
-    const scale = props.scale;
-    var Vtitle, Vcaptionitem, Vtext;
-    if (props.lang) {
-        Vtitle = "VIPtitleJP"
-        Vcaptionitem = "VIPcaptionitemJP"
-        Vtext = "VIPtextJP"
-    } else {
-        Vtitle = "VIPtitle"
-        Vcaptionitem = "VIPcaptionitem"
-        Vtext = "VIPtext"
-    }
+    const { scale, item: { img, title, translation, description, label, dimensions, date, furtherInfo }, text, lang } = props;
+
+    let style = 'fullwidth-container';
+    if(lang) { style = 'fullwidth-container fullwidth-modifier-eng' }
+
     return (
         <Fade>
-            <div className="workcontainer">
-                <img src={props.item.img} className="fullwidthVIPimage" style={{width: scale + '%'}} alt=""/>
-                <div className="captions" style={{width: scale + '%'}} >
-                    <div className="textAndCaptions">
-                        <div>
-                            <p className={Vtext}>{ReactHTMLParser(props.text)}</p>
-                        </div>
-                        <div style={{width: scale + '%', marginTop: '1rem'}} className='fullwidthText_mobileCaptions'> 
-                            <p className={Vtitle}>{props.item.title}</p>
-                            <p className={Vcaptionitem}>{props.item.translation}</p>
-                            <p className={Vcaptionitem}>{props.item.description}</p>
-                            <p className={Vcaptionitem}>{props.item.label}</p>
-                            <p className={Vcaptionitem}>{props.item.dimensions}</p>
-                            <p className={Vcaptionitem}>{props.item.date}</p>
-                            <p className={Vcaptionitem} style={{lineHeight: '1.4'}}>{props.item.furtherInfo ? ReactHTMLParser(props.item.furtherInfo) : null}</p>
-                        </div>
+            <div className={style}>
+                <img src={img} style={{width: scale + '%'}} alt=""/>
+                <div style={{width: scale + '%'}} >
+                    <div className="text-caption">
+                        <p>{html(text)}</p>
+                    </div>
+                    <div className='fullwidthText_mobileCaptions'> 
+                        <h2>{title}</h2>
+                        <p>{translation}</p>
+                        <p>{description}</p>
+                        <p>{label}</p>
+                        <p>{dimensions}</p>
+                        <p>{date}</p>
+                        <p style={{lineHeight: '1.4'}}>{furtherInfo ? html(furtherInfo) : null}</p>
                     </div>
                 </div>
             </div>
         </Fade>
     )
-}
+};
+
+export default FullwidthHorizontal;
 

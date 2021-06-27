@@ -1,39 +1,31 @@
-import React from 'react';
 import Fade from 'react-reveal/Fade';
-import ReactHTMLParser from 'react-html-parser';
-import '../vip.css'
+import html from 'react-html-parser';
 
-export default function fullwidthHorizontal(props) {
+const FullwidthHorizontal = (props) => {
 
-    const scale = props.scale;
-    var Vtitle, Vcaptionitem;
-    if (props.lang) {
-        Vtitle = "VIPtitleJP"
-        Vcaptionitem = "VIPcaptionitemJP"
-    } else {
-        Vtitle = "VIPtitle"
-        Vcaptionitem = "VIPcaptionitem"
-    }
+    const { scale, item: { img, title, translation, description, source, label, seal, dimensions, date, furtherInfo}, lang } = props;
+
+    let style = 'fullwidth-container';
+    if(lang) { style = 'fullwidth-container fullwidth-modifier-eng' }
+
     return (
         <Fade>
-            <div className="workcontainer">
-                <img src={props.item.img} className="fullwidthVIPimage" style={{width: scale + '%'}} alt=""/>
-                <div className="captions" style={{width: scale + '%'}} >
-                    <h2 className={Vtitle}>{props.item.title}</h2>
-                    <p className={Vcaptionitem}>{props.item.translation}</p>
-                    <p className={Vcaptionitem}>{props.item.description}</p>
-
-                    <p className={Vcaptionitem}>{props.item.source ? props.item.source : null}</p>
-                    
-                    <p className={Vcaptionitem}>{props.item.label}</p>
-                    <p className={Vcaptionitem}>{props.item.seal ? props.item.seal : null}</p>
-                    <p className={Vcaptionitem}>{props.item.dimensions}</p>
-                    <p className={Vcaptionitem}>{props.item.date}</p>
-                    <p className={Vcaptionitem} style={{lineHeight: '1.4'}}>{props.item.furtherInfo ? ReactHTMLParser(props.item.furtherInfo) : null}</p>
+            <div className={style}>
+                <img src={img} style={{width: scale + '%'}} alt=""/>
+                <div style={{width: scale + '%'}} >
+                    <h2>{title}</h2>
+                    <p>{translation}</p>
+                    <p >{description}</p>
+                    <p>{source ? source : null}</p>                    
+                    <p>{label}</p>
+                    <p>{seal ? seal : null}</p>
+                    <p>{dimensions}</p>
+                    <p>{date}</p>
+                    <p style={{lineHeight: '1.4'}}>{furtherInfo ? html(furtherInfo) : null}</p>
                 </div>
             </div>
         </Fade>
     )
-}
+};
 
-
+export default FullwidthHorizontal;

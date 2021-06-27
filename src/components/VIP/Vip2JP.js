@@ -1,4 +1,4 @@
-import './vip.css';
+import './vipMain.css';
 import './vipPhone.css';
 
 import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
@@ -22,13 +22,13 @@ const EarlyAccess2JP = () => {
                 <img src={group3} className='fullwidthimagestyle' alt=""/>
             </div> 
 
-            <div className="navigationLinks">
-                <a className="navLinksItemJP" href='vip'>作品一覧 (1)</a>
-                <a className="navLinksItemJP navLinksActive" href='vip2'>作品一覧 (2)</a>
-                <a className="navLinksItemJP" href='../'>展覧会概要</a>
+            <div className="nav-linkJP">
+                <a href='vip'>作品一覧 (1)</a>
+                <a className="active-link" href='vip2'>作品一覧 (2)</a>
+                <a href='../'>展覧会概要</a>
             </div>
 
-            <FullwidthWithText item={En1963JP} scale="75" text={enVIPtextJP} lang='jp'/>
+            <FullwidthWithText item={En1963JP} scale="75" text={enVIPtextJP} />
             <HalfwidthHorizontal item1={Monoui1963JP} item2={Kanzan_shikkin1964JP} scaleLeft={50} contentWidth={50} lang='jp'/>
             <HalfwidthHorizontal item1={Ki_shikkin1964JP} item2={Ki1963JP} scaleLeft={50} contentWidth={57} lang='jp'/>
 
@@ -43,20 +43,20 @@ const EarlyAccess2JP = () => {
                 <img src={group5} className='fullwidthimagestyle' alt=""/>
             </div>   
 
-            <FullwidthHorizontal item={Myo1964JP} scale="70" lang='jp'/>
-            <FullwidthHorizontal item={Sojo1969JP} scale="60" lang='jp'/>
+            <FullwidthHorizontal item={Myo1964JP} scale="70" />
+            <FullwidthHorizontal item={Sojo1969JP} scale="60" />
 
             <div className='containerstyle notFirst' >
                 <img src={group6} className='fullwidthimagestyle' alt=""/>
             </div>   
 
-            <FullwidthHorizontal item={Ki1995JP} scale="60" lang='jp'/>
+            <FullwidthHorizontal item={Ki1995JP} scale="60" />
             <HalfwidthHorizontal item1={Nin1975JP} item2={Negai1986JP} scaleLeft={38} contentWidth={60} lang='jp'/>
          
             <InquiryJP />
 
-            <a href='/vip'>
-                <h2 className="nextpageJP">前のページ</h2>
+            <a href='/vip' className='nextJp'>
+                <h2>前のページ</h2>
             </a>
         </>
     )

@@ -411,7 +411,12 @@ button:focus {
   display: inline;
 }
 
-.listlink {
+.listcontainer {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.listcontainer a {
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -420,12 +425,6 @@ button:focus {
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-}
-
-.listcontainer {
-  display: flex;
-  justify-content: center;
-  margin: 4rem 0;
 }
 
 @media screen and (max-width: 768px) {

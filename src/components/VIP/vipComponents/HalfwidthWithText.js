@@ -2,9 +2,8 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import ReactHTMLParser from 'react-html-parser';
 
-
-import "../vip.css";
-import "../vipPhone.css";
+// import "../vipMain.css";
+// import "../vipPhone.css";
 
 export default function HalfwidthWithText(props) {
 

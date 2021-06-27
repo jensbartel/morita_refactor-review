@@ -1,4 +1,4 @@
-import './vip.css';
+import './vipMain.css';
 import './vipPhone.css';
 
 import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
@@ -22,16 +22,16 @@ const EarlyAccessJP = () => {
                 <img src={group1} className='fullwidthimagestyle' alt=""/>
             </div>
 
-            <div className="navigationLinks">
-                <a className="navLinksItemJP navLinksActive" href='vip'>作品一覧 (1)</a>
-                <a className="navLinksItemJP" href='vip2'>作品一覧 (2)</a>
-                <a className="navLinksItemJP" href='../'>展覧会概要</a>
+            <div className="nav-linkJP">
+                <a className="active-link" href='vip'>作品一覧 (1)</a>
+                <a href='vip2'>作品一覧 (2)</a>
+                <a href='../'>展覧会概要</a>
             </div>
 
-            <FullwidthWithText item={KanzanScreen1969JP} scale="75" text={kanzanVIPtextJP} lang='jp'/>
+            <FullwidthWithText item={KanzanScreen1969JP} scale="75" text={kanzanVIPtextJP}/>
             <HalfwidthHorizontal item1={Shizuka1969JP} item2={Ryu1965JP} scaleLeft={56} contentWidth={42} lang='jp'/>
-            <FullwidthHorizontal item={SeishiBiken1941JP} scale="60" lang='jp'/>
-            <FullwidthHorizontal item={Miraiken1949JP} scale="35" lang='jp'/>
+            <FullwidthHorizontal item={SeishiBiken1941JP} scale="60" />
+            <FullwidthHorizontal item={Miraiken1949JP} scale="35" />
 
             <div className='containerstyle'>
                 <img src={group2} className='fullwidthimagestyle' alt=""/>
@@ -68,7 +68,7 @@ const EarlyAccessJP = () => {
             </div>
 
             <div className='video-responsive3-vip'>            
-                <FullwidthHorizontal item={Kan1961JP} scale="70" lang='jp'/>
+                <FullwidthHorizontal item={Kan1961JP} scale="70" />
                 <HalfwidthHorizontal item1={Kan1965JP} item2={Datsu1963JP} scaleLeft={54} contentWidth={59} lang='jp'/>
                 <HalfwidthHorizontal item1={Kanzan1964JP} item2={Usobuku_shikkin1963JP} scaleLeft={40} contentWidth={46} lang='jp'/>
 
@@ -77,13 +77,13 @@ const EarlyAccessJP = () => {
                     <img src={group7} className='fullwidthimagestyle' alt="" lang='jp'/>
                 </div>
 
-                <FullwidthHorizontal item={Kumomushin1967JP} scale="60" lang='jp'/>
-                <FullwidthHorizontal item={Eko1967JP} scale="60" lang='jp'/>
+                <FullwidthHorizontal item={Kumomushin1967JP} scale="60" />
+                <FullwidthHorizontal item={Eko1967JP} scale="60" />
 
                 <InquiryJP />
 
-                <a href='/vip2'>
-                    <h2 className="nextpageJP">次のページ</h2>
+                <a href='/vip2' className='nextJp'>
+                    <h2>次のページ</h2>
                 </a>
             </div>
 

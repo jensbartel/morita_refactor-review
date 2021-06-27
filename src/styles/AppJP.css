@@ -4,159 +4,149 @@
   margin-top: -100px;
 }
 
-.title-containerJP {
+.exhibition-titleJP {
   display: flex;
   justify-content: center;
-}
-
-.title-container2JP {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.title-styleJP {
-  font-size: 3.8rem;
-  font-family: "FOT-筑紫オールド明朝 Pro R", serif;
-  margin-bottom: 20px;
+  flex-direction: column;
   text-align: center;
   letter-spacing: 0;
+  margin-bottom: 60px;
 }
-
-.title-datesJP {
+.exhibition-titleJP span {
+  font-family: "FOT-筑紫オールド明朝 Pro R", serif;
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+}
+.exhibition-titleJP p {
   font-size: 1rem;
   line-height: 1.4;
-  margin-bottom: 60px;
-  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .defaultstyleJP {
-  padding: 0 30%;
-  line-height: 1.6;
   font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 30%;
 }
 
-.text-left-flexboxJP {
+.text-image-flexboxJP {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 60px 80px;
 }
-
-.text-left-containerJP,
-.text-left-imageJP,
-.text-right-containerJP {
+.text-image-flexboxJP .text-column {
   width: 30vw;
-}
-
-.text-left-left-columnJP,
-.text-right-left-columnJP {
-  width: 30vw;
-  line-height: 1.6;
   font-size: 14px;
-  letter-spacing: 0;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
-
-.text-left-captionJP {
+.text-image-flexboxJP .image-column {
+  width: 30vw;
+}
+.text-image-flexboxJP .image-column img {
+  width: 30vw;
+}
+.text-image-flexboxJP .image-column p {
   text-align: left;
+  letter-spacing: 0;
   color: #525252;
   font-size: 0.75rem;
-  letter-spacing: 0;
   line-height: 1.4;
-  margin-top: 5px;
-}
-
-.parts-headerJP {
-  padding: 40px 30% 0;
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-}
-
-.quicklinkJP {
-  padding: 0 30%;
-  line-height: 1, 0.6;
-  letter-spacing: 0;
-  font-size: 14px;
-  margin-bottom: 2.5rem;
-  display: flex;
-}
-
-.quicklink-pJP {
-  font-synthesis: 13px;
-  color: #525252;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
-.mobileJP {
-  display: none;
-}
-
-.read-more-or-lessJP {
-  margin: 7px 30% 3rem;
-  background: none;
-  color: grey;
-  border: none;
-  cursor: pointer;
+  margin: 5px 0 0 0;
   padding: 0;
-  font-size: 14px;
-  position: relative;
-  z-index: 99;
-}
-
-.endnotesJP {
-  padding: 0 30%;
-  line-height: 1.6;
-  letter-spacing: 0;
-  font-size: 12px;
-  margin-bottom: 2rem;
-}
-
-.essay-intro-containerJP {
-  line-height: 1.6;
-  font-size: 13px;
-  padding: 0 30%;
-  color: #525252;
-}
-
-.essay-introJP {
-  margin: 2rem 0 0;
 }
 
 .timeline-containerJP {
   width: 55vw;
-  margin: 4rem auto 8rem;
-  line-height: 1.6;
   letter-spacing: 0;
   font-size: 14px;
+  line-height: 1.7;
+  margin: 4rem auto 8rem;
+  padding: 0;
 }
-
-.timeline-rowJP {
+.timeline-containerJP div {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: row;
 }
-
-.timeline-leftcolumnJP {
+.timeline-containerJP div div {
+  display: block;
+}
+.timeline-containerJP div div:first-child {
   width: 15%;
 }
-
-.timeline-rightcolumnJP {
+.timeline-containerJP div div:last-child {
   width: 85%;
+}
+
+.parts-headerJP,
+.section-headerJP {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin: 0 0 3rem 0;
+  padding: 40px 30% 0;
+}
+
+.quicklinkJP {
+  display: flex;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+  padding: 0 30%;
+}
+.quicklinkJP a p {
+  cursor: pointer;
+  color: grey;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.quicklinkJP a p:hover {
+  color: #000;
+}
+
+.endnotesJP {
+  letter-spacing: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  padding: 0 30%;
+}
+
+.read-more-or-lessJP {
+  background: none;
+  color: grey;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  transition: 0.3s;
+  font-size: 14px;
+  line-height: 1;
+  margin: 7px 30% 3rem;
+  padding: 0;
+}
+.read-more-or-lessJP:hover {
+  color: #383838;
+}
+
+.essay-introJP {
+  color: #525252;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 30%;
 }
 
 .video-responsive2 {
   margin-bottom: 6rem;
-}
-
-.section-headerJP {
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  margin-bottom: 1rem;
-  padding: 40px 30% 0;
 }
 
 .listcontainerJP {
@@ -164,11 +154,14 @@
   justify-content: center;
   margin: 4rem 0;
 }
-
-.listlinkJP {
+.listcontainerJP a {
   font-size: 14px;
   letter-spacing: 0;
   text-align: center;
+}
+
+.mobileJP {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {

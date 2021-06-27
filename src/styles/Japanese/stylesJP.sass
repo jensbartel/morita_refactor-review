@@ -1,135 +1,122 @@
+// MIXINS
+=standard-text($font-size, $line-height, $margin, $padding)
+    font-size: $font-size
+    line-height: $line-height
+    margin: $margin
+    padding: $padding
+
+    
+// anchor div
 .anchordiv
     padding-top: 100px
     margin-top: -100px
-    
+
+
 // exhibition title
-.title-containerJP
+.exhibition-titleJP
     display: flex
     justify-content: center
-
-.title-container2JP
-    display: flex
-    justify-content: center
-    text-align: center
-
-.title-styleJP
-    font-size: 3.8rem
-    font-family: 'FOT-筑紫オールド明朝 Pro R', serif
-    margin-bottom: 20px
+    flex-direction: column
     text-align: center
     letter-spacing: 0
-
-.title-datesJP
-    font-size: 1rem
-    line-height: 1.4
     margin-bottom: 60px
-    letter-spacing: 0
+    span
+        font-family: 'FOT-筑紫オールド明朝 Pro R', serif
+        font-size: 3.8rem
+        margin-bottom: 20px
+    p
+        +standard-text(1rem, 1.4, 0, 0)
+        
 
 // default text block
 .defaultstyleJP
-    padding: 0 30%
-    line-height: 1.6
-    font-size: 14px
+    +standard-text(14px, 1.6, 0, 0 30%)
 
-// text left image right
-.text-left-flexboxJP
+
+// text left image right, text right image left
+.text-image-flexboxJP
     display: flex
     justify-content: space-evenly
     align-items: center
     margin: 60px 80px
-
-.text-left-containerJP,
-.text-left-imageJP,
-.text-right-containerJP
-    width: 30vw
-
-.text-left-left-columnJP,
-.text-right-left-columnJP
-    width: 30vw
-    line-height: 1.6
-    font-size: 14px
-    letter-spacing: 0
-
-.text-left-captionJP
-    text-align: left
-    color: #525252
-    font-size: 0.75rem
-    letter-spacing: 0
-    line-height: 1.4
-    margin-top: 5px
-
-
-// parts
-.parts-headerJP
-    padding: 40px 30% 0
-    font-size: 1.6rem
-    font-weight: 500
-    margin-bottom: 3rem
-
-.quicklinkJP
-    padding: 0 30%
-    line-height: 1,.6
-    letter-spacing: 0
-    font-size: 14px
-    margin-bottom: 2.5rem
-    display: flex
-
-.quicklink-pJP
-    font-synthesis: 13px
-    color: #525252
-    cursor: pointer
-    margin-right: 20px
-
-.mobileJP
-    display: none
-
-.read-more-or-lessJP
-    margin: 7px 30% 3rem
-    background: none
-    color: grey
-    border: none
-    cursor: pointer
-    padding: 0
-    font-size: 14px
-    position: relative
-    z-index: 99
-
-.endnotesJP
-    padding: 0 30%
-    line-height: 1.6
-    letter-spacing: 0
-    font-size: 12px
-    margin-bottom: 2rem
-
-.essay-intro-containerJP
-    line-height: 1.6
-    font-size: 13px
-    padding: 0 30%
-    color: #525252
-
-.essay-introJP
-    margin: 2rem 0 0
-
+    .text-column
+        width: 30vw
+        +standard-text(14px, 1.6, 0, 0)
+        
+    .image-column
+        width: 30vw
+        img 
+            width: 30vw
+        p
+            text-align: left
+            letter-spacing: 0
+            color: #525252
+            +standard-text(0.75rem, 1.4, 5px 0 0 0, 0)
+            
 
 // timeline
 .timeline-containerJP
     width: 55vw
-    margin: 4rem auto 8rem
-    line-height: 1.6
     letter-spacing: 0
-    font-size: 14px
+    +standard-text(14px, 1.7, 4rem auto 8rem, 0)    
+    div
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-direction: row
+        div
+            display: block
+            &:first-child
+                width: 15%
+            &:last-child
+                width: 85%
 
-.timeline-rowJP
-    width: 100%
+
+// parts, section header
+.parts-headerJP,
+.section-headerJP
+    font-weight: 500
+    +standard-text(1.6rem, 1, 0 0 3rem 0, 40px 30% 0)
+    // note: margin-bottom was 3rem for parts and 1rem for section
+
+
+.quicklinkJP
     display: flex
-    justify-content: flex-start
-    align-items: flex-start
+    letter-spacing: 0
+    +standard-text(13px, 1.6, 0 0 2.5rem 0, 0 30%)    
+    a
+        p
+            cursor: pointer
+            color: grey
+            margin-right: 20px
+            transition: 0.3s
+            &:hover
+                color: #000
 
-.timeline-leftcolumnJP
-    width: 15%
 
-.timeline-rightcolumnJP
-    width: 85%
+.endnotesJP
+    letter-spacing: 0
+    +standard-text(12px, 1.6, 0 0 2rem 0, 0 30%)    
+    
+
+.read-more-or-lessJP
+    background: none
+    color: grey
+    border: none
+    cursor: pointer
+    position: relative
+    z-index: 99
+    transition: 0.3s
+    +standard-text(14px, 1, 7px 30% 3rem, 0)
+    &:hover
+        color: #383838
+
+
+// intro to essay
+.essay-introJP
+    color: #525252
+    +standard-text(13px, 1.6, 0, 0 30%)
 
 
 // video
@@ -137,22 +124,16 @@
     margin-bottom: 6rem
 
 
-// section header
-.section-headerJP
-    font-size: 1.6rem
-    font-weight: 500
-    letter-spacing: 0
-    margin-bottom: 1rem
-    padding: 40px 30% 0
-
-
 // link for work list
 .listcontainerJP
     display: flex
     justify-content: center
     margin: 4rem 0
+    a
+        font-size: 14px
+        letter-spacing: 0
+        text-align: center
 
-.listlinkJP
-    font-size: 14px
-    letter-spacing: 0
-    text-align: center
+
+.mobileJP
+    display: none

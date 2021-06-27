@@ -14,7 +14,6 @@ const Part03 = () => {
             {/* <EssayBlock7 /> */}
             <Parts text={partsLabel[3]} />
             <Timeline title='Chronology' data={chronology} />
-
             <LargeImage item={essay21} />
             <Timeline title='Selected Exhibitions' data={exhibitionHistory} />
             <TwoImages item1={essay25} item2={essay26} />

@@ -1,0 +1,247 @@
+.containerstyle {
+  width: 94vw;
+  margin: 0 auto 4rem;
+}
+.containerstyle img {
+  width: 100%;
+}
+
+.containerstyle.notFirst {
+  margin: 0 auto 6rem;
+}
+
+a.nextEng h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  /* not fully comprehend WHY but apparently adding the padding-bottom removes a bug that prevented to scroll the English VIP page properly */
+}
+
+a.nextJp h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 40px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 4rem;
+}
+.nav-link a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 40px;
+  border: none;
+  background: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1.33px;
+  transition: 0.3s;
+}
+.nav-link a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.nav-linkJP {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 4rem;
+}
+.nav-linkJP a {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 40px;
+  border: none;
+  background: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1.33px;
+  transition: 0.3s;
+}
+.nav-linkJP a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.active-link {
+  color: grey !important;
+  text-decoration: underline;
+}
+.active-link:hover {
+  color: #000 !important;
+}
+
+/* video VIP page 1 */
+.iframe {
+  display: block;
+  margin: 0 auto 6rem;
+}
+.iframe:first-child {
+  margin-bottom: 4rem;
+}
+
+.video-responsive2-vip {
+  margin-bottom: 6rem;
+}
+
+/* Fullwidth Horizontal */
+.fullwidth-container {
+  width: 95vw;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+.fullwidth-container img {
+  margin: 0 auto 1rem;
+}
+.fullwidth-container div {
+  margin: 1rem auto 0;
+  text-align: left;
+  letter-spacing: 0;
+}
+.fullwidth-container div h2 {
+  padding-bottom: 0.5rem;
+  color: #515151;
+  font-size: 24px;
+  font-weight: 600;
+}
+.fullwidth-container div p {
+  margin-bottom: 0.2rem;
+  font-size: 12px;
+  line-height: 1;
+  color: gray;
+}
+.fullwidth-container div.text-caption {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+.fullwidth-container div.text-caption p {
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.fullwidth-modifier-eng {
+  font-family: "Quicksand", sans-serif;
+}
+.fullwidth-modifier-eng div p {
+  font-size: 11px;
+}
+
+/* Halfwidth Horizontal with Text */
+.VIPtextVert {
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: gray;
+  padding-right: 8rem;
+  text-align: left;
+}
+
+.VIPtextVertJP {
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: gray;
+  padding-right: 8rem;
+  text-align: left;
+}
+
+.VIP-halfwidthText-container {
+  width: 100%;
+  margin: 0 auto 6rem;
+}
+
+.VIP-halfwidthText-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.VIP-halfwidthText-col6 {
+  width: 50%;
+  margin: auto;
+}
+
+.VIP-halfwidthText-inner-left {
+  margin: 2rem 1rem 0 2rem;
+  text-align: center;
+}
+
+.VIP-halfwidthText-inner-right {
+  margin: 0 2rem 0 1rem;
+  text-align: center;
+}
+
+.VIP-halfwidthText-img-vert {
+  margin: 2rem 0 1rem;
+  text-align: right;
+}
+
+.VIP-halfwidthText-caption {
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* Halfwidth Horizontal */
+.VIP-halfwidth-variation-container {
+  margin-bottom: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.VIP-halfwidth-img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 0.66rem;
+}
+
+/* Inquiry */
+.VIP-listcontainer {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.VIP-listlink {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.VIP-inquirystyle {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 2rem 0 3rem;
+}
+
+.VIP-listlinkJP {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.VIP-inquirystyleJP {
+  font-size: 14px;
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+
+.test2 {
+  color: blue;
+}
+
+/*# sourceMappingURL=vipMain.css.map */

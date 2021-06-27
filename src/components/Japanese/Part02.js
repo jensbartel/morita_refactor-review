@@ -22,7 +22,7 @@ const Part02 = () => {
             
             <RepresentedWorks lang='jp' />
             <div className='listcontainerJP' >
-                <a href="http://exh.shibunkaku.co.jp/MoritaShiryu_作品リスト.pdf" download className='listlinkJP'><u>作品リストをダウンロード</u></a>
+                <a href="http://exh.shibunkaku.co.jp/MoritaShiryu_作品リスト.pdf" download ><u>作品リストをダウンロード</u></a>
             </div>
             <DefaultTextBlockJP text={html(workSelectionJP4)} />
             <TwoImages item1={essay24} item2={essay23} />
