@@ -30,7 +30,7 @@ export const essayQuickLink = [
   },
   {
     text:   "4. Calligraphy and Abstract Painting",
-    quickLink: "quicklink4"
+    quickLink: "quicklink4" 
   },
 
 ]
