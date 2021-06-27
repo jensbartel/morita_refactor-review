@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom"; 
-import "./styles/English/App.css";
-import "./styles/Japanese/AppJP.css";
+import "./styles/App.css";
+import "./styles/AppJP.css";
 
 import EarlyAccess from "./components/VIP/EarlyAccess";
 import EarlyAccess2 from "./components/VIP/EarlyAccess2";
@@ -17,11 +17,11 @@ class App extends Component {
                 <Router>
                     <div className="App">
                         <Route exact path="/" component={MoritaJP} />
+                        <Route exact path="/vip" component={EarlyAccessJP} /> 
+                        <Route exact path="/vip2" component={EarlyAccess2JP} /> 
                         <Route exact path="/english" component={Morita} />
                         <Route exact path="/english/vip" component={EarlyAccess} /> 
                         <Route exact path="/english/vip2" component={EarlyAccess2} /> 
-                        <Route exact path="/vip" component={EarlyAccessJP} /> 
-                        <Route exact path="/vip2" component={EarlyAccess2JP} /> 
                     </div>
                 </Router>                
         );

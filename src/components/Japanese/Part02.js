@@ -1,8 +1,8 @@
 import html from 'react-html-parser'
 
-import DefaultTextBlockJP from './textOnlyJP/DefaultTextBlockJP'
+import DefaultTextBlockJP from './layout/textOnlyJP/DefaultTextBlockJP'
 import FullWidthImage from '../English/layout/image/FullWidthImage'
-import PartsJP from './textOnlyJP/PartsJP'
+import PartsJP from './layout/textOnlyJP/PartsJP'
 import RepresentedWorks from '../English/layout/image/RepresentedWorks'
 import TextLeftImageRightJP from './layout/textAndImageJP/TextLeftImageRightJP'
 import TwoImages from '../English/layout/image/TwoImages'

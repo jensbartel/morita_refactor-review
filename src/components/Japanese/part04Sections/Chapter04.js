@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import html from 'react-html-parser'
 
-import ChapterQuickLinkJP from '../textOnlyJP/ChapterQuickLinkJP';
-import DefaultTextBlockJP from '../textOnlyJP/DefaultTextBlockJP';
-import EndnotesJP from '../textOnlyJP/EndnotesJP';
+import ChapterQuickLinkJP from '../layout/textOnlyJP/ChapterQuickLinkJP';
+import DefaultTextBlockJP from '../layout/textOnlyJP/DefaultTextBlockJP';
+import EndnotesJP from '../layout/textOnlyJP/EndnotesJP';
 import LargeImage from '../../English/layout/image/LargeImage';
-import SectionHeaderJP from '../textOnlyJP/SectionHeaderJP';
+import SectionHeaderJP from '../layout/textOnlyJP/SectionHeaderJP';
 import TextRightImageLeftJP from '../layout/textAndImageJP/TextRightImageLeftJP';
 
 import { essay20, essay22, essay27, essay28 } from '../../../data/ImageConstantsEssay';
@@ -13,7 +13,7 @@ import { acknowledgmentsJP, essayQuickLinkJP, morita14aJP, morita14bJP, morita14
 
 const Chapter04 = () => {
     const [ visible, setVisible ] = useState(false);
-    const btnText = this.state.visible ? "折りたたむ" : "続きを読む";
+    const btnText = visible ? "折りたたむ" : "続きを読む";
 
     return (
         <>

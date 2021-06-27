@@ -1,7 +1,7 @@
 import html from 'react-html-parser'
 
-import DefaultTextBlockJP from "./textOnlyJP/DefaultTextBlockJP"
-import ExhibitionTitleJP from "./textOnlyJP/ExhibitionTitleJP"
+import DefaultTextBlockJP from "./layout/textOnlyJP/DefaultTextBlockJP"
+import ExhibitionTitleJP from "./layout/textOnlyJP/ExhibitionTitleJP"
 import LargeImage from "../English/layout/image/LargeImage"
 import TwoImages from "../English/layout/image/TwoImages"
 

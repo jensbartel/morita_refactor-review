@@ -1,20 +1,39 @@
 import { useState } from 'react'
 import html from 'react-html-parser'
 
-import ChapterQuickLinkJP from '../textOnlyJP/ChapterQuickLinkJP'
-import DefaultTextBlockJP from "../textOnlyJP/DefaultTextBlockJP"
+import ChapterQuickLinkJP from '../layout/textOnlyJP/ChapterQuickLinkJP'
+import DefaultTextBlockJP from "../layout/textOnlyJP/DefaultTextBlockJP"
 import LargeImage from "../../English/layout/image/LargeImage"
-import SectionHeaderJP from '../textOnlyJP/SectionHeaderJP'
+import SectionHeaderJP from '../layout/textOnlyJP/SectionHeaderJP'
 import TextLeftImageRightJP from '../layout/textAndImageJP/TextLeftImageRightJP'
 import TextRightImageLeftJP from '../layout/textAndImageJP/TextRightImageLeftJP'
 import TwoImages from "../../English/layout/image/TwoImages"
 
-import { essay1, essay10, essay2, essay3, essay4, essay5, essay6 } from "../../../data/ImageConstantsEssay"
-import { essayQuickLinkJP, morita02aJP, morita02JP, morita03JP, morita04JP, morita05JP, morita06JP, morita07JP, morita08JP, morita09aJP, morita09JP, sectionLabelJP } from "../../../data/TextConstantsJP"
+import { 
+    essayQuickLinkJP, 
+    morita02aJP,
+    morita02JP, 
+    morita03JP, 
+    morita04JP, 
+    morita05JP, 
+    morita06JP, 
+    morita07JP, 
+    morita08JP, 
+    morita09aJP, 
+    morita09JP,
+    sectionLabelJP } from "../../../data/TextConstantsJP"
+import { 
+    essay1, 
+    essay10, 
+    essay2, 
+    essay3, 
+    essay4, 
+    essay5, 
+    essay6 } from "../../../data/ImageConstantsEssay"
 
 const Chapter02 = () => {
     const [ visible, setVisible ] = useState(false);
-    const btnText = this.state.visible ? "折りたたむ" : "続きを読む";
+    const btnText = visible ? "折りたたむ" : "続きを読む";
 
     return (
         <>

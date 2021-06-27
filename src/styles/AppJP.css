@@ -31,7 +31,7 @@
 }
 
 .defaultstyleJP {
-  padding-top: 0 30%;
+  padding: 0 30%;
   line-height: 1.6;
   font-size: 14px;
 }
@@ -74,7 +74,7 @@
 }
 
 .quicklinkJP {
-  padding-top: 0 30%;
+  padding: 0 30%;
   line-height: 1, 0.6;
   letter-spacing: 0;
   font-size: 14px;
@@ -152,7 +152,7 @@
 }
 
 .section-headerJP {
-  font-size: 1.6;
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0;
   margin-bottom: 1rem;

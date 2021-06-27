@@ -1,11 +1,11 @@
 import html from 'react-html-parser'
 
-import ChapterQuickLinkJP from "../textOnlyJP/ChapterQuickLinkJP"
-import DefaultTextBlockJP from "../textOnlyJP/DefaultTextBlockJP"
+import ChapterQuickLinkJP from "../layout/textOnlyJP/ChapterQuickLinkJP"
+import DefaultTextBlockJP from "../layout/textOnlyJP/DefaultTextBlockJP"
 import FullWidthImage from "../../English/layout/image/FullWidthImage"
-import IntroToEssayJP from "../textOnlyJP/IntroToEssayJP"
-import PartsJP from '../textOnlyJP/PartsJP'
-import SectionHeaderJP from "../textOnlyJP/SectionHeaderJP"
+import IntroToEssayJP from "../layout/textOnlyJP/IntroToEssayJP"
+import PartsJP from '../layout/textOnlyJP/PartsJP'
+import SectionHeaderJP from "../layout/textOnlyJP/SectionHeaderJP"
 
 import { wanobi01 } from "../../../data/ImageConstantsEssay"
 import { essayQuickLinkJP, morita01JP, partsLabelJP, sectionLabelJP } from "../../../data/TextConstantsJP"
