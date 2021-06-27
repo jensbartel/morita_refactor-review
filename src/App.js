@@ -5,8 +5,8 @@ import "./styles/AppJP.css";
 
 import Vip from "./components/VIP/Vip";
 import Vip2 from "./components/VIP/Vip2";
-import VipJP from "./components/VIP/VipJP";
-import Vip2JP from "./components/VIP/Vip2JP";
+import VipJP from "./components/VIP/VipJapanese";
+import Vip2JP from "./components/VIP/VipJapanese2";
 import Morita from "./components/English/Morita_English";
 import MoritaJP from "./components/Japanese/Morita_Japanese";
 

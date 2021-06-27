@@ -29,7 +29,7 @@ const EarlyAccess = () => {
             </div>
 
             <FullwidthWithText item={KanzanScreen1969} scale="75" text={kanzanVIPtext} lang='en'/>
-            <HalfwidthHorizontal item1={Shizuka1969} item2={Ryu1965} scaleLeft={56} contentWidth={42} />
+            <HalfwidthHorizontal item1={Shizuka1969} item2={Ryu1965} scaleLeft={56} contentWidth={42} lang='en'/>
             <FullwidthHorizontal item={SeishiBiken1941} scale="60" lang='en'/>
             <FullwidthHorizontal item={Miraiken1949} scale="35" lang='en'/>
 
@@ -37,7 +37,7 @@ const EarlyAccess = () => {
                 <img src={group2} alt=""/>
             </div>
 
-            <HalfwidthWithText item1={So1954} text={soVIPtext} scale1="70"/>
+            <HalfwidthWithText item={So1954} text={soVIPtext} scale1="70" lang='en'/>
 
             <div className='video-responsive-vip'>
                 <iframe 
@@ -69,8 +69,8 @@ const EarlyAccess = () => {
 
             <div className='video-responsive3-vip'>
                 <FullwidthHorizontal item={Kan1961} scale="70" lang='en'/>
-                <HalfwidthHorizontal item1={Kan1965} item2={Datsu1963} scaleLeft={54} contentWidth={59} />
-                <HalfwidthHorizontal item1={Kanzan1964} item2={Usobuku_shikkin1963} scaleLeft={40} contentWidth={46} />
+                <HalfwidthHorizontal item1={Kan1965} item2={Datsu1963} scaleLeft={54} contentWidth={59} lang='en'/>
+                <HalfwidthHorizontal item1={Kanzan1964} item2={Usobuku_shikkin1963} scaleLeft={40} contentWidth={46} lang='en'/>
 
                 {/* third group  */}
                 <div className='containerstyle notFirst'>

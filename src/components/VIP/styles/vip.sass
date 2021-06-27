@@ -7,20 +7,6 @@
 .containerstyle.notFirst
     margin: 0 auto 6rem
 
-a.nextEng
-    h2
-        font-family: 'Quicksand', sans-serif
-        font-size: 18px
-        text-align: center
-        padding-bottom: 0.5rem
-        /* not fully comprehend WHY but apparently adding the padding-bottom removes a bug that prevented to scroll the English VIP page properly */
-
-a.nextJp
-    h2
-        font-size: 18px
-        text-align: center
-        margin: 0 40px
-
 .nav-link
     display: flex
     justify-content: center
@@ -86,7 +72,6 @@ a.nextJp
     div
         margin: 1rem auto 0
         text-align: left
-        // font-family: 'Quicksand', sans-serif
         letter-spacing: 0
         h2
             padding-bottom: 0.5rem
@@ -103,7 +88,6 @@ a.nextJp
         flex-direction: column
         margin-top: -1rem
         p
-            // font-family: 'Quicksand', sans-serif
             letter-spacing: 0
             line-height: 1.4
             font-size: 14px
@@ -116,90 +100,130 @@ a.nextJp
         p
             font-size: 11px
 
-/* Halfwidth Horizontal with Text */
-.VIPtextVert
-    font-family: 'Quicksand', sans-serif
-    letter-spacing: 0
-    line-height: 1.4
-    font-size: 14px
-    color: gray
-    padding-right: 8rem
-    text-align: left
-
-.VIPtextVertJP
-    letter-spacing: 0
-    line-height: 1.4
-    font-size: 14px
-    color: gray
-    padding-right: 8rem
-    text-align: left
-
-.VIP-halfwidthText-container
+// Halfwidth Horizontal with Text
+.halfwidthText-container
     width: 100%
     margin: 0 auto 6rem
 
-.VIP-halfwidthText-row
+.halfwidthText-row
     width: 100%
     display: flex
     flex-wrap: wrap
     align-items: center
 
-.VIP-halfwidthText-col6
+.halfwidthText-column
     width: 50%
     margin: auto
 
-.VIP-halfwidthText-inner-left
+.inner-left
     margin: 2rem 1rem 0 2rem
     text-align: center
+    img
+        margin: 2rem 0 1rem
+        text-align: right
+    div
+        text-align: left
+        margin: 0 auto
+        letter-spacing: 0
+        h2
+            font-size: 24px
+            font-weight: 600
+            color: #515151
+            text-align: left
+            padding-bottom: 0.5rem
+            letter-spacing: 0
+        p
+            font-size: 12px
+            line-height: 1
+            margin-bottom: 0.2rem
+            color: gray
 
-.VIP-halfwidthText-inner-right
+.inner-right
     margin: 0 2rem 0 1rem
     text-align: center
+    p
+        font-size: 14px
+        line-height: 1.4
+        letter-spacing: 0
+        color: gray
+        padding-right: 8rem
+        text-align: left
 
-.VIP-halfwidthText-img-vert
-    margin: 2rem 0 1rem
-    text-align: right
-
-.VIP-halfwidthText-caption
-    text-align: left
-    margin: 0 auto
+.halfwidthText-modifier-eng
+    font-family: 'Quicksand', sans-serif
+    div
+        p
+            font-size: 11px
 
 /* Halfwidth Horizontal */
-.VIP-halfwidth-variation-container
+.halfwidth-horizontal
     margin-bottom: 6rem
     width: 100%
     display: flex
     justify-content: space-evenly
     align-items: center
+    div
+        img
+            width: 100%
+            margin: auto
+            display: block
+            margin-bottom: 0.66rem
+        h2
+            padding-bottom: 0.5rem
+            color: #515151
+            font-size: 24px
+            font-weight: 600
+        p
+            margin-bottom: 0.2rem
+            font-size: 12px //11px
+            line-height: 1
+            color: gray
 
-.VIP-halfwidth-img
-    width: 100%
-    margin: auto
-    display: block
-    margin-bottom: 0.66rem
+.halfwidth-modifier-eng
+    div
+        font-family: 'Quicksand', sans-serif
+        letter-spacing: 0
+        p
+            font-size: 11px
 
 /* Inquiry */
-.VIP-listcontainer
+.worklist-download
     margin: 4rem 0
     text-align: center
+    a
+        font-family: 'Quicksand', sans-serif
+        font-size: 14px
+        letter-spacing: 0
 
-.VIP-listlink
-    font-family: Quicksand, sans-serif
-    font-size: 14px
-    letter-spacing: 0
-
-.VIP-inquirystyle
-    font-family: Quicksand, sans-serif
+.inquiry
+    font-family: 'Quicksand', sans-serif
     font-size: 14px
     text-align: center
     letter-spacing: 0
     margin: 2rem 0 3rem
 
-.VIP-listlinkJP
-    font-size: 14px
-    letter-spacing: 0
+.worklist-downloadJP
+    margin: 2rem 0
+    text-align: center
+    a
+        font-size: 14px
+        letter-spacing: 0
 
-.VIP-inquirystyleJP
+.inquiryJP
     font-size: 14px
     text-align: center
     margin: 2rem 0 3rem
+
+a.nextEng
+    h2
+        font-family: 'Quicksand', sans-serif
+        font-size: 18px
+        text-align: center
+        padding-bottom: 0.5rem
+        /* not fully comprehend WHY but apparently adding the padding-bottom removes a bug that prevented to scroll the English VIP page properly */
+
+a.nextJp
+    h2
+        font-size: 18px
+        text-align: center
+        margin: 0 40px

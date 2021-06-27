@@ -1,52 +1,43 @@
-import React from 'react'
 import Fade from 'react-reveal/Fade'
-import ReactHTMLParser from 'react-html-parser';
+import html from 'react-html-parser';
 
-// import "../vipMain.css";
-// import "../vipPhone.css";
+const HalfwidthWithText = (props) => {
 
-export default function HalfwidthWithText(props) {
+    const { scale1, item: { img, title, description, label, dimensions, date, furtherInfo }, lang } = props
 
-    const scale1 = props.scale1
-    
-    var Vtitle, Vcaptionitem, Vtext;
-    if (props.lang) {
-        Vtitle = "VIPtitleJP"
-        Vcaptionitem = "VIPcaptionitemJP"
-        Vtext = "VIPtextVertJP"
-    } else {
-        Vtitle = "VIPtitle"
-        Vcaptionitem = "VIPcaptionitem"
-        Vtext = "VIPtextVert"
+    let left = 'inner-left';
+    let right = 'inner-right';
+    if(lang) { 
+        left = 'inner-left halfwidthText-modifier-eng' 
+        right = 'inner-right halfwidthText-modifier-eng' 
     }
 
     return (
         <Fade>
-            <div className="VIP-halfwidthText-container">
-                <div className="VIP-halfwidthText-row">
-                    <div className="VIP-halfwidthText-col6">
-                        <div className="VIP-halfwidthText-inner-left">
-                            <img src={props.item1.img} className="VIP-halfwidthText-img-vert" style={{width: scale1 + '%'}} alt="" />
-                            <div className="VIP-halfwidthText-caption" style={{width: scale1 + '%'}}>
-                                <p className={Vtitle}>{props.item1.title}</p>
-                                <p className={Vcaptionitem}>{props.item1.description}</p>
-                                <p className={Vcaptionitem}>{props.item1.label}</p>
-                                <p className={Vcaptionitem}>{props.item1.dimensions}</p>
-                                <p className={Vcaptionitem}>{props.item1.date}</p>
-                                <p className={Vcaptionitem} style={{lineHeight: '1.4'}}>{props.item1.furtherInfo ? ReactHTMLParser(props.item1.furtherInfo) : null}</p>
+            <div className="halfwidthText-container">
+                <div className="halfwidthText-row">
+                    <div className="halfwidthText-column">
+                        <div className={left}>
+                            <img src={img} style={{width: scale1 + '%'}} alt="" />
+                            <div style={{width: scale1 + '%'}}>
+                                <h2>{title}</h2>
+                                <p>{description}</p>
+                                <p>{label}</p>
+                                <p>{dimensions}</p>
+                                <p>{date}</p>
+                                <p style={{lineHeight: '1.4'}}>{furtherInfo ? html(furtherInfo) : null}</p>
                             </div>
                         </div>
                     </div>
-                    <div className="VIP-halfwidthText-col6">
-                        <div className="VIP-halfwidthText-inner-right">
-                            <div className="VIP-halfwidthText-halfwidth-caption">
-                            <p className={Vtext}>{ReactHTMLParser(props.text)}</p>
-
-                            </div>
+                    <div className="halfwidthText-column">
+                        <div className={right}>
+                            <p>{html(props.text)}</p> 
                         </div>
                     </div>
                 </div>
             </div>
         </Fade>
     )
-}
+};
+
+ export default HalfwidthWithText;

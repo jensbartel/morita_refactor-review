@@ -29,15 +29,15 @@ const EarlyAccess2 = () => {
             </div>
 
             <FullwidthWithText item={En1963} scale="75" text={enVIPtext} lang='en'/>
-            <HalfwidthHorizontal item1={Monoui1963} item2={Kanzan_shikkin1964} scaleLeft={50} contentWidth={50} />
-            <HalfwidthHorizontal item1={Ki_shikkin1964} item2={Ki1963} scaleLeft={50} contentWidth={57} />
+            <HalfwidthHorizontal item1={Monoui1963} item2={Kanzan_shikkin1964} scaleLeft={50} contentWidth={50} lang='en'/>
+            <HalfwidthHorizontal item1={Ki_shikkin1964} item2={Ki1963} scaleLeft={50} contentWidth={57} lang='en'/>
 
             <div className='containerstyle notFirst'>
                 <img src={group4} alt=""/>
             </div>       
 
-            <HalfwidthHorizontal item1={Usobuku1963} item2={En1969} scaleLeft={55} contentWidth={57} />
-            <HalfwidthHorizontal item1={Izumi1975} item2={Asa1970} scaleLeft={45} contentWidth={54} />
+            <HalfwidthHorizontal item1={Usobuku1963} item2={En1969} scaleLeft={55} contentWidth={57} lang='en'/>
+            <HalfwidthHorizontal item1={Izumi1975} item2={Asa1970} scaleLeft={45} contentWidth={54} lang='en'/>
 
             <div className='containerstyle notFirst'>
                 <img src={group5} alt=""/>
@@ -51,7 +51,7 @@ const EarlyAccess2 = () => {
             </div>   
 
             <FullwidthHorizontal item={Ki1995} scale="60" lang='en'/>
-            <HalfwidthHorizontal item1={Nin1975} item2={Negai1986} scaleLeft={38} contentWidth={60} />
+            <HalfwidthHorizontal item1={Nin1975} item2={Negai1986} scaleLeft={38} contentWidth={60} lang='en'/>
                      
             <Inquiry />
 

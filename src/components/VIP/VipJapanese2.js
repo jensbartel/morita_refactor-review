@@ -29,15 +29,15 @@ const EarlyAccess2JP = () => {
             </div>
 
             <FullwidthWithText item={En1963JP} scale="75" text={enVIPtextJP} />
-            <HalfwidthHorizontal item1={Monoui1963JP} item2={Kanzan_shikkin1964JP} scaleLeft={50} contentWidth={50} lang='jp'/>
-            <HalfwidthHorizontal item1={Ki_shikkin1964JP} item2={Ki1963JP} scaleLeft={50} contentWidth={57} lang='jp'/>
+            <HalfwidthHorizontal item1={Monoui1963JP} item2={Kanzan_shikkin1964JP} scaleLeft={50} contentWidth={50} />
+            <HalfwidthHorizontal item1={Ki_shikkin1964JP} item2={Ki1963JP} scaleLeft={50} contentWidth={57} />
 
             <div className='containerstyle notFirst' >
                 <img src={group4} className='fullwidthimagestyle' alt=""/>
             </div> 
 
-            <HalfwidthHorizontal item1={Usobuku1963JP} item2={En1969JP} scaleLeft={55} contentWidth={57} lang='jp'/><br /><br />
-            <HalfwidthHorizontal item1={Izumi1975JP} item2={Asa1970JP} scaleLeft={45} contentWidth={54} lang='jp'/><br /><br />
+            <HalfwidthHorizontal item1={Usobuku1963JP} item2={En1969JP} scaleLeft={55} contentWidth={57} /><br /><br />
+            <HalfwidthHorizontal item1={Izumi1975JP} item2={Asa1970JP} scaleLeft={45} contentWidth={54} /><br /><br />
 
             <div className='containerstyle notFirst' >
                 <img src={group5} className='fullwidthimagestyle' alt=""/>
@@ -51,7 +51,7 @@ const EarlyAccess2JP = () => {
             </div>   
 
             <FullwidthHorizontal item={Ki1995JP} scale="60" />
-            <HalfwidthHorizontal item1={Nin1975JP} item2={Negai1986JP} scaleLeft={38} contentWidth={60} lang='jp'/>
+            <HalfwidthHorizontal item1={Nin1975JP} item2={Negai1986JP} scaleLeft={38} contentWidth={60} />
          
             <InquiryJP />
 
