@@ -1,18 +1,17 @@
-import './vipMain.css';
-import './vipPhone.css';
+import '../styles/vip.css'
 
-import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
-import FullwidthWithText from './vipComponents/FullwidthWithText';
-import HalfwidthHorizontal from './vipComponents/HalfwidthHorizontal';
-import Inquiry from './vipComponents/Inquiry';
+import FullwidthHorizontal from '../vipcomponents/FullwidthHorizontal';
+import FullwidthWithText from '../vipcomponents/FullwidthWithText';
+import HalfwidthHorizontal from '../vipcomponents/HalfwidthHorizontal';
+import Inquiry from '../vipcomponents/Inquiry';
 
-import group3 from '../../assets/installation/group3.jpg';
-import group4 from '../../assets/installation/group4.jpg';
-import group5 from '../../assets/installation/group5.jpg';
-import group6 from '../../assets/installation/group6.jpg';
+import group3 from '../../../assets/installation/group3.jpg';
+import group4 from '../../../assets/installation/group4.jpg';
+import group5 from '../../../assets/installation/group5.jpg';
+import group6 from '../../../assets/installation/group6.jpg';
 
-import { Ki_shikkin1964, Ki1963, En1963, Monoui1963, Kanzan_shikkin1964,Asa1970, En1969, Usobuku1963, Izumi1975, Myo1964, Sojo1969, Ki1995, Nin1975, Negai1986 } from '../../data/ImageConstants';
-import { enVIPtext } from '../../data/TextConstants';
+import { Ki_shikkin1964, Ki1963, En1963, Monoui1963, Kanzan_shikkin1964,Asa1970, En1969, Usobuku1963, Izumi1975, Myo1964, Sojo1969, Ki1995, Nin1975, Negai1986 } from '../../../data/ImageConstants';
+import { enVIPtext } from '../../../data/TextConstants';
 
 
 const EarlyAccess2 = () => {

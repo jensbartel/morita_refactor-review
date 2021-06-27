@@ -1,18 +1,17 @@
-import './vipMain.css';
-import './vipPhone.css';
+import '../styles/vip.css'
 
-import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
-import HalfwidthHorizontal from './vipComponents/HalfwidthHorizontal';
-import FullwidthWithText from './vipComponents/FullwidthWithText';
-import InquiryJP from './vipComponents/InquiryJP';
+import FullwidthHorizontal from '../vipcomponents/FullwidthHorizontal';
+import HalfwidthHorizontal from '../vipcomponents/HalfwidthHorizontal';
+import FullwidthWithText from '../vipcomponents/FullwidthWithText';
+import InquiryJP from '../vipcomponents/InquiryJP';
 
-import group3 from '../../assets/installation/group3.jpg';
-import group4 from '../../assets/installation/group4.jpg';
-import group5 from '../../assets/installation/group5.jpg';
-import group6 from '../../assets/installation/group6.jpg';
+import group3 from '../../../assets/installation/group3.jpg';
+import group4 from '../../../assets/installation/group4.jpg';
+import group5 from '../../../assets/installation/group5.jpg';
+import group6 from '../../../assets/installation/group6.jpg';
 
-import { En1963JP, Monoui1963JP, Kanzan_shikkin1964JP, Ki_shikkin1964JP, Ki1963JP, Usobuku1963JP, En1969JP, Asa1970JP, Izumi1975JP, Myo1964JP, Sojo1969JP, Ki1995JP, Nin1975JP, Negai1986JP } from '../../data/ImageConstants';
-import { enVIPtextJP } from '../../data/TextConstantsJP';
+import { En1963JP, Monoui1963JP, Kanzan_shikkin1964JP, Ki_shikkin1964JP, Ki1963JP, Usobuku1963JP, En1969JP, Asa1970JP, Izumi1975JP, Myo1964JP, Sojo1969JP, Ki1995JP, Nin1975JP, Negai1986JP } from '../../../data/ImageConstants';
+import { enVIPtextJP } from '../../../data/TextConstantsJP';
 
 
 const EarlyAccess2JP = () => {

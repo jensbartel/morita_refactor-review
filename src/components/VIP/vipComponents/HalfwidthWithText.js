@@ -3,7 +3,7 @@ import html from 'react-html-parser';
 
 const HalfwidthWithText = (props) => {
 
-    const { scale1, item: { img, title, description, label, dimensions, date, furtherInfo }, lang } = props
+    const { item: { img, title, description, label, dimensions, date, furtherInfo }, lang } = props
 
     let left = 'inner-left';
     let right = 'inner-right';
@@ -18,8 +18,8 @@ const HalfwidthWithText = (props) => {
                 <div className="halfwidthText-row">
                     <div className="halfwidthText-column">
                         <div className={left}>
-                            <img src={img} style={{width: scale1 + '%'}} alt="" />
-                            <div style={{width: scale1 + '%'}}>
+                            <img src={img} alt="" />
+                            <div>
                                 <h2>{title}</h2>
                                 <p>{description}</p>
                                 <p>{label}</p>

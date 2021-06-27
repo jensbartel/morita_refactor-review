@@ -1,18 +1,17 @@
-import './vipMain.css';
-import './vipPhone.css';
+import '../styles/vip.css'
 
-import FullwidthHorizontal from './vipComponents/FullwidthHorizontal';
-import FullwidthWithText from './vipComponents/FullwidthWithText';
-import HalfwidthHorizontal from './vipComponents/HalfwidthHorizontal';
-import HalfwidthWithText from './vipComponents/HalfwidthWithText';
-import Inquiry from './vipComponents/Inquiry';
+import FullwidthHorizontal from '../vipcomponents/FullwidthHorizontal';
+import FullwidthWithText from '../vipcomponents/FullwidthWithText';
+import HalfwidthHorizontal from '../vipcomponents/HalfwidthHorizontal';
+import HalfwidthWithText from '../vipcomponents/HalfwidthWithText';
+import Inquiry from '../vipcomponents/Inquiry';
 
-import group1 from "../../assets/installation/group1.jpg";
-import group2 from "../../assets/installation/group2.jpg";
-import group7 from "../../assets/installation/group7.jpg";
+import group1 from "../../../assets/installation/group1.jpg";
+import group2 from "../../../assets/installation/group2.jpg";
+import group7 from "../../../assets/installation/group7.jpg";
 
-import { Miraiken1949, Ryu1965, Shizuka1969, KanzanScreen1969, Datsu1963, Usobuku_shikkin1963, So1954, Kan1965, Kanzan1964, Kumomushin1967, Eko1967, SeishiBiken1941, Kan1961 } from '../../data/ImageConstants';
-import { kanzanVIPtext, soVIPtext } from '../../data/TextConstants';
+import { Miraiken1949, Ryu1965, Shizuka1969, KanzanScreen1969, Datsu1963, Usobuku_shikkin1963, So1954, Kan1965, Kanzan1964, Kumomushin1967, Eko1967, SeishiBiken1941, Kan1961 } from '../../../data/ImageConstants';
+import { kanzanVIPtext, soVIPtext } from '../../../data/TextConstants';
 
 
 const EarlyAccess = () => {
@@ -37,12 +36,13 @@ const EarlyAccess = () => {
                 <img src={group2} alt=""/>
             </div>
 
-            <HalfwidthWithText item={So1954} text={soVIPtext} scale1="70" lang='en'/>
+            <HalfwidthWithText item={So1954} text={soVIPtext} lang='en'/>
 
             <div className='video-responsive-vip'>
                 <iframe 
                     className='iframe'
-                    src="https://player.vimeo.com/video/493276722?title=0&byline=0&portrait=0" 
+                    // src="https://player.vimeo.com/video/493276722?title=0&byline=0&portrait=0" 
+                    src="https://player.vimeo.com/video/494030007?title=0&byline=0&portrait=0" 
                     width="640" 
                     height="431" 
                     frameBorder="0" 

@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./styles/App.css";
 import "./styles/AppJP.css";
 
-import Vip from "./components/VIP/Vip";
-import Vip2 from "./components/VIP/Vip2";
-import VipJP from "./components/VIP/VipJapanese";
-import Vip2JP from "./components/VIP/VipJapanese2";
+import Vip from "./components/VIP/pages/Vip";
+import Vip2 from "./components/VIP/pages/Vip2";
+import VipJP from "./components/VIP/pages/VipJapanese";
+import Vip2JP from "./components/VIP/pages/VipJapanese2";
 import Morita from "./components/English/Morita_English";
 import MoritaJP from "./components/Japanese/Morita_Japanese";
 
