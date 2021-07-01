@@ -10,11 +10,12 @@ import group4 from '../../../assets/installation/group4.jpg';
 import group5 from '../../../assets/installation/group5.jpg';
 import group6 from '../../../assets/installation/group6.jpg';
 
-import { En1963JP, Monoui1963JP, Kanzan_shikkin1964JP, Ki_shikkin1964JP, Ki1963JP, Usobuku1963JP, En1969JP, Asa1970JP, Izumi1975JP, Myo1964JP, Sojo1969JP, Ki1995JP, Nin1975JP, Negai1986JP } from '../../../data/ImageConstants';
+import { En1963JP, Monoui1963JP, Kanzan_shikkin1964JP, Ki_shikkin1964JP, Ki1963JP, Usobuku1963JP, En1969JP, Asa1970JP, Izumi1975JP, Sojo1969JP, Ki1995JP, Nin1975JP, Negai1986JP, Myo1964_1JP, Myo1964_2JP } from '../../../data/ImageConstants';
 import { enVIPtextJP } from '../../../data/TextConstantsJP';
+import HalfwidthHorizontalVariation from '../vipcomponents/HalfwidthHorizontalVariation';
 
 
-const EarlyAccess2JP = () => {
+const VIPJapanese2 = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}}>
@@ -42,7 +43,8 @@ const EarlyAccess2JP = () => {
                 <img src={group5} className='fullwidthimagestyle' alt=""/>
             </div>   
 
-            <FullwidthHorizontal item={Myo1964JP} scale="70" />
+            {/* <FullwidthHorizontal item={Myo1964JP} scale="70" /> */}
+            <HalfwidthHorizontalVariation item1={Myo1964_1JP} item2={Myo1964_2JP} />
             <FullwidthHorizontal item={Sojo1969JP} scale="60" />
 
             <div className='containerstyle notFirst' >
@@ -61,4 +63,4 @@ const EarlyAccess2JP = () => {
     )
 };
 
-export default EarlyAccess2JP;
+export default VIPJapanese2;

@@ -21,7 +21,7 @@ const RepresentedWorks= (props) => {
     } else {
         langStyle = 'rep-defaultstyle';
         captionText = repTextENG;
-        langStyleMobile = 'rep-defaultstyle';
+        langStyleMobile = 'rep-defaultstyle_mobile';
         captionTextMobile = repTextENG_mobile;
     }
 

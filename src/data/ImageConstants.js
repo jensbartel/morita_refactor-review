@@ -11,6 +11,9 @@ import image10 from "../assets/worksHonshi/Monoui1963.jpg";
 import image11 from "../assets/worksHonshi/Kanzan1964.jpg";
 import image12 from "../assets/worksHonshi/Kanzan_shikkin1964.jpg";
 import image14 from "../assets/worksHonshi/Myo1964.jpg";
+import image14a from '../assets/worksHonshi/Myo1964_copy1.jpg'
+import image14b from '../assets/worksHonshi/Myo1964_copy2.jpg'
+
 import image15 from "../assets/worksHonshi/Ki1964.jpg";
 import image16 from "../assets/worksHonshi/Kan1965.jpg";
 import image17 from "../assets/worksHonshi/Ryu1965.jpg";
@@ -306,6 +309,37 @@ const Myo1964JP = {
     date: "1964年",
     furtherInfo: "<br />【出品】<br />「森田子龍書作展」山田画廊・京都府ギャラリー、1964年<br /><br />【所載】<br />『自選作品　子龍』墨美社、1971年<br />『森田子龍全作品集　1952-1998』蒼龍社、2019年"
 }
+
+const Myo1964_1 = {
+    id: '14a',
+    img: image14a,
+}
+const Myo1964_2 = {
+    id: '14b',
+    img: image14b,
+    title: "Myō, Setsugetsuka",
+    description: "Aluminum flake pigment and lacquer on paper, pair of framed works",
+    label: "With a label signed by Inada Sousai",
+    dimensions: "74 x 95 / 78 x 99 cm (overall)",
+    date: "1964",
+    furtherInfo: "<br /><strong>Exhibition</strong><br />Solo exhibition. Kyoto: Yamada Gallery; Kyoto: Gallery of Kyoto Prefecture, 1964.<br /><br /><strong>Literature</strong><br /><i>The Works of Shiryū Morita: Selected by the Artist</i>. Kyoto: Bokubisha, 1971.<br /><i>Morita Shiryū Catalogue Raisonné: 1952-1998</i>. Uji: Soryusha, 2019."
+}
+
+const Myo1964_1JP = {
+    id: '14a',
+    img: image14a,
+}
+const Myo1964_2JP = {
+    id: '14b',
+    img: image14b,
+    title: "妙　雪月花",
+    description: "紙・アルミ泥・漆　額装、二点一対",
+    label: "稻田宗哉シール",
+    dimensions: "各74×95 / 78×99 cm",
+    date: "1964年",
+    furtherInfo: "<br />【出品】<br />「森田子龍書作展」山田画廊・京都府ギャラリー、1964年<br /><br />【所載】<br />『自選作品　子龍』墨美社、1971年<br />『森田子龍全作品集　1952-1998』蒼龍社、2019年"
+}
+
 
 const Ki_shikkin1964 = {
     id: 15,
@@ -620,6 +654,8 @@ export {
     Kanzan1964,
     Kanzan_shikkin1964,
     Myo1964,
+    Myo1964_1,
+    Myo1964_2,
     Ki_shikkin1964,
     Kan1965,
     Ryu1965,
@@ -634,7 +670,6 @@ export {
     Izumi1975,
     Ki1995,
     Negai1986,
-
     So1954JP,
     SeishiBiken1941JP,
     Datsu1963JP,
@@ -648,6 +683,8 @@ export {
     Kanzan1964JP,
     Kanzan_shikkin1964JP,
     Myo1964JP,
+    Myo1964_1JP,
+    Myo1964_2JP,
     Ki_shikkin1964JP,
     Kan1965JP,
     Ryu1965JP,

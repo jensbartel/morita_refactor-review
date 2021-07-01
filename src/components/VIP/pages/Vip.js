@@ -14,7 +14,7 @@ import { Miraiken1949, Ryu1965, Shizuka1969, KanzanScreen1969, Datsu1963, Usobuk
 import { kanzanVIPtext, soVIPtext } from '../../../data/TextConstants';
 
 
-const EarlyAccess = () => {
+const VIP = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}}>
@@ -41,8 +41,7 @@ const EarlyAccess = () => {
             <div className='video-responsive-vip'>
                 <iframe 
                     className='iframe'
-                    // src="https://player.vimeo.com/video/493276722?title=0&byline=0&portrait=0" 
-                    src="https://player.vimeo.com/video/494030007?title=0&byline=0&portrait=0" 
+                    src="https://player.vimeo.com/video/493276722?title=0&byline=0&portrait=0" 
                     width="640" 
                     height="431" 
                     frameBorder="0" 
@@ -90,4 +89,4 @@ const EarlyAccess = () => {
     )
 };
 
-export default EarlyAccess;
+export default VIP;

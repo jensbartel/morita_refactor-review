@@ -188,6 +188,30 @@
         p
             font-size: 11px
 
+.halfwidth-variation
+    width: 66%
+    margin: 0 auto 6rem
+    div
+        &:first-child            
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 4rem
+            width: 100%
+            img
+                width: 100%
+                margin-bottom: 1rem
+        &:last-child            
+            h2
+                padding-bottom: 0.5rem
+                color: #515151
+                font-size: 24px
+                font-weight: 600
+            p
+                margin-bottom: 0.2rem
+                font-size: 12px //11px
+                line-height: 1
+                color: gray
+
 /* Inquiry */
 .worklist-download
     margin: 4rem 0

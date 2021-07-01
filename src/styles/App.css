@@ -95,7 +95,7 @@ button:focus {
 }
 .fullwidthContainerstyle img {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 0.25rem;
 }
 
 .two-images-flexbox {
@@ -321,6 +321,24 @@ button:focus {
   letter-spacing: 0;
 }
 
+.sidemenu-container {
+  height: 100vh;
+  background-: none;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.sidemenu-hidden {
+  opacity: 0;
+}
+
 .sidemenu {
   position: fixed;
   display: block;
@@ -328,7 +346,6 @@ button:focus {
   width: 70px;
   height: 160px;
   left: -10px;
-  top: 300px;
   border-radius: 10px;
   box-shadow: 4px 6px 5px 0px rgba(194, 194, 194, 0.33);
   font-family: "Quicksand", sans-serif;

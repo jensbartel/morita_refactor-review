@@ -14,11 +14,11 @@ import { KanzanScreen1969JP, Ryu1965JP, Shizuka1969JP, Miraiken1949JP, So1954JP,
 import { kanzanVIPtextJP, soVIPtextJP } from '../../../data/TextConstantsJP';
 
 
-const EarlyAccessJP = () => {
+const VIPJapanese = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}} >
-                <img src={group1} className='fullwidthimagestyle' alt=""/>
+                <img src={group1} alt=""/>
             </div>
 
             <div className="nav-linkJP">
@@ -33,7 +33,7 @@ const EarlyAccessJP = () => {
             <FullwidthHorizontal item={Miraiken1949JP} scale="35" />
 
             <div className='containerstyle'>
-                <img src={group2} className='fullwidthimagestyle' alt=""/>
+                <img src={group2} alt=""/>
             </div>
 
             <HalfwidthWithText item={So1954JP} text={soVIPtextJP} scale1="70"/>
@@ -73,7 +73,7 @@ const EarlyAccessJP = () => {
 
                 {/* third group  */}
                 <div className='containerstyle notFirst' >
-                    <img src={group7} className='fullwidthimagestyle' alt="" lang='jp'/>
+                    <img src={group7} alt="" lang='jp'/>
                 </div>
 
                 <FullwidthHorizontal item={Kumomushin1967JP} scale="60" />
@@ -90,4 +90,4 @@ const EarlyAccessJP = () => {
     )
 };
 
-export default EarlyAccessJP;
+export default VIPJapanese;
