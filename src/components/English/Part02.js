@@ -15,6 +15,7 @@ const Part02 = () => {
     return (
         <>
             {/* <EssayBlock6/>             */}
+            <div id='part2' className='anchordiv'></div>
             <Parts text={partsLabel[2]} />
             <DefaultTextBlock text={html(workSelection)} />
             <TextLeftImageRight text={workSelection2} item={essay15} />

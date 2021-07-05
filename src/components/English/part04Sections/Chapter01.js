@@ -17,6 +17,7 @@ import {
 const Chapter01 = () => {
     return (
         <>
+            <div id='part4' className='anchordiv'></div>
             {/* <EssayBlock1 /> */}
             <Parts text={partsLabel[4]} />
             <IntroToEssay />

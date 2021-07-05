@@ -4,6 +4,7 @@ import html from 'react-html-parser'
 import ChapterQuickLinkJP from '../layout/textOnlyJP/ChapterQuickLinkJP'
 import DefaultTextBlockJP from "../layout/textOnlyJP/DefaultTextBlockJP"
 import LargeImage from "../../English/layout/image/LargeImage"
+import Pullquote2JP from '../layout/textOnlyJP/Pullquote2JP'
 import SectionHeaderJP from '../layout/textOnlyJP/SectionHeaderJP'
 import TextLeftImageRightJP from '../layout/textAndImageJP/TextLeftImageRightJP'
 import TextRightImageLeftJP from '../layout/textAndImageJP/TextRightImageLeftJP'
@@ -61,6 +62,7 @@ const Chapter02 = () => {
                 <TwoImages item1={essay5} item2={essay6} lang='jp'/>
                 <DefaultTextBlockJP text={html(morita07JP)} />
                 <DefaultTextBlockJP text={html(morita08JP)} />
+                <Pullquote2JP />
                 <DefaultTextBlockJP text={html(morita09JP)} />
                 <TextRightImageLeftJP item={essay10} text={morita09aJP} />
                 </> : null

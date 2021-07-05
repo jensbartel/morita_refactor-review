@@ -11,6 +11,7 @@ import chronology from '../../data/Chronology'
 const Part03 = () => {
     return (
         <>
+            <div id='part3' className='anchordiv'></div>
             {/* <EssayBlock7 /> */}
             <Parts text={partsLabel[3]} />
             <Timeline title='Chronology' data={chronology} />

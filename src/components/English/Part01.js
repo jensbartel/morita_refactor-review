@@ -13,6 +13,7 @@ import { essay7, essay8, essay9 } from '../../data/ImageConstantsEssay'
 const Part01 = () => {
     return (
         <>
+            <div id='part1' className='anchordiv'></div>
             <ExhibitionTitle/>
             <DefaultTextBlock text={html(preview)} />
             <LargeImage item={essay9} />

@@ -10,16 +10,10 @@ const Morita = () => {
         <div> 
             <Navigation />
             <MainVisual />
-            <div className='anchor'>
-                <div id='part1'></div>
-                <Part01 />
-                <div id='part2'></div>
-                <Part02 /> 
-                <div id='part3'></div>
-                <Part03 />
-                <div id='part4'></div>
-                <Part04 />              
-            </div>
+            <Part01 />
+            <Part02 /> 
+            <Part03 />
+            <Part04 />              
         </div>
     )
 };

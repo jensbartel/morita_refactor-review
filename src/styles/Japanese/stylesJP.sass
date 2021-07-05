@@ -1,3 +1,6 @@
+// VARIABLES
+$font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
+
 // MIXINS
 =standard-text($font-size, $line-height, $margin, $padding)
     font-size: $font-size
@@ -21,7 +24,7 @@
     letter-spacing: 0
     margin-bottom: 60px
     span
-        font-family: 'FOT-筑紫オールド明朝 Pro R', serif
+        font-family: $font-headerJP
         font-size: 3.8rem
         margin-bottom: 20px
     p
@@ -117,6 +120,47 @@
 .essay-introJP
     color: #525252
     +standard-text(13px, 1.6, 0, 0 30%)
+
+
+// pullquote
+=pullquoteJP-base
+    p
+        opacity: 0
+        white-space: nowrap
+        line-height: 0.05
+        letter-spacing: 12
+        &:nth-child(3)
+            animation-delay: 0.25s
+        &:nth-child(5)
+            animation-delay: 0.5s
+        &:nth-child(7)
+            animation-delay: 0.75s
+        &:nth-child(9)
+            animation-delay: 1s
+
+.pullquoteJP
+    +pullquoteJP-base
+    +standard-text(3.4rem, 1.2, 6rem 0 6rem -5rem, 0 30%)
+
+.pullquoteJP2
+    +pullquoteJP-base
+    +standard-text(3.4rem, 1.2, 4rem 0 6rem 0, 0 20% 0 40%)
+
+.pullquoteJP-animation
+    p
+        animation-name: pullquoteAnimJP
+        animation-duration: 1s
+        animation-fill-mode: forwards
+        animation-timing-function: ease-out  
+
+// PULLQUOTE ANIMATION
+@keyframes pullquoteAnimJP
+    from 
+        opacity: 0
+        transform: translate(0, 2rem)
+    to
+        opacity: 1
+        transform: translate(0, 0)
 
 
 // video
