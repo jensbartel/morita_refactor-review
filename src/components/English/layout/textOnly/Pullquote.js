@@ -1,13 +1,25 @@
+import { useInView } from 'react-intersection-observer';
+
 const Pullquote = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+      });
+
+    if (inView) {
+        document.getElementById('pullquote').classList.add('pullquote-animation')
+    };
+
     return (
-        <div className="pullquote">            
-            <span><i>Sho</i> is the site of</span><br />
-            <span>writing characters,</span><br />
-            <span>which manifests the</span><br />
-            <span>dynamic movements</span><br />
-            <span>of our inner being.</span><br/><br/>
+        <div className="pullquote" id='pullquote'> 
+            <p ref={ref}><i>Sho</i> is the site of </p><br />
+            <p ref={ref}>writing characters, </p><br />
+            <p ref={ref}>which manifests the </p><br />
+            <p ref={ref}>dynamic movements </p><br />
+            <p ref={ref}>of our inner being.</p>
         </div>
     )
 };
 
 export default Pullquote;
+

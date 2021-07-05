@@ -53,6 +53,7 @@ const Chapter04 = () => {
 
             <LargeImage item={essay27} />
             <LargeImage item={essay28} />
+            <div id='endnotes'></div>
             <DefaultTextBlock text={html(acknowledgments)} />
             <br /><br /><br /><br /> 
         </>

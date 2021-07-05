@@ -13,7 +13,6 @@ const Navigation = () => {
 
     window.addEventListener('scroll', function(event) {
         var scroll = this.scrollY;
-        console.log(window.innerHeight);
         if (scroll>450) {
             this.document.getElementById('sidemenu').classList.remove('sidemenu-hidden');
         } else {

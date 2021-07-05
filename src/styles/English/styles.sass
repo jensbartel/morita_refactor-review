@@ -32,9 +32,10 @@ button:focus
 
 
 // Looks double... is the first used anywhere?
-.anchor div
-    padding-top: 100px
-    margin-top: -100px
+// Note Jul 4: apparently this was on the 2nd pullquote (why?)
+// .anchor div
+//     padding-top: 100px
+//     margin-top: -100px
 
 .anchordiv
     padding-top: 100px
@@ -186,6 +187,10 @@ button:focus
             cursor: pointer
             margin: 0 20px 0 0
             padding: 0
+            color: grey
+            transition: 0.2s
+            &:hover
+                color: #4a4a4a
     
 .endnotes
     +standard-text($font-default, 11px, 0 0 2rem 0, 0 30%, #000, 1.6)
@@ -199,7 +204,7 @@ button:focus
     z-index: 99
     transition: 0.3s
     &:hover
-        color: #383838
+        color: #4a4a4a
     
 
 // intro to essay
@@ -212,17 +217,50 @@ button:focus
 
 
 // pullquote
+=pullquote-base
+    p
+        opacity: 0
+        white-space: nowrap
+        line-height: 0.05
+        &:nth-child(3)
+            animation-delay: 0.25s
+        &:nth-child(5)
+            animation-delay: 0.5s
+        &:nth-child(7)
+            animation-delay: 0.75s
+        &:nth-child(9)
+            animation-delay: 1s
+
 .pullquote
-    +standard-text($font-header, 3.8rem , 40px 0 10px -80px, 0 30%, #000, 1)
+    +pullquote-base
+    +standard-text($font-header, 3.8rem , 0 0 2rem -5rem, 0 30%, #000, 1)
+    margin-bottom: 6rem
 
 .pullquote2
-    +standard-text($font-header, 3.8rem , 40px -120px 10px 120px, 0 20% 0 30%, #000, 1)
+    +pullquote-base
+    +standard-text($font-header, 3.8rem , 4rem 0 -4rem 0, 0 20% 0 40%, #000, 1)
+
+.pullquote-animation
+    p
+        animation-name: pullquoteAnim
+        animation-duration: 1s
+        animation-fill-mode: forwards
+        animation-timing-function: ease-out  
+
+// PULLQUOTE ANIMATION
+@keyframes pullquoteAnim
+    from 
+        opacity: 0
+        transform: translate(0, 2rem)
+    to
+        opacity: 1
+        transform: translate(0, 0)
 
 
 // navigation
 .sidemenu-container
     height: 100vh
-    background-: none
+    background-color: none
     opacity: 1
     position: fixed
     top: 0
@@ -309,3 +347,6 @@ button:focus
     a
         +standard-text($font-default, 14px, 0, 0, #000, 1)
         text-align: center
+
+
+
