@@ -15,6 +15,32 @@ button:focus {
   margin-top: -100px;
 }
 
+a[data-tool-tip] {
+  position: relative;
+}
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  text-align: left;
+  width: 30vw;
+  display: block;
+  position: absolute;
+  background-color: #f0f0f0;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  bottom: 1.3rem;
+  left: -10rem;
+  transition: transform ease-in 0.2s;
+  transform: scale(0);
+  transform-origin: 10rem 100%;
+  font-size: 0.75rem;
+}
+a[data-tool-tip]:hover {
+  cursor: pointer;
+}
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+}
+
 .exhibition-title {
   display: flex;
   justify-content: center;

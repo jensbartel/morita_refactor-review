@@ -8,12 +8,35 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
     margin: $margin
     padding: $padding
 
-    
 // anchor div
 .anchordiv
     padding-top: 100px
     margin-top: -100px
 
+
+a[data-tool-tipJP]
+    position: relative
+    &::after
+        content: attr(data-tool-tipJP)
+        letter-spacing: 0
+        line-height: 1.5
+        text-align: left
+        width: 30vw
+        display: block
+        position: absolute
+        background-color: #f0f0f0
+        padding: 0.6rem 1.2rem
+        border-radius: 8px
+        bottom: 1.3rem
+        left: -10rem
+        transition: transform ease-in 0.2s
+        transform: scale(0)
+        transform-origin: 10rem 100%
+        font-size: 0.75rem
+    &:hover
+        cursor: pointer
+        &::after
+            transform: scale(1)
 
 // exhibition title
 .exhibition-titleJP
@@ -29,12 +52,10 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
         margin-bottom: 20px
     p
         +standard-text(1rem, 1.4, 0, 0)
-        
 
 // default text block
 .defaultstyleJP
     +standard-text(14px, 1.6, 0, 0 30%)
-
 
 // text left image right, text right image left
 .text-image-flexboxJP
@@ -45,23 +66,22 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
     .text-column
         width: 30vw
         +standard-text(14px, 1.6, 0, 0)
-        
+
     .image-column
         width: 30vw
-        img 
+        img
             width: 30vw
         p
             text-align: left
             letter-spacing: 0
             color: #525252
             +standard-text(0.75rem, 1.4, 5px 0 0 0, 0)
-            
 
 // timeline
 .timeline-containerJP
     width: 55vw
     letter-spacing: 0
-    +standard-text(14px, 1.7, 4rem auto 8rem, 0)    
+    +standard-text(14px, 1.7, 4rem auto 8rem, 0)
     div
         width: 100%
         display: flex
@@ -75,7 +95,6 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
             &:last-child
                 width: 85%
 
-
 // parts, section header
 .parts-headerJP,
 .section-headerJP
@@ -83,11 +102,10 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
     +standard-text(1.6rem, 1, 0 0 3rem 0, 40px 30% 0)
     // note: margin-bottom was 3rem for parts and 1rem for section
 
-
 .quicklinkJP
     display: flex
     letter-spacing: 0
-    +standard-text(13px, 1.6, 0 0 2.5rem 0, 0 30%)    
+    +standard-text(13px, 1.6, 0 0 2.5rem 0, 0 30%)
     a
         p
             cursor: pointer
@@ -97,11 +115,9 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
             &:hover
                 color: #000
 
-
 .endnotesJP
     letter-spacing: 0
-    +standard-text(12px, 1.6, 0 0 2rem 0, 0 30%)    
-    
+    +standard-text(12px, 1.6, 0 0 2rem 0, 0 30%)
 
 .read-more-or-lessJP
     background: none
@@ -115,12 +131,10 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
     &:hover
         color: #383838
 
-
 // intro to essay
 .essay-introJP
     color: #525252
     +standard-text(13px, 1.6, 0, 0 30%)
-
 
 // pullquote
 =pullquoteJP-base
@@ -151,22 +165,20 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
         animation-name: pullquoteAnimJP
         animation-duration: 1s
         animation-fill-mode: forwards
-        animation-timing-function: ease-out  
+        animation-timing-function: ease-out
 
 // PULLQUOTE ANIMATION
 @keyframes pullquoteAnimJP
-    from 
+    from
         opacity: 0
         transform: translate(0, 2rem)
     to
         opacity: 1
         transform: translate(0, 0)
 
-
 // video
 .video-responsive2
     margin-bottom: 6rem
-
 
 // link for work list
 .listcontainerJP
@@ -177,7 +189,6 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
         font-size: 14px
         letter-spacing: 0
         text-align: center
-
 
 .mobileJP
     display: none

@@ -4,11 +4,13 @@ import FullwidthHorizontal from '../vipcomponents/FullwidthHorizontal';
 import FullwidthWithText from '../vipcomponents/FullwidthWithText';
 import HalfwidthHorizontal from '../vipcomponents/HalfwidthHorizontal';
 import HalfwidthWithText from '../vipcomponents/HalfwidthWithText';
+import InquiryJP from '../vipcomponents/InquiryJP';
 
 import group1 from "../../../assets/installation/group1.jpg";
 import group2 from "../../../assets/installation/group2.jpg";
+import group7 from "../../../assets/installation/group7.jpg";
 
-import { KanzanScreen1969JP, Ryu1965JP, Shizuka1969JP, Miraiken1949JP, So1954JP,  SeishiBiken1941JP } from '../../../data/ImageConstants';
+import { KanzanScreen1969JP, Ryu1965JP, Shizuka1969JP, Miraiken1949JP, So1954JP, Kan1965JP, Datsu1963JP, Kanzan1964JP, Usobuku_shikkin1963JP, Kumomushin1967JP, Eko1967JP, SeishiBiken1941JP, Kan1961JP } from '../../../data/ImageConstants';
 import { kanzanVIPtextJP, soVIPtextJP } from '../../../data/TextConstantsJP';
 
 
@@ -64,11 +66,12 @@ const VIPJapanese = () => {
                 </iframe>
             </div>
 
-            {/* <div className='video-responsive3-vip'>            
+            <div className='video-responsive3-vip'>            
                 <FullwidthHorizontal item={Kan1961JP} scale="70" />
                 <HalfwidthHorizontal item1={Kan1965JP} item2={Datsu1963JP} scaleLeft={54} contentWidth={59} />
                 <HalfwidthHorizontal item1={Kanzan1964JP} item2={Usobuku_shikkin1963JP} scaleLeft={40} contentWidth={46} />
 
+                {/* third group  */}
                 <div className='containerstyle notFirst' >
                     <img src={group7} alt="" lang='jp'/>
                 </div>
@@ -81,7 +84,7 @@ const VIPJapanese = () => {
                 <a href='/vip2' className='nextJp'>
                     <h2>次のページ</h2>
                 </a>
-            </div> */}
+            </div>
 
         </>
     )
