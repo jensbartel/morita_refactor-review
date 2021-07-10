@@ -71,7 +71,7 @@ a[data-tool-tip]
 
 // default text block
 .defaultstyle
-    +standard-text($font-default, 14px, 0, 0 30%, #000, 1.6)
+    +standard-text($font-default, 14px, 0 0 4rem, 0 30%, #000, 1.6)
 
 
 // large image
@@ -248,8 +248,8 @@ a[data-tool-tip]
 
 .pullquote
     +pullquote-base
-    +standard-text($font-header, 3.8rem , 0 0 2rem -5rem, 0 30%, #000, 1)
-    margin-bottom: 6rem
+    +standard-text($font-header, 3.8rem, 0 0 2rem -5rem, 0 30%, #000, 1)
+    margin-bottom: 8rem
 
 .pullquote2
     +pullquote-base
@@ -315,6 +315,12 @@ a[data-tool-tip]
     display: block
     margin: 2rem auto
 
+.theVideo
+    display: flex
+    justify-content: center
+    margin: auto
+    margin-bottom: 4rem
+
 // quote
 .quoteStyle 
     +standard-text($font-default, 13px, 0, 0 32.5%, #000, 1.6)
@@ -323,7 +329,7 @@ a[data-tool-tip]
 // represented works
 .rep-container
     display: block
-    margin: auto
+    margin: 8rem auto
     width: calc( 75vw + 2rem )
     div
         margin: 2rem 0 0 0

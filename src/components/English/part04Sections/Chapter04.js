@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import html from 'react-html-parser'
+import Fade from 'react-reveal'
 
 import LargeImage from '../layout/image/LargeImage';
 import TextRightImageLeft from '../layout/textAndImage/TextRightImageLeft';
@@ -7,7 +8,7 @@ import DefaultTextBlock from '../layout/textOnly/DefaultTextBlock';
 import Endnotes from '../layout/textOnly/Endnotes';
 
 import { essay20, essay22, essay27, essay28 } from '../../../data/ImageConstantsEssay';
-import { acknowledgments, essayQuickLink, morita14, morita14a, morita14b, morita14c, morita15, moritaEndnotes, sectionLabel } from '../../../data/TextConstants';
+import { acknowledgments, essayQuickLink, morita14, morita14a, morita14b, morita15, moritaEndnotes, sectionLabel } from '../../../data/TextConstants';
 import SectionHeader from '../layout/textOnly/SectionHeader';
 import ChapterQuickLink from '../layout/textOnly/ChapterQuickLink';
 
@@ -17,28 +18,30 @@ const Chapter04 = () => {
 
     return (
         <>
-            {/* <EssayBlock5 /> */}
-            <div id='quicklink4' className='anchordiv'></div>
-            <SectionHeader text={sectionLabel[4]} />
-            <ChapterQuickLink
-                item1={essayQuickLink[1].text}
-                item2={essayQuickLink[2].text}
-                item3={essayQuickLink[3].text}
-                item1Link={essayQuickLink[1].quickLink}
-                item2Link={essayQuickLink[2].quickLink}
-                item3Link={essayQuickLink[3].quickLink}
-            />
-            <DefaultTextBlock text={html(morita14)} />
+            <Fade bottom>
+                <>
+                    <div id='quicklink4' className='anchordiv'></div>
+                    <SectionHeader text={sectionLabel[4]} />
+                    <ChapterQuickLink
+                        item1={essayQuickLink[1].text}
+                        item2={essayQuickLink[2].text}
+                        item3={essayQuickLink[3].text}
+                        item1Link={essayQuickLink[1].quickLink}
+                        item2Link={essayQuickLink[2].quickLink}
+                        item3Link={essayQuickLink[3].quickLink}
+                    />
+                    <DefaultTextBlock text={html(morita14)} />
+                </>
+            </Fade>
 
-            <TextRightImageLeft text={morita14a} item={essay20} />
+            <Fade bottom>   <TextRightImageLeft text={morita14a} item={essay20} />          </Fade>
 
             { visible ? 
                 <>
-                    <DefaultTextBlock text={html(morita14b)} />
-                    <LargeImage item={essay22} />
-                    <DefaultTextBlock text={html(morita14c)} />
-                    <DefaultTextBlock text={html(morita15)} />
-                    <Endnotes text={html(moritaEndnotes)} />
+                            <DefaultTextBlock text={html(morita14b)} />
+                            <LargeImage item={essay22} />
+                            <DefaultTextBlock text={html(morita15)} />
+                    <Fade>  <Endnotes text={html(moritaEndnotes)} />                        </Fade>
                 </> : null
             }
         
@@ -51,11 +54,11 @@ const Chapter04 = () => {
                 {btnText}
             </button>
 
-            <LargeImage item={essay27} />
-            <LargeImage item={essay28} />
-            <div id='endnotes'></div>
-            <DefaultTextBlock text={html(acknowledgments)} />
-            <br /><br /><br /><br /> 
+                            <LargeImage item={essay27} />
+                            <LargeImage item={essay28} />
+                            <div id='endnotes'></div>
+                            <DefaultTextBlock text={html(acknowledgments)} />
+                            <br /><br /><br /><br /> 
         </>
     )
 };

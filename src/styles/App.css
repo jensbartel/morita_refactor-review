@@ -69,7 +69,7 @@ a[data-tool-tip]:hover::after {
 .defaultstyle {
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
-  margin: 0;
+  margin: 0 0 4rem;
   padding: 0 30%;
   color: #000;
   line-height: 1.6;
@@ -335,7 +335,7 @@ a[data-tool-tip]:hover::after {
   color: #000;
   line-height: 1;
   letter-spacing: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 .pullquote p {
   opacity: 0;
@@ -445,6 +445,13 @@ a[data-tool-tip]:hover::after {
   margin: 2rem auto;
 }
 
+.theVideo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
 .quoteStyle {
   font-family: "Quicksand", sans-serif;
   font-size: 13px;
@@ -457,7 +464,7 @@ a[data-tool-tip]:hover::after {
 
 .rep-container {
   display: block;
-  margin: auto;
+  margin: 8rem auto;
   width: calc( 75vw + 2rem );
 }
 .rep-container div {

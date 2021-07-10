@@ -1,11 +1,15 @@
-const DefaultTextBlock = (props) => {
-    let text = props.text;
+import Fade from 'react-reveal'
 
-    return (
-        <div className="defaultstyle">
-            {text}<br /><br />
-        </div>
-    );
+const DefaultTextBlock = (props) => {
+    let { text, fade } = props;
+
+    return (    
+        <>
+            {fade === 'none' && <div className='defaultstyle'>{text}</div>}
+            {fade === 'bottom' && <Fade bottom><div className='defaultstyle'>{text}</div></Fade>}
+            {(fade !== 'none' && fade !== 'bottom') && <Fade><div className='defaultstyle'>{text}</div></Fade>}
+        </>
+    )
 };
 
 export default DefaultTextBlock;

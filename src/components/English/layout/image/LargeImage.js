@@ -1,7 +1,8 @@
+import Fade from 'react-reveal'
 import html from 'react-html-parser'
 
 const LargeImage = (props) => {
-    const { item: { emphasis, emphasisJP, text, textJP, img }, lang } = props;
+    const { item: { emphasis, emphasisJP, text, textJP, img }, lang, fade } = props;
 
     var captionText, emphasisText,langStyle;
     if(lang) {
@@ -16,14 +17,46 @@ const LargeImage = (props) => {
     }
 
     return (
-        <div className="large-image-container">
-            <img src={img} alt="" />
-            <div style={{ marginBottom: "1rem" }}>
-                <p className={langStyle}>
-                    <strong>{emphasisText}</strong>{ html(captionText) }
-                </p>
-            </div>
-        </div>
+        <>
+            {fade === 'none' && (
+                    <Fade>
+                        <div className="large-image-container">
+                            <img src={img} alt="" />
+                            <div style={{ marginBottom: "1rem" }}>
+                                <p className={langStyle}>
+                                    <strong>{emphasisText}</strong>{ html(captionText) }
+                                </p>
+                            </div>
+                        </div>
+                    </Fade>
+                )
+            }
+
+            {fade !== 'none' && (
+                    <Fade bottom>
+                        <div className="large-image-container">
+                            <img src={img} alt="" />
+                            <div style={{ marginBottom: "1rem" }}>
+                                <p className={langStyle}>
+                                    <strong>{emphasisText}</strong>{ html(captionText) }
+                                </p>
+                            </div>
+                        </div>
+                    </Fade>
+                )
+            }
+        </>
+
+        // <Fade bottom>
+        //     <div className="large-image-container">
+        //         <img src={img} alt="" />
+        //         <div style={{ marginBottom: "1rem" }}>
+        //             <p className={langStyle}>
+        //                 <strong>{emphasisText}</strong>{ html(captionText) }
+        //             </p>
+        //         </div>
+        //     </div>
+        // </Fade>
     );
 };
 

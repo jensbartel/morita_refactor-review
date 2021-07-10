@@ -292,10 +292,9 @@ a.nextEng h2 {
   /* not fully comprehend WHY but apparently adding the padding-bottom removes a bug that prevented to scroll the English VIP page properly */
 }
 
-a.nextJp h2 {
+.nextJp h2 {
   font-size: 18px;
   text-align: center;
-  margin: 0 40px;
 }
 
 @media screen and (max-width: 576px) {
