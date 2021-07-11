@@ -46,17 +46,6 @@ const LargeImage = (props) => {
                 )
             }
         </>
-
-        // <Fade bottom>
-        //     <div className="large-image-container">
-        //         <img src={img} alt="" />
-        //         <div style={{ marginBottom: "1rem" }}>
-        //             <p className={langStyle}>
-        //                 <strong>{emphasisText}</strong>{ html(captionText) }
-        //             </p>
-        //         </div>
-        //     </div>
-        // </Fade>
     );
 };
 
