@@ -123,7 +123,7 @@ a[data-tool-tip]:hover::after {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 60px 80px;
+  margin: 6rem 5rem 2rem;
 }
 .two-images-flexbox div {
   width: 30vw;
@@ -160,7 +160,7 @@ a[data-tool-tip]:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 120px;
+  margin: 6rem 120px 2rem;
 }
 .two-images-var .image1 {
   width: 65%;
@@ -187,7 +187,8 @@ a[data-tool-tip]:hover::after {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 60px 80px;
+  padding: 2rem 5rem;
+  margin-bottom: 2rem;
 }
 .text-image-flexbox .text-column {
   width: 30vw;
@@ -243,7 +244,17 @@ a[data-tool-tip]:hover::after {
   width: 85%;
 }
 
-.parts-header,
+.parts-header {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem 0;
+  padding: 40px 30% 0;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
 .section-header {
   font-family: "Cormorant", serif;
   font-size: 1.6rem;
@@ -358,11 +369,12 @@ a[data-tool-tip]:hover::after {
 .pullquote2 {
   font-family: "Cormorant", serif;
   font-size: 3.8rem;
-  margin: 4rem 0 -4rem 0;
+  margin: 0 0 0 0;
   padding: 0 20% 0 40%;
   color: #000;
   line-height: 1;
   letter-spacing: 0;
+  margin: 6rem 0 -6rem;
 }
 .pullquote2 p {
   opacity: 0;
@@ -448,8 +460,7 @@ a[data-tool-tip]:hover::after {
 .theVideo {
   display: flex;
   justify-content: center;
-  margin: auto;
-  margin-bottom: 4rem;
+  margin: 0 auto 6rem;
 }
 
 .quoteStyle {
@@ -464,7 +475,7 @@ a[data-tool-tip]:hover::after {
 
 .rep-container {
   display: block;
-  margin: 8rem auto;
+  margin: 4rem auto;
   width: calc( 75vw + 2rem );
 }
 .rep-container div {
@@ -516,7 +527,7 @@ a[data-tool-tip]:hover::after {
 .listcontainer {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  margin: 6rem 0;
 }
 .listcontainer a {
   font-family: "Quicksand", sans-serif;

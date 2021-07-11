@@ -109,7 +109,7 @@ a[data-tool-tip]
     display: flex
     justify-content: space-evenly
     align-items: center
-    margin: 60px 80px
+    margin: 6rem 5rem 2rem
     div
         width: 30vw
         margin-bottom: 2rem
@@ -132,7 +132,7 @@ a[data-tool-tip]
     display: flex
     justify-content: space-between
     align-items: center
-    margin: 100px 120px        
+    margin: 6rem 120px 2rem      
     .image1
         width: 65%
         margin-bottom: 2rem
@@ -157,7 +157,8 @@ a[data-tool-tip]
     display: flex
     justify-content: space-evenly
     align-items: center
-    margin: 60px 80px
+    padding: 2rem 5rem
+    margin-bottom: 2rem
     .text-column
         width: 30vw
         +standard-text($font-default, 14px, 0, 0, #000, 1.6)
@@ -189,7 +190,10 @@ a[data-tool-tip]
 
     
 // parts, section header
-.parts-header,
+.parts-header
+    +standard-text($font-header, 1.6rem, 2rem 0 3rem 0, 40px 30% 0, #000, 1)
+    font-weight: 500
+
 .section-header
     +standard-text($font-header, 1.6rem, 0 0 3rem 0, 40px 30% 0, #000, 1)
     font-weight: 500
@@ -253,7 +257,8 @@ a[data-tool-tip]
 
 .pullquote2
     +pullquote-base
-    +standard-text($font-header, 3.8rem , 4rem 0 -4rem 0, 0 20% 0 40%, #000, 1)
+    +standard-text($font-header, 3.8rem , 0 0 0 0, 0 20% 0 40%, #000, 1)
+    margin: 6rem 0 -6rem
 
 .pullquote-animation
     p
@@ -318,8 +323,7 @@ a[data-tool-tip]
 .theVideo
     display: flex
     justify-content: center
-    margin: auto
-    margin-bottom: 4rem
+    margin: 0 auto 6rem
 
 // quote
 .quoteStyle 
@@ -329,7 +333,7 @@ a[data-tool-tip]
 // represented works
 .rep-container
     display: block
-    margin: 8rem auto
+    margin: 4rem auto
     width: calc( 75vw + 2rem )
     div
         margin: 2rem 0 0 0
@@ -364,7 +368,7 @@ a[data-tool-tip]
 .listcontainer
     display: flex
     justify-content: center
-    margin: 4rem 0
+    margin: 6rem 0
     a
         +standard-text($font-default, 14px, 0, 0, #000, 1)
         text-align: center
