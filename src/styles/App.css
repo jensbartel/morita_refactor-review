@@ -936,11 +936,7 @@ a[data-tool-tip]:hover::after {
     flex-direction: column;
     margin: 2rem 15% 2rem;
   }
-  .two-images-var .image1 {
-    width: 100%;
-    padding: 0;
-  }
-  .two-images-var .image2 {
+  .two-images-var .image1, .two-images-var .image2 {
     width: 100%;
     padding: 0;
   }
@@ -1004,8 +1000,26 @@ a[data-tool-tip]:hover::after {
     line-height: 1.6;
   }
 
+  .endnotes {
+    padding: 0 15%;
+  }
+
   .read-more-less {
     margin: 0 15% 3rem;
+  }
+
+  .essay-intro .text, .essay-intro .note {
+    padding: 0 15%;
+  }
+
+  .pullquote, .pullquote2 {
+    margin-left: 0;
+    padding: 0 15%;
+    font-size: 2rem;
+  }
+
+  .pullquote2 {
+    margin: 4rem 0 -2rem -2rem;
   }
 
   .sidemenu {
@@ -1042,9 +1056,10 @@ a[data-tool-tip]:hover::after {
     margin: auto;
     margin-top: 1rem;
   }
-
-  .essay-intro .text, .essay-intro .note {
-    padding: 0 15%;
+}
+@media only screen and (max-width: 320px) {
+  .pullquote, .pullquote2 {
+    font-size: 1.75rem;
   }
 }
 
