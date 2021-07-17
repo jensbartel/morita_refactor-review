@@ -138,15 +138,15 @@
                 <nav id="p_nav">
                     <div class="r_mn_inner">
                         <ul >
-                            <li class="art"><a href="https://www.shibunkaku.co.jp/english/art/" id="art">Art</a></li>
-                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" >Exhibition</a></li>
+                            <li class="art"><a href="english/art/" id="art" class="">Art</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" class="">Exhibition</a></li>
                             <li class="kosho"><a href="https://www.shibunkaku.co.jp/english/kosho/" class="">Antiquarian Books</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/publishing/" class="">Publishing</a></li>
                             <li class="s"><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
                             <li class="s"><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
                         </ul>
                         <div class="lang"><a onclick="myFunction()" style="cursor: pointer">Jp</a></div>
-                        <!-- was href="/" initially-->
+                        <!-- was <a href="/"> initially-->
                     </div>
                 </nav>
             </div>
@@ -154,13 +154,13 @@
             
             <!-- mobile navigation menu -->
             <div class="menu_button">
-                <a href="#"></a>
+                <a href='#'></a>
             </div>
 
             <div id="language_switch2">
             <nav id="m_nav">
                 <div class="m_header">
-                    <a class="close" href="#">
+                    <a class="close" href='#'>
                         <img src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/menu_close.svg">
                     </a>
                     <div class="title">
@@ -356,7 +356,7 @@
         }
 
         docReady(function () {
-            console.log('dom is ready at:', window.location.href);
+            // console.log('dom is ready at:', window.location.href);
             var currentURL = window.location.href;
 
             if (currentURL.includes('/english')) {

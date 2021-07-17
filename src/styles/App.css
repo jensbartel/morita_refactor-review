@@ -540,7 +540,7 @@ a[data-tool-tip]:hover::after {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   a[data-tool-tip]::after {
     width: 32.5vw;
   }
@@ -564,14 +564,8 @@ a[data-tool-tip]:hover::after {
     margin: 0 0 3rem;
   }
 
-  .pullquote {
-    font-size: 3rem;
-    margin-bottom: 6rem;
-  }
-
-  .pullquote2 {
-    font-size: 3rem;
-    padding: 0 20% 2rem 25%;
+  .section-header {
+    margin-bottom: 1rem;
   }
 
   .timeline-container {
@@ -600,8 +594,30 @@ a[data-tool-tip]:hover::after {
   .large-image-caption {
     width: 70%;
   }
+
+  .pullquote {
+    margin: 0 0 6rem 0;
+    padding-left: 20%;
+  }
+
+  .pullquote2 {
+    padding: 2rem 20% 2rem 25%;
+  }
 }
-@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .pullquote {
+    margin-bottom: 4rem;
+  }
+
+  .section-header {
+    margin-bottom: 1rem;
+  }
+
+  .parts-header {
+    padding: 40px 20% 0 30%;
+  }
+}
+@media only screen and (min-width: 810px) and (max-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   a[data-tool-tip]::after {
     width: 32.5vw;
   }
@@ -625,14 +641,8 @@ a[data-tool-tip]:hover::after {
     margin: 0 0 3rem;
   }
 
-  .pullquote {
-    font-size: 3rem;
-    margin-bottom: 6rem;
-  }
-
-  .pullquote2 {
-    font-size: 3rem;
-    padding: 0 20% 2rem 25%;
+  .section-header {
+    margin-bottom: 1rem;
   }
 
   .timeline-container {
@@ -661,13 +671,41 @@ a[data-tool-tip]:hover::after {
   .large-image-caption {
     width: 70%;
   }
+
+  .pullquote {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .pullquote2 {
+    font-size: 3rem;
+    padding: 0 20% 2rem 25%;
+  }
 }
-@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .pullquote {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .pullquote2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
   .quicklink {
     padding: 0 10% 0 30%;
   }
+
+  .section-header {
+    margin-bottom: 1rem;
+  }
+
+  .parts-header {
+    padding: 40px 20% 0 30%;
+  }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   a[data-tool-tip]::after {
     width: 32.5vw;
   }
@@ -691,14 +729,8 @@ a[data-tool-tip]:hover::after {
     margin: 0 0 3rem;
   }
 
-  .pullquote {
-    font-size: 3rem;
-    margin-bottom: 6rem;
-  }
-
-  .pullquote2 {
-    font-size: 3rem;
-    padding: 0 20% 2rem 25%;
+  .section-header {
+    margin-bottom: 1rem;
   }
 
   .timeline-container {
@@ -727,30 +759,123 @@ a[data-tool-tip]:hover::after {
   .large-image-caption {
     width: 70%;
   }
+
+  .pullquote {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .pullquote2 {
+    font-size: 3rem;
+    padding: 0 20% 2rem 25%;
+  }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .pullquote {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .pullquote2 {
+    font-size: 3rem;
+    margin-bottom: -4rem;
+  }
+
   .quicklink {
     padding: 0 10% 0 30%;
   }
-}
-@media screen and (max-width: 568px) {
-  .title-style {
-    font-size: 2rem;
+
+  .section-header {
+    margin-bottom: 1rem;
   }
 
-  .title-dates {
-    font-size: 14px;
-    margin-bottom: 40px;
+  .parts-header {
+    padding: 40px 20% 0 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  a[data-tool-tip]::after {
+    width: 32.5vw;
+  }
+
+  .defaultstyle,
+.endnotes {
+    padding: 0 20%;
+  }
+
+  .essay-intro .text,
+.essay-intro .note {
+    padding: 0 20%;
+  }
+
+  .parts-header,
+.section-header {
+    padding: 40px 20% 0;
+  }
+
+  .parts-header {
+    margin: 0 0 3rem;
+  }
+
+  .section-header {
+    margin-bottom: 1rem;
+  }
+
+  .timeline-container {
+    width: 60vw;
+  }
+
+  .quicklink {
+    padding: 0 10% 0 20%;
+  }
+
+  .quoteStyle {
+    padding: 0 25%;
+  }
+
+  .read-more-less {
+    margin-left: 20%;
+  }
+
+  .large-image-container {
+    width: 100vw;
+  }
+  .large-image-container img {
+    width: 70%;
+  }
+
+  .large-image-caption {
+    width: 70%;
+  }
+
+  .pullquote {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .pullquote2 {
+    font-size: 3rem;
+    padding: 0 20% 2rem 25%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .exhibition-title span {
+    font-size: 2.25rem;
   }
 
   .defaultstyle {
-    padding: 0 25%;
     font-size: 13px;
+    padding: 0 15%;
+    margin-bottom: 3rem;
+  }
+
+  .parts-header {
+    padding: 0 15%;
   }
 
   .large-image-container {
     width: 100vw;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 2rem;
   }
 
   .large-image-style {
@@ -775,8 +900,16 @@ a[data-tool-tip]:hover::after {
 
   .two-images-flexbox {
     flex-direction: column;
-    width: 70vw;
+    justify-content: center;
+    width: 100vw;
     margin: 0;
+  }
+  .two-images-flexbox div {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .two-images-flexbox div img {
+    width: 100%;
   }
 
   .two-images-container1,
@@ -817,6 +950,21 @@ a[data-tool-tip]:hover::after {
     padding-left: 0;
   }
 
+  .text-image-flexbox {
+    flex-direction: column;
+    padding: 0 15% 2rem;
+  }
+  .text-image-flexbox .text-column {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .text-image-flexbox .image-column {
+    width: 100%;
+  }
+  .text-image-flexbox .image-column img {
+    width: 100%;
+  }
+
   .text-left-flexbox {
     flex-direction: column;
     justify-content: center;
@@ -843,6 +991,19 @@ a[data-tool-tip]:hover::after {
     margin-bottom: 1.5rem;
     width: 70vw;
     font-size: 13px;
+  }
+
+  .timeline-container {
+    width: 70%;
+    font-size: 12px;
+    margin-bottom: 4rem;
+  }
+
+  .sidemenu {
+    width: 60px;
+  }
+  .sidemenu ul {
+    padding-left: 15px;
   }
 }
 

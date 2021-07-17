@@ -4,10 +4,11 @@
 // below:
 // iPad 1st + 2nd gen, iPad Mini 1
 // iPad 7th, 8th gen
-// iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4  
+// iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4 
+// iPad Pro 
 
-// iPad 1st + 2nd gen, iPad Mini 1
-@media screen and (max-width: 768px)
+
+=ipad-portrait
     a[data-tool-tip]
         &::after
             width: 32.5vw
@@ -15,7 +16,7 @@
     .defaultstyle,
     .endnotes
         padding: 0 20%
-    
+
     .essay-intro
         .text,
         .note
@@ -24,17 +25,12 @@
     .parts-header,
     .section-header
         padding: 40px 20% 0
-
+    
     .parts-header
         margin: 0 0 3rem
 
-    .pullquote
-        font-size: 3rem
-        margin-bottom: 6rem
-
-    .pullquote2
-        font-size: 3rem
-        padding: 0 20% 2rem 25%
+    .section-header
+        margin-bottom: 1rem
 
     .timeline-container
         width: 60vw
@@ -55,29 +51,34 @@
 
     .large-image-caption
         width: 70%
+
+
+
+// iPad Pro
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +ipad-portrait        
+    .pullquote
+        margin: 0 0 6rem 0
+        padding-left: 20%
+
+    .pullquote2
+        padding: 2rem 20% 2rem 25%
+
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+    .pullquote
+        margin-bottom: 4rem
+
+    .section-header
+        margin-bottom: 1rem
+
+    .parts-header
+        padding: 40px 20% 0 30%
+
+
 
 // iPad 7th, 8th gen
-@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
-    a[data-tool-tip]
-        &::after
-            width: 32.5vw
-
-    .defaultstyle,
-    .endnotes
-        padding: 0 20%
-
-    .essay-intro
-        .text,
-        .note
-            padding: 0 20%
-
-    .parts-header,
-    .section-header
-        padding: 40px 20% 0
-    
-    .parts-header
-        margin: 0 0 3rem
-    
+@media only screen and (min-width: 810px) and (max-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +ipad-portrait   
     .pullquote
         font-size: 3rem
         margin-bottom: 6rem
@@ -86,53 +87,29 @@
         font-size: 3rem
         padding: 0 20% 2rem 25%
 
-    .timeline-container
-        width: 60vw
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+    .pullquote
+        font-size: 3rem
+        margin-bottom: 4rem
 
-    .quicklink
-        padding: 0 10% 0 20%
-    
-    .quoteStyle
-        padding: 0 25%
-    
-    .read-more-less
-        margin-left: 20%
+    .pullquote2
+        font-size: 3rem
+        padding-bottom: 2rem
 
-    .large-image-container
-        width: 100vw
-        img
-            width: 70%
-
-    .large-image-caption
-        width: 70%
-
-@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
     .quicklink
         padding: 0 10% 0 30%
+
+    .section-header
+        margin-bottom: 1rem
+
+    .parts-header
+        padding: 40px 20% 0 30%
+
 
 
 // iPad 3rd-6th gen, iPad Pro 9.7", iPad Air 1 + 2, iPad Mini 2-4  
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
-    a[data-tool-tip]
-        &::after
-            width: 32.5vw
-
-    .defaultstyle,
-    .endnotes
-        padding: 0 20%
-
-    .essay-intro
-        .text,
-        .note
-            padding: 0 20%
-
-    .parts-header,
-    .section-header
-        padding: 40px 20% 0
-    
-    .parts-header
-        margin: 0 0 3rem
-    
+@media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    +ipad-portrait    
     .pullquote
         font-size: 3rem
         margin-bottom: 6rem
@@ -141,28 +118,34 @@
         font-size: 3rem
         padding: 0 20% 2rem 25%
 
-    .timeline-container
-        width: 60vw
 
-    .quicklink
-        padding: 0 10% 0 20%
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+    .pullquote
+        font-size: 3rem
+        margin-bottom: 4rem
+    
+    .pullquote2
+        font-size: 3rem
+        margin-bottom: -4rem
 
-    .quoteStyle
-        padding: 0 25%
-
-    .read-more-less
-        margin-left: 20%
-
-    .large-image-container
-        width: 100vw
-        img
-            width: 70%
-
-    .large-image-caption
-        width: 70%
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
     .quicklink
         padding: 0 10% 0 30%
 
-    
+    .section-header
+        margin-bottom: 1rem
+
+    .parts-header
+        padding: 40px 20% 0 30%
+
+
+
+// iPad 1st + 2nd gen, iPad Mini 1
+@media only screen and (max-width: 768px) 
+    +ipad-portrait
+    .pullquote
+        font-size: 3rem
+        margin-bottom: 6rem
+
+    .pullquote2
+        font-size: 3rem
+        padding: 0 20% 2rem 25%
