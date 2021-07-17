@@ -14,7 +14,7 @@
 
     <meta property="og:site_name" content="SHIBUNKAKU">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.shibunkaku.co.jp/english/">
+    <meta property="og:url" content="https://www.shibunkaku.co.jp/english/"> <!--incorrect-->
     <meta property="og:title" content="SHIBUNKAKU">
     <meta property="og:description" content="思文閣グループの公式サイトです。思文閣は美術品・古典籍の販売、ギャラリー経営、出版事業を通して日本文化の継承・普及・創造に努めています。">
     <meta property="og:image"
@@ -172,17 +172,17 @@
                 <div class="inner">
                     <div class="top">
                         <ul class="">
-                            <li><a href="https://www.shibunkaku.co.jp/english/art/" class="">Art</a></li>
-                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" class="">Exhibition</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/art/" class="has_sub">Art</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" class="has_sub">Exhibition</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/kosho/" class="">Antiquarian Books</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/publishing/" class="">Publishing</a></li>
 
-                            <li><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/location/" class="has_sub">Location</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
                             <li class="lang"><a onclick="myFunction()" style="cursor: pointer">Jp</a></li>
                         </ul>
                         <div class="sub_pages">
-                            <div class="sub_art sub_group ">
+                            <div class="sub_art sub_group">
                                 <div class="page_header">
                                     <div class="inner">
                                         <div class="r_h_inner">
@@ -196,7 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sub_exhibition sub_group ">
+                            <div class="sub_exhibition sub_group">
                                 <div class="page_header">
                                     <div class="inner">
                                         <div class="r_h_inner">
@@ -212,7 +212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sub_location sub_group ">
+                            <div class="sub_location sub_group">
                                 <div class="page_header">
                                     <div class="inner">
                                         <div class="r_h_inner">
@@ -224,7 +224,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sub_company sub_group ">
+                            <div class="sub_company sub_group">
                                 <div class="page_header">
                                     <div class="inner">
                                         <div class="r_h_inner">
@@ -241,7 +241,7 @@
                     <div class="footer">
                         <div class="inner">
                             <ul>
-                                <li><a class="has_sub " href="https://www.shibunkaku.co.jp/english/company/">Company</a></li>
+                                <li><a class="has_sub" href="https://www.shibunkaku.co.jp/english/company/">Company</a></li>
                                 <li><a class="" href="https://www.shibunkaku.co.jp/english/news/">News</a></li>
                                 <li><a class="" href="https://www.shibunkaku.co.jp/english/contact/">Contact</a></li>
                             </ul>
@@ -329,7 +329,7 @@
     <script>
         function myFunction() {
             var currentURL = window.location.href;
-            console.warn(currentURL);
+            // console.warn(currentURL);
             if (currentURL.includes("english")) {
                 currentURL = currentURL.replace("/english", "");
                 window.location.href = currentURL;

@@ -932,22 +932,17 @@ a[data-tool-tip]:hover::after {
     letter-spacing: 0;
   }
 
-  .TIV-flexContainer {
+  .two-images-var {
     flex-direction: column;
-    width: 70vw;
-    margin-top: 0;
-    margin: auto;
+    margin: 2rem 15% 2rem;
   }
-
-  .TIV-imageContainer1 {
+  .two-images-var .image1 {
     width: 100%;
-    margin-top: 0.5rem;
-    padding-right: 0;
+    padding: 0;
   }
-
-  .TIV-imageContainer2 {
+  .two-images-var .image2 {
     width: 100%;
-    padding-left: 0;
+    padding: 0;
   }
 
   .text-image-flexbox {
@@ -999,11 +994,57 @@ a[data-tool-tip]:hover::after {
     margin-bottom: 4rem;
   }
 
+  .section-header {
+    padding: 0 15%;
+  }
+
+  .quicklink {
+    padding: 0 15%;
+    flex-direction: column;
+    line-height: 1.6;
+  }
+
+  .read-more-less {
+    margin: 0 15% 3rem;
+  }
+
   .sidemenu {
     width: 60px;
   }
   .sidemenu ul {
     padding-left: 15px;
+  }
+
+  .quoteStyle {
+    padding: 0 19%;
+  }
+
+  .rep-container {
+    width: 100%;
+    margin: 0;
+  }
+  .rep-container div {
+    flex-direction: column;
+    margin: 0;
+  }
+  .rep-container div:first-child {
+    margin-bottom: 2rem;
+  }
+  .rep-container div img {
+    margin: 2rem auto 0;
+    width: 70%;
+  }
+  .rep-container div img:first-child {
+    margin-top: 0;
+  }
+  .rep-container div:last-child {
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .essay-intro .text, .essay-intro .note {
+    padding: 0 15%;
   }
 }
 
