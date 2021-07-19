@@ -258,7 +258,7 @@ a[data-tool-tip]
 .pullquote2
     +pullquote-base
     +standard-text($font-header, 3.8rem , 0 0 0 0, 0 20% 0 40%, #000, 1)
-    margin: 6rem 0 -6rem
+    margin: 6rem 0 -4rem
 
 .pullquote-animation
     p
@@ -316,14 +316,21 @@ a[data-tool-tip]
             cursor: pointer            
 
 // video
-.iframe
-    display: block
-    margin: 2rem auto
-
 .theVideo
-    display: flex
-    justify-content: center
-    margin: 0 auto 6rem
+    position: relative
+    padding-bottom: 33.75% // = 56.25% * 60% (56.25% = 16:9 aspect ratio)
+    padding-top: 0
+    overflow: hidden
+    max-width: 60%
+    margin: 4rem auto 6rem
+    height: auto
+    .iframe
+        position: absolute
+        top: -2px
+        left: -2px
+        width: calc(100% + 4px)
+        height: calc(100% + 4px)
+
 
 // quote
 .quoteStyle 

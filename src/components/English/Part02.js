@@ -34,12 +34,11 @@ const Part02 = () => {
             <Fade bottom>   <TwoImages item1={essay24} item2={essay23} />                       </Fade>
 
                             <div className='theVideo'>
-                                <Iframe url="https://player.vimeo.com/video/546329551?title=0&byline=0&portrait=0"
-                                    width="640px"
-                                    height="360px"
+                                <Iframe className='iframe' url="https://player.vimeo.com/video/546329551?autoplay=0&title=0&byline=0&portrait=0"
+                                    // width="640px"
+                                    // height="360px"
                                     frameborder="0"
-                                    allow="fullscreen"
-                                    allowfullscreen
+                                    allow="fullscreen; picture-in-picture"
                                 />
                             </div>
 
@@ -49,3 +48,4 @@ const Part02 = () => {
 };
 
 export default Part02
+
