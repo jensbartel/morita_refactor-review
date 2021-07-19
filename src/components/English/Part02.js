@@ -35,8 +35,6 @@ const Part02 = () => {
 
                             <div className='theVideo'>
                                 <Iframe className='iframe' url="https://player.vimeo.com/video/546329551?autoplay=0&title=0&byline=0&portrait=0"
-                                    // width="640px"
-                                    // height="360px"
                                     frameborder="0"
                                     allow="fullscreen; picture-in-picture"
                                 />

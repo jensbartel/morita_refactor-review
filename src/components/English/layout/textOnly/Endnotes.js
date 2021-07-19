@@ -4,8 +4,6 @@ const Endnotes = (props) => {
     return (
         <div className="endnotes">
             {text}
-            <br /> 
-            <br />
         </div>
     );
 };

@@ -1,22 +1,22 @@
 import Fade from 'react-reveal/Fade';
 import html from 'react-html-parser';
 
-const FullwidthHorizontal = (props) => {
+const FullwidthWithText = (props) => {
 
     const { scale, item: { img, title, translation, description, label, dimensions, date, furtherInfo }, text, lang } = props;
 
-    let style = 'fullwidth-container';
-    if(lang) { style = 'fullwidth-container fullwidth-modifier-eng' }
+    let style = 'fullwidthWithText-container';
+    if(lang) { style = 'fullwidthWithText-container fullwidth-modifier-eng' }
 
     return (
         <Fade>
             <div className={style}>
                 <img src={img} style={{width: scale + '%'}} alt=""/>
-                <div style={{width: scale + '%'}} >
+                <div className='withText' style={{width: scale + '%'}} >
                     <div className="text-caption">
                         <p>{html(text)}</p>
                     </div>
-                    <div className='fullwidthText_mobileCaptions'> 
+                    <div className='fullwidthWithText_mobileCaptions'> 
                         <h2>{title}</h2>
                         <p>{translation}</p>
                         <p>{description}</p>
@@ -31,5 +31,5 @@ const FullwidthHorizontal = (props) => {
     )
 };
 
-export default FullwidthHorizontal;
+export default FullwidthWithText;
 

@@ -121,6 +121,49 @@
   font-size: 11px;
 }
 
+.fullwidthWithText-container {
+  width: 95vw;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+.fullwidthWithText-container img {
+  margin: 0 auto 1rem;
+}
+.fullwidthWithText-container div {
+  margin: 1rem auto 0;
+  text-align: left;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+}
+.fullwidthWithText-container div div.text-caption {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+.fullwidthWithText-container div div.text-caption p {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: gray;
+  margin-bottom: 1rem;
+}
+.fullwidthWithText-container div div {
+  width: 100%;
+}
+.fullwidthWithText-container div div h2 {
+  padding-bottom: 0.5rem;
+  color: #515151;
+  font-size: 24px;
+  font-weight: 600;
+}
+.fullwidthWithText-container div div p {
+  margin-bottom: 0.2rem;
+  font-size: 12px;
+  line-height: 1;
+  color: gray;
+}
+
 .halfwidthText-container {
   width: 100%;
   margin: 0 auto 6rem;
@@ -402,6 +445,11 @@ a.nextEng h2 {
   .fullwidthText_mobileCaptions {
     width: 100% !important;
     margin-top: 0 !important;
+    background-color: aqua;
+  }
+
+  .fullwidthWithText-container > div {
+    flex-direction: column-reverse;
   }
 
   .halfwidth-horizontal {
@@ -411,6 +459,12 @@ a.nextEng h2 {
   .halfwidth-horizontal div {
     width: 75vw !important;
     margin-bottom: 2rem;
+  }
+  .halfwidth-horizontal div h2 {
+    font-size: 26px;
+  }
+  .halfwidth-horizontal div p {
+    font-size: 14px;
   }
 
   .halfwidth-variation {
@@ -444,6 +498,12 @@ a.nextEng h2 {
     margin: 0 auto 2rem;
     padding-bottom: 0;
     width: 100% !important;
+  }
+  .inner-left div h2 {
+    font-size: 26px;
+  }
+  .inner-left div p {
+    font-size: 14px;
   }
 
   .inner-right {

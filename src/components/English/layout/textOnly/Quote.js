@@ -4,8 +4,6 @@ const Quote = (props) => {
     return (
         <div className='quoteStyle'>
             {textValue}
-            <br /> 
-            <br />
         </div>
     );
 };
