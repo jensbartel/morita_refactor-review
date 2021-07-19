@@ -1,4 +1,5 @@
 import '../styles/vip.css'
+import Fade from 'react-reveal'
 
 import FullwidthHorizontal from '../vipcomponents/FullwidthHorizontal';
 import FullwidthWithText from '../vipcomponents/FullwidthWithText';
@@ -18,7 +19,9 @@ const VIP = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}}>
-                <img src={group1} alt=""/>
+                <Fade>                
+                    <img src={group1} alt=""/>
+                </Fade>
             </div>
 
             <div className="nav-link">
@@ -33,7 +36,9 @@ const VIP = () => {
             <FullwidthHorizontal item={Miraiken1949} scale="35" lang='en'/>
 
             <div className='containerstyle'>
-                <img src={group2} alt=""/>
+                <Fade>
+                    <img src={group2} alt=""/>
+                </Fade>
             </div>
 
             <HalfwidthWithText item={So1954} text={soVIPtext} lang='en'/>
@@ -73,7 +78,9 @@ const VIP = () => {
 
                 {/* third group  */}
                 <div className='containerstyle notFirst'>
-                    <img src={group7} alt=""/>
+                    <Fade>
+                        <img src={group7} alt=""/>
+                    </Fade>
                 </div>
 
                 <FullwidthHorizontal item={Kumomushin1967} scale="60" lang='en'/>

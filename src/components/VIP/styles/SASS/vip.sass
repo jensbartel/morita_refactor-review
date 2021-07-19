@@ -75,14 +75,14 @@
         letter-spacing: 0
         h2
             padding-bottom: 0.5rem
-            color: #515151
+            color: #000
             font-size: 24px
             font-weight: 600
         p
             margin-bottom: 0.2rem
             font-size: 12px //11px
             line-height: 1
-            color: gray
+            color: #000
     div.text-caption
         display: flex
         flex-direction: column
@@ -96,9 +96,6 @@
 
 .fullwidth-modifier-eng
     font-family: 'Quicksand', sans-serif
-    div
-        p
-            font-size: 11px
 
 // FullwidthWidthText Horizontal
 .fullwidthWithText-container
@@ -121,20 +118,20 @@
                 font-size: 14px
                 line-height: 1.4
                 letter-spacing: 0
-                color: gray
                 margin-bottom: 1rem
+                color: #000
         div
             width: 100%
             h2
                 padding-bottom: 0.5rem
-                color: #515151
+                color: #000
                 font-size: 24px
                 font-weight: 600
             p
                 margin-bottom: 0.2rem
                 font-size: 12px //11px
                 line-height: 1
-                color: gray
+                color: #000
 
 // Halfwidth Horizontal with Text
 .halfwidthText-container
@@ -166,7 +163,7 @@
         h2
             font-size: 24px
             font-weight: 600
-            color: #515151
+            color: #000
             text-align: left
             padding-bottom: 0.5rem
             letter-spacing: 0
@@ -174,24 +171,22 @@
             font-size: 12px
             line-height: 1
             margin-bottom: 0.2rem
-            color: gray
+            color: #000
 
 .inner-right
-    margin: 0 2rem 0 1rem
+    margin: -6rem 2rem 0 1rem
     text-align: center
     p
         font-size: 14px
         line-height: 1.4
         letter-spacing: 0
-        color: gray
+        color: #000
         padding-right: 8rem
         text-align: left
 
 .halfwidthText-modifier-eng
     font-family: 'Quicksand', sans-serif
-    div
-        p
-            font-size: 11px
+
 
 /* Halfwidth Horizontal */
 .halfwidth-horizontal
@@ -208,22 +203,22 @@
             margin-bottom: 0.66rem
         h2
             padding-bottom: 0.5rem
-            color: #515151
+            color: #000
             font-size: 24px
             font-weight: 600
         p
             margin-bottom: 0.2rem
             font-size: 12px //11px
             line-height: 1
-            color: gray
+            color: #000
 
 .halfwidth-modifier-eng
     div
         font-family: 'Quicksand', sans-serif
         letter-spacing: 0
-        p
-            font-size: 11px
 
+
+// Halfwidth variation
 .halfwidth-variation
     width: 66%
     margin: 0 auto 6rem
@@ -239,14 +234,14 @@
         &:last-child            
             h2
                 padding-bottom: 0.5rem
-                color: #515151
+                color: #000
                 font-size: 24px
                 font-weight: 600
             p
                 margin-bottom: 0.2rem
                 font-size: 12px //11px
                 line-height: 1
-                color: gray
+                color: #000
 
 /* Inquiry */
 .worklist-download
@@ -288,3 +283,22 @@ a.nextEng
     h2
         font-size: 18px
         text-align: center
+
+
+// @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+@media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    .inner-right
+        margin: 0rem 2rem 0 1rem
+
+// @media only screen and (max-width: 768px) 
+
+@media only screen and (min-width: 810px) and (max-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    .inner-right
+        margin: 0rem 2rem 0 1rem
+
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+    .inner-right
+        margin: -10rem 2rem 0 1rem
+
+
+
