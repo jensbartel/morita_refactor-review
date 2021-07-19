@@ -67,7 +67,7 @@ const Chapter02 = () => {
                 <Fade bottom>   <TwoImages item1={essay5} item2={essay6} />             </Fade>
                                  <DefaultTextBlock text={html(morita07)} />
                                 <Pullquote2 />
-                                <DefaultTextBlock text={html(morita09)} />
+                                <DefaultTextBlock text={html(morita09)} lessMaBo='true'/>
                 <Fade bottom>   <TextLeftImageRight text={morita09a} item={essay10} />  </Fade>
                 </> : null
 

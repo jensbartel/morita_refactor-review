@@ -5,12 +5,12 @@ const TextRightImageLeft = (props) => {
     const item = props.item;
 
     return (
-        <div className="text-image-flexbox">
-            <div className="image-column">
+        <div className="text-image-flexbox TRIL-mobile">
+            <div className="image-column" style={{marginBottom: '2rem'}}>
                 <img src={item.img} alt=""/>
                 <p><strong>{item.emphasis}</strong>{html(item.text)}</p>
             </div>
-            <div className="text-column">
+            <div className="text-column" style={{marginBottom: '0'}}>
                 {html(text)}    
             </div>
         </div>

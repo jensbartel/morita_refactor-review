@@ -7,6 +7,7 @@ import FullWidthImage from "../layout/image/FullWidthImage"
 import IntroToEssay from '../layout/textOnly/IntroToEssay'
 import Parts from '../layout/textOnly/Parts'
 import SectionHeader from '../layout/textOnly/SectionHeader'
+
 import { essayQuickLink, partsLabel, sectionLabel, morita01 } from '../../../data/TextConstants'
 import { wanobi01 } from "../../../data/ImageConstantsEssay"
 

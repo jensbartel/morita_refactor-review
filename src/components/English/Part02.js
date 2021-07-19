@@ -19,7 +19,7 @@ const Part02 = () => {
             <Fade bottom>
                 <>
                             <Parts text={partsLabel[2]} />
-                            <DefaultTextBlock text={html(workSelection2)} fade='none'/>
+                            <DefaultTextBlock text={html(workSelection2)} fade='none' lessMaBo='true'/>
                 </>
             </Fade>
 

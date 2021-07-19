@@ -40,7 +40,7 @@ const Chapter03 = () => {
            { visible ? 
                 <>
                                 <LargeImage item={essay13} fade='none'/>
-                                <DefaultTextBlock text={html(morita12)} />
+                                <DefaultTextBlock text={html(morita12)} lessMaBo='true'/>
                 <Fade bottom>   <TextLeftImageRight item={essay14} text={morita12a} />          </Fade>
                                 <DefaultTextBlock text={html(morita13)} />
                 </> : null
