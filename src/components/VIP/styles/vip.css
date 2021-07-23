@@ -25,7 +25,7 @@
   color: black;
   font-weight: 600;
   cursor: pointer;
-  letter-spacing: 1.33px;
+  letter-spacing: 0.75px;
   transition: 0.3s;
 }
 .nav-link a:hover {
