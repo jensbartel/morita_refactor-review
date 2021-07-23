@@ -1,4 +1,5 @@
 import html from 'react-html-parser'
+import Fade from 'react-reveal'
 
 import DefaultTextBlockJP from "./layout/textOnlyJP/DefaultTextBlockJP"
 import ExhibitionTitleJP from "./layout/textOnlyJP/ExhibitionTitleJP"
@@ -14,10 +15,10 @@ const Part01 = () => {
         <>
             <div id='part1' className='anchordiv'></div>
             <ExhibitionTitleJP />
-            <DefaultTextBlockJP text={html(previewJP)} />
+            <DefaultTextBlockJP text={html(previewJP)} fade='none'/>
             <LargeImage item={essay9} lang="jp"/>
             <DefaultTextBlockJP text={html(previewJP3)} />
-            <TwoImages item1={essay7} item2={essay8} lang="jp" />
+            <Fade bottom><TwoImages item1={essay7} item2={essay8} lang="jp" /></Fade>
             <DefaultTextBlockJP text={html(previewJP4)} />
             <DefaultTextBlockJP text={html(exhibitionInfoJP)} />
             <PullquoteJP />

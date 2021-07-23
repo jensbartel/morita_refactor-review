@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import html from 'react-html-parser'
+import Fade from 'react-reveal'
 
 import ChapterQuickLinkJP from '../layout/textOnlyJP/ChapterQuickLinkJP';
 import DefaultTextBlockJP from '../layout/textOnlyJP/DefaultTextBlockJP';
@@ -17,27 +18,34 @@ const Chapter04 = () => {
 
     return (
         <>
-            <div id='quicklink4' className='anchordiv'></div>
-            <SectionHeaderJP text={sectionLabelJP[4]} />
-            <ChapterQuickLinkJP 
-                item1={essayQuickLinkJP[1].text} 
-                item2={essayQuickLinkJP[2].text} 
-                item3={essayQuickLinkJP[3].text} 
-                item1Link={essayQuickLinkJP[1].quickLink} 
-                item2Link={essayQuickLinkJP[2].quickLink} 
-                item3Link={essayQuickLinkJP[3].quickLink} />
-            <DefaultTextBlockJP text={html(morita14JP)} />
+            <Fade bottom>
+                <>
+                    <div id='quicklink4' className='anchordiv'></div>
+                    <SectionHeaderJP text={sectionLabelJP[4]} />
+                    <ChapterQuickLinkJP 
+                        item1={essayQuickLinkJP[1].text} 
+                        item2={essayQuickLinkJP[2].text} 
+                        item3={essayQuickLinkJP[3].text} 
+                        item1Link={essayQuickLinkJP[1].quickLink} 
+                        item2Link={essayQuickLinkJP[2].quickLink} 
+                        item3Link={essayQuickLinkJP[3].quickLink} />
+                    <DefaultTextBlockJP text={html(morita14JP)} fade='none'/>
+                </>
+            </Fade>
 
 
-            <TextRightImageLeftJP text={morita14aJP} item={essay20} />
+            <Fade bottom>
+                <TextRightImageLeftJP text={morita14aJP} item={essay20} />
+            </Fade>
             
             { visible ?
                 <>
                 <DefaultTextBlockJP text={html(morita14bJP)} />
                 <LargeImage item={essay22} lang='jp'/>
                 <DefaultTextBlockJP text={html(morita14cJP)} />
-                <DefaultTextBlockJP text={html(morita15JP)} />
-                <EndnotesJP text={html(moritaEndnotesJP)} />
+                <Fade>
+                    <EndnotesJP text={html(moritaEndnotesJP)} />
+                </Fade>
                 </> : null
             }
 

@@ -96,6 +96,9 @@
 
 .fullwidth-modifier-eng
     font-family: 'Quicksand', sans-serif
+    div.text-caption
+        p
+            line-height: 1.4 !important
 
 // FullwidthWidthText Horizontal
 .fullwidthWithText-container
@@ -116,7 +119,7 @@
             margin-top: -1rem
             p
                 font-size: 14px
-                line-height: 1.4
+                line-height: 1.6
                 letter-spacing: 0
                 margin-bottom: 1rem
                 color: #000
@@ -178,7 +181,7 @@
     text-align: center
     p
         font-size: 14px
-        line-height: 1.4
+        line-height: 1.6
         letter-spacing: 0
         color: #000
         padding-right: 8rem
@@ -186,6 +189,8 @@
 
 .halfwidthText-modifier-eng
     font-family: 'Quicksand', sans-serif
+    p
+        line-height: 1.4 !important
 
 
 /* Halfwidth Horizontal */
@@ -283,9 +288,16 @@ a.nextEng
     h2
         font-size: 18px
         text-align: center
+        padding-bottom: 0.5rem
+        // is the padding the reason why the extra scrollbar (=bug?) disappears 
 
+
+
+
+// various tablet formats
 
 // @media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+
 @media only screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
     .inner-right
         margin: 0rem 2rem 0 1rem

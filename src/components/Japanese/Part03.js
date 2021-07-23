@@ -1,3 +1,5 @@
+import Fade from 'react-reveal'
+
 import LargeImage from '../English/layout/image/LargeImage'
 import PartsJP from './layout/textOnlyJP/PartsJP'
 import TimelineJP from './layout/textOnlyJP/TimelineJP'
@@ -11,12 +13,22 @@ import { partsLabelJP } from '../../data/TextConstantsJP'
 const Part03 = () => {
     return (
         <>
-            <div id='part3' className='anchordiv'></div>                        
-            <PartsJP text={partsLabelJP[3]} />
-            <TimelineJP title='年譜' data={chronologyJP}/>
+            <div id='part3' className='anchordiv'></div>  
+
+            <Fade bottom>            
+                <PartsJP text={partsLabelJP[3]} />
+                <TimelineJP title='年譜' data={chronologyJP}/>
+            </Fade>          
+
             <LargeImage item={essay21} lang='jp' />
-            <TimelineJP title='展覧会歴' data={exhibitionHistoryJP}/>
-            <TwoImages item1={essay25} item2={essay26} />            
+
+            <Fade>
+                <TimelineJP title='展覧会歴' data={exhibitionHistoryJP}/>
+            </Fade>
+
+            <Fade bottom>
+                <TwoImages item1={essay25} item2={essay26} />                        
+            </Fade>
         </>
     )
 }

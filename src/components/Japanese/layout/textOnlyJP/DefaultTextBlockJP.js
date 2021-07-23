@@ -1,10 +1,19 @@
+import Fade from 'react-reveal'
+
 const DefaultTextBlockJP = (props) => {
-    let text = props.text;
+    let { text, fade ,lessMaBo } = props;
+
+    let defaultStyleJP = 'defaultstyleJP';
+    if (lessMaBo) {
+        defaultStyleJP += ' lessMaBo';
+    }
 
     return (
-        <div className="defaultstyleJP">
-            {text}<br /><br />
-        </div>
+        <>
+            {fade === 'none' && <div className={defaultStyleJP}>{text}</div>}
+            {fade === 'bottom' && <Fade bottom><div className={defaultStyleJP}>{text}</div></Fade>}
+            {(fade !== 'none' && fade !== 'bottom') && <Fade><div className={defaultStyleJP}>{text}</div></Fade>}
+        </>
     );
 };
 

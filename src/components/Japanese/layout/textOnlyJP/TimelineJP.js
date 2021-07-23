@@ -7,7 +7,7 @@ const TimelineJP = (props) => {
         <div className='timeline-containerJP'>
             {title}<br/><br/>
             {data.map((item) => (
-                <div>
+                <div key={item.event}>
                     <div>{item.year}</div>
                     <div>{html(item.event)}</div>
                 </div>

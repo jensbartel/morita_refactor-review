@@ -37,6 +37,7 @@ const Part02 = () => {
                                 <Iframe className='iframe' url="https://player.vimeo.com/video/546329551?autoplay=0&title=0&byline=0&portrait=0"
                                     frameborder="0"
                                     allow="fullscreen; picture-in-picture"
+                                    title="Morita Shiryu"
                                 />
                             </div>
 

@@ -51,7 +51,6 @@ const VIP = () => {
                     height="431" 
                     frameBorder="0" 
                     allow="autoplay; fullscreen; picture-in-picture" 
-                    allowFullScreen
                     title="Morita Shiryu"
                     >
                 </iframe>  
@@ -65,7 +64,6 @@ const VIP = () => {
                     height="360" 
                     frameBorder="0" 
                     allow="autoplay; fullscreen; picture-in-picture" 
-                    allowFullScreen
                     title="So"
                     >                    
                 </iframe>

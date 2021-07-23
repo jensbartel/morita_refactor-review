@@ -9,8 +9,7 @@
                     width="640" 
                     height="360" 
                     frameBorder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowFullScreen
+                    allow="autoplay; fullscreen; picture-in-picture"                     
                     title="So"
                     >                    
                 </iframe>

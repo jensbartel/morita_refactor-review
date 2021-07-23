@@ -9,6 +9,7 @@ import Quote from '../layout/textOnly/Quote'
 import Pullquote2 from '../layout/textOnly/Pullquote2'
 import SectionHeader from '../layout/textOnly/SectionHeader'
 import TextLeftImageRight from '../layout/textAndImage/TextLeftImageRight'
+import TextRightImageLeft from '../layout/textAndImage/TextRightImageLeft'
 import TwoImages from '../layout/image/TwoImages'
 
 import { 
@@ -50,7 +51,7 @@ const Chapter02 = () => {
                         item2Link={essayQuickLink[3].quickLink}
                         item3Link={essayQuickLink[4].quickLink}
                     />
-                    <DefaultTextBlock text={html(morita02)} />                   
+                    <DefaultTextBlock text={html(morita02)} fade='none'/>                   
                 </>
             </Fade>
 
@@ -68,7 +69,7 @@ const Chapter02 = () => {
                                  <DefaultTextBlock text={html(morita07)} />
                                 <Pullquote2 />
                                 <DefaultTextBlock text={html(morita09)} lessMaBo='true'/>
-                <Fade bottom>   <TextLeftImageRight text={morita09a} item={essay10} />  </Fade>
+                <Fade bottom>   <TextRightImageLeft text={morita09a} item={essay10} />  </Fade>
                 </> : null
 
             }

@@ -50,13 +50,15 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.4;
   margin: 0;
   padding: 0;
+  color: #1f1f1f;
 }
 
 .defaultstyleJP {
   font-size: 14px;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 4rem;
   padding: 0 30%;
+  color: #1f1f1f;
 }
 
 .text-image-flexboxJP {
@@ -64,6 +66,7 @@ a[data-tool-tipJP]:hover::after {
   justify-content: space-evenly;
   align-items: center;
   margin: 60px 80px;
+  padding: 2rem 5rem;
 }
 .text-image-flexboxJP .text-column {
   width: 30vw;
@@ -71,6 +74,7 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  color: #1f1f1f;
 }
 .text-image-flexboxJP .image-column {
   width: 30vw;
@@ -86,6 +90,7 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.4;
   margin: 5px 0 0 0;
   padding: 0;
+  color: #1f1f1f;
 }
 
 .timeline-containerJP {
@@ -95,6 +100,7 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.7;
   margin: 4rem auto 8rem;
   padding: 0;
+  color: #1f1f1f;
 }
 .timeline-containerJP div {
   width: 100%;
@@ -113,13 +119,22 @@ a[data-tool-tipJP]:hover::after {
   width: 85%;
 }
 
-.parts-headerJP,
-.section-headerJP {
-  font-weight: 500;
+.parts-headerJP {
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 1.4;
+  margin: 2rem 0 3rem 0;
+  padding: 40px 30% 0;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.section-headerJP {
+  font-size: 1.6rem;
+  line-height: 1.4;
   margin: 0 0 3rem 0;
   padding: 40px 30% 0;
+  color: #1f1f1f;
+  font-weight: 500;
 }
 
 .quicklinkJP {
@@ -129,6 +144,8 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.6;
   margin: 0 0 2.5rem 0;
   padding: 0 30%;
+  color: #1f1f1f;
+  color: #777;
 }
 .quicklinkJP a p {
   cursor: pointer;
@@ -146,11 +163,11 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.6;
   margin: 0 0 2rem 0;
   padding: 0 30%;
+  color: #1f1f1f;
 }
 
 .read-more-or-lessJP {
   background: none;
-  color: grey;
   border: none;
   cursor: pointer;
   position: relative;
@@ -160,9 +177,11 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1;
   margin: 7px 30% 3rem;
   padding: 0;
+  color: #1f1f1f;
+  color: #777;
 }
 .read-more-or-lessJP:hover {
-  color: #383838;
+  color: #000;
 }
 
 .essay-introJP {
@@ -171,13 +190,15 @@ a[data-tool-tipJP]:hover::after {
   line-height: 1.6;
   margin: 0;
   padding: 0 30%;
+  color: #1f1f1f;
 }
 
 .pullquoteJP {
   font-size: 3.4rem;
   line-height: 1.2;
-  margin: 6rem 0 6rem -5rem;
+  margin: 8rem 0 8rem -5rem;
   padding: 0 30%;
+  color: #1f1f1f;
 }
 .pullquoteJP p {
   opacity: 0;
@@ -201,8 +222,9 @@ a[data-tool-tipJP]:hover::after {
 .pullquoteJP2 {
   font-size: 3.4rem;
   line-height: 1.2;
-  margin: 4rem 0 6rem 0;
+  margin: 8rem 0 8rem 0;
   padding: 0 20% 0 40%;
+  color: #1f1f1f;
 }
 .pullquoteJP2 p {
   opacity: 0;
@@ -240,6 +262,23 @@ a[data-tool-tipJP]:hover::after {
     transform: translate(0, 0);
   }
 }
+.theVideoJP {
+  position: relative;
+  padding-bottom: 33.75%;
+  padding-top: 0;
+  overflow: hidden;
+  max-width: 60%;
+  margin: 4rem auto 6rem;
+  height: auto;
+}
+.theVideoJP .iframe {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+
 .video-responsive2 {
   margin-bottom: 6rem;
 }
@@ -247,7 +286,7 @@ a[data-tool-tipJP]:hover::after {
 .listcontainerJP {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  margin: 6rem 0;
 }
 .listcontainerJP a {
   font-size: 14px;

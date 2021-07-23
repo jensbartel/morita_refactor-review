@@ -7,6 +7,7 @@ $font-headerJP: 'FOT-筑紫オールド明朝 Pro R', serif
     line-height: $line-height
     margin: $margin
     padding: $padding
+    color: #1f1f1f
 
 // anchor div
 .anchordiv
@@ -55,7 +56,7 @@ a[data-tool-tipJP]
 
 // default text block
 .defaultstyleJP
-    +standard-text(14px, 1.6, 0, 0 30%)
+    +standard-text(14px, 1.6, 0 0 4rem, 0 30%)
 
 // text left image right, text right image left
 .text-image-flexboxJP
@@ -63,6 +64,7 @@ a[data-tool-tipJP]
     justify-content: space-evenly
     align-items: center
     margin: 60px 80px
+    padding: 2rem 5rem
     .text-column
         width: 30vw
         +standard-text(14px, 1.6, 0, 0)
@@ -96,16 +98,20 @@ a[data-tool-tipJP]
                 width: 85%
 
 // parts, section header
-.parts-headerJP,
-.section-headerJP
+.parts-headerJP
+    +standard-text(1.6rem, 1.4, 2rem 0 3rem 0, 40px 30% 0)
     font-weight: 500
-    +standard-text(1.6rem, 1, 0 0 3rem 0, 40px 30% 0)
+
+.section-headerJP
+    +standard-text(1.6rem, 1.4, 0 0 3rem 0, 40px 30% 0)
+    font-weight: 500
     // note: margin-bottom was 3rem for parts and 1rem for section
 
 .quicklinkJP
     display: flex
     letter-spacing: 0
     +standard-text(13px, 1.6, 0 0 2.5rem 0, 0 30%)
+    color: #777
     a
         p
             cursor: pointer
@@ -121,21 +127,22 @@ a[data-tool-tipJP]
 
 .read-more-or-lessJP
     background: none
-    color: grey
     border: none
     cursor: pointer
     position: relative
     z-index: 99
     transition: 0.3s
     +standard-text(14px, 1, 7px 30% 3rem, 0)
+    color: #777
     &:hover
-        color: #383838
+        color: #000
 
 // intro to essay
 .essay-introJP
     color: #525252
     +standard-text(13px, 1.6, 0, 0 30%)
 
+    
 // pullquote
 =pullquoteJP-base
     p
@@ -154,11 +161,11 @@ a[data-tool-tipJP]
 
 .pullquoteJP
     +pullquoteJP-base
-    +standard-text(3.4rem, 1.2, 6rem 0 6rem -5rem, 0 30%)
+    +standard-text(3.4rem, 1.2, 8rem 0 8rem -5rem, 0 30%)
 
 .pullquoteJP2
     +pullquoteJP-base
-    +standard-text(3.4rem, 1.2, 4rem 0 6rem 0, 0 20% 0 40%)
+    +standard-text(3.4rem, 1.2, 8rem 0 8rem 0, 0 20% 0 40%)
 
 .pullquoteJP-animation
     p
@@ -177,6 +184,22 @@ a[data-tool-tipJP]
         transform: translate(0, 0)
 
 // video
+.theVideoJP
+    position: relative
+    padding-bottom: 33.75% // = 56.25% * 60% (56.25% = 16:9 aspect ratio)
+    padding-top: 0
+    overflow: hidden
+    max-width: 60%
+    margin: 4rem auto 6rem
+    height: auto
+    .iframe
+        position: absolute
+        top: -2px
+        left: -2px
+        width: calc(100% + 4px)
+        height: calc(100% + 4px)
+
+
 .video-responsive2
     margin-bottom: 6rem
 
@@ -184,7 +207,7 @@ a[data-tool-tipJP]
 .listcontainerJP
     display: flex
     justify-content: center
-    margin: 4rem 0
+    margin: 6rem 0
     a
         font-size: 14px
         letter-spacing: 0

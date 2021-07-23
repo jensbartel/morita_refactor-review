@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import html from 'react-html-parser'
+import Fade from 'react-reveal'
 
 import ChapterQuickLinkJP from '../layout/textOnlyJP/ChapterQuickLinkJP'
 import DefaultTextBlockJP from '../layout/textOnlyJP/DefaultTextBlockJP'
@@ -17,26 +18,32 @@ const Chapter03 = () => {
 
     return (
         <>
-            <div id='quicklink3' className='anchordiv'></div>
-            <SectionHeaderJP text={sectionLabelJP[3]} />
-            <ChapterQuickLinkJP 
-                item1={essayQuickLinkJP[1].text} 
-                item2={essayQuickLinkJP[2].text} 
-                item3={essayQuickLinkJP[4].text} 
-                item1Link={essayQuickLinkJP[1].quickLink} 
-                item2Link={essayQuickLinkJP[2].quickLink} 
-                item3Link={essayQuickLinkJP[4].quickLink} />
-            <DefaultTextBlockJP text={html(morita10JP)} />
+            <Fade bottom>
+                <>
+                    <div id='quicklink3' className='anchordiv'></div>
+                    <SectionHeaderJP text={sectionLabelJP[3]} />
+                    <ChapterQuickLinkJP 
+                        item1={essayQuickLinkJP[1].text} 
+                        item2={essayQuickLinkJP[2].text} 
+                        item3={essayQuickLinkJP[4].text} 
+                        item1Link={essayQuickLinkJP[1].quickLink} 
+                        item2Link={essayQuickLinkJP[2].quickLink} 
+                        item3Link={essayQuickLinkJP[4].quickLink} />
+                    <DefaultTextBlockJP text={html(morita10JP)} fade='none'/>
+                </>
+            </Fade>
 
             <LargeImage item={essay11} lang='jp' />
             <DefaultTextBlockJP text={html(morita11JP)} />
 
             { visible ?
                 <>
-                <LargeImage item={essay13} lang='jp'/>
-                <DefaultTextBlockJP text={html(morita12JP)} />
-                <TextLeftImageRightJP item={essay14} text={morita12aJP} lang='jp'/>
-                <DefaultTextBlockJP text={html(morita13JP)} />
+                    <LargeImage item={essay13} lang='jp'/>
+                    <DefaultTextBlockJP text={html(morita12JP)} lessMaBo='true'/>
+                    <Fade bottom>
+                        <TextLeftImageRightJP item={essay14} text={morita12aJP} lang='jp'/>
+                    </Fade>
+                    <DefaultTextBlockJP text={html(morita13JP)} />
                 </> : null
             }
 
@@ -49,9 +56,11 @@ const Chapter03 = () => {
             </button>
 
             <LargeImage item={essay17} lang='jp' />
-            <TwoImagesVariation item1={essay18} item2={essay19} lang='jp' />
+            <Fade bottom>
+                <TwoImagesVariation item1={essay18} item2={essay19} lang='jp' />
+            </Fade>
         </>
     )
-}
+};
 
-export default Chapter03
+export default Chapter03;

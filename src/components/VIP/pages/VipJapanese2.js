@@ -1,4 +1,5 @@
 import '../styles/vip.css'
+import Fade from 'react-reveal'
 
 import FullwidthHorizontal from '../vipcomponents/FullwidthHorizontal';
 import HalfwidthHorizontal from '../vipcomponents/HalfwidthHorizontal';
@@ -19,7 +20,9 @@ const VIPJapanese2 = () => {
     return (
         <>
             <div className='containerstyle' style={{marginTop: '2rem'}}>
-                <img src={group3} className='fullwidthimagestyle' alt=""/>
+                <Fade>
+                    <img src={group3} alt=""/>
+                </Fade>
             </div> 
 
             <div className="nav-linkJP">
@@ -33,22 +36,27 @@ const VIPJapanese2 = () => {
             <HalfwidthHorizontal item1={Ki_shikkin1964JP} item2={Ki1963JP} scaleLeft={50} contentWidth={57} />
 
             <div className='containerstyle notFirst' >
-                <img src={group4} className='fullwidthimagestyle' alt=""/>
+                <Fade>
+                    <img src={group4} className='fullwidthimagestyle' alt=""/>
+                </Fade>
             </div> 
 
             <HalfwidthHorizontal item1={Usobuku1963JP} item2={En1969JP} scaleLeft={55} contentWidth={57} /><br /><br />
             <HalfwidthHorizontal item1={Izumi1975JP} item2={Asa1970JP} scaleLeft={45} contentWidth={54} /><br /><br />
 
             <div className='containerstyle notFirst' >
-                <img src={group5} className='fullwidthimagestyle' alt=""/>
+                <Fade>
+                    <img src={group5} className='fullwidthimagestyle' alt=""/>
+                </Fade>
             </div>   
 
-            {/* <FullwidthHorizontal item={Myo1964JP} scale="70" /> */}
             <HalfwidthHorizontalVariation item1={Myo1964_1JP} item2={Myo1964_2JP} />
             <FullwidthHorizontal item={Sojo1969JP} scale="60" />
 
             <div className='containerstyle notFirst' >
-                <img src={group6} className='fullwidthimagestyle' alt=""/>
+                <Fade>
+                    <img src={group6} className='fullwidthimagestyle' alt=""/>
+                </Fade>
             </div>   
 
             <FullwidthHorizontal item={Ki1995JP} scale="60" />
