@@ -1,5 +1,5 @@
-import html from 'react-html-parser'
 import Fade from 'react-reveal'
+import html from 'react-html-parser'
 
 import ChapterQuickLink from '../layout/textOnly/ChapterQuickLink'
 import DefaultTextBlock from '../layout/textOnly/DefaultTextBlock'

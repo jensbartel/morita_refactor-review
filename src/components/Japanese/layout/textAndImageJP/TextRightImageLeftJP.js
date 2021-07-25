@@ -4,12 +4,12 @@ const TextRightImageLeftJP = (props) => {
     const { text, item } = props;
 
     return (
-        <div className="text-image-flexboxJP">
-            <div className="image-column">
+        <div className="text-image-flexboxJP ">
+            <div className="image-columnJP TRIL-mobileJP">
                 <img src={item.img} alt=""/>
                 <p><strong>{item.emphasisJP}</strong>{item.textJP}</p>
             </div>
-            <div className="text-column">
+            <div className="text-columnJP">
                 {html(text)}    
             </div>
         </div>

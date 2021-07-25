@@ -65,10 +65,10 @@ a[data-tool-tipJP]:hover::after {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 60px 80px;
   padding: 2rem 5rem;
+  margin-bottom: 2rem;
 }
-.text-image-flexboxJP .text-column {
+.text-image-flexboxJP .text-columnJP {
   width: 30vw;
   font-size: 14px;
   line-height: 1.6;
@@ -76,13 +76,13 @@ a[data-tool-tipJP]:hover::after {
   padding: 0;
   color: #1f1f1f;
 }
-.text-image-flexboxJP .image-column {
+.text-image-flexboxJP .image-columnJP {
   width: 30vw;
 }
-.text-image-flexboxJP .image-column img {
+.text-image-flexboxJP .image-columnJP img {
   width: 30vw;
 }
-.text-image-flexboxJP .image-column p {
+.text-image-flexboxJP .image-columnJP p {
   text-align: left;
   letter-spacing: 0;
   color: #525252;
@@ -298,17 +298,10 @@ a[data-tool-tipJP]:hover::after {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .defaultstyleJP {
-    padding: 0 20%;
-  }
-
-  .parts-headerJP,
-.section-headerJP {
-    padding: 40px 20% 0;
-  }
-
-  .essay-intoJP {
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .defaultstyleJP,
+.essay-introJP,
+.endnotesJP {
     padding: 0 20%;
   }
 
@@ -316,29 +309,47 @@ a[data-tool-tipJP]:hover::after {
     padding: 0;
   }
 
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
+  }
+
   .quicklinkJP {
     padding: 0 10% 0 20%;
   }
 
-  .endnotesJP {
-    padding: 0 25%;
-  }
-
   .read-more-or-lessJP {
     margin: 0.5rem 20% 1.5rem;
+  }
+
+  .theVideoJP {
+    max-width: 70%;
+    padding-bottom: 39.375%;
+  }
+
+  .text-image-flexboxJP {
+    justify-content: space-around;
+  }
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+    width: 32.5vw;
+  }
+  .text-image-flexboxJP .image-columnJP img {
+    width: 32.5vw;
+  }
+
+  .large-image-caption-jp {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .quicklinkJP {
+    padding: 0 10% 0 30%;
   }
 }
 @media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .defaultstyleJP {
-    padding: 0 20%;
-  }
-
-  .parts-headerJP,
-.section-headerJP {
-    padding: 40px 20% 0;
-  }
-
-  .essay-introJP {
+  .defaultstyleJP,
+.essay-introJP,
+.endnotesJP {
     padding: 0 20%;
   }
 
@@ -346,34 +357,47 @@ a[data-tool-tipJP]:hover::after {
     padding: 0;
   }
 
-  .quicklinkJP {
-    padding: 0 10% 0 20%;
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
   }
 
-  .endnotesJP {
-    padding: 0 25%;
+  .quicklinkJP {
+    padding: 0 10% 0 20%;
   }
 
   .read-more-or-lessJP {
     margin: 0.5rem 20% 1.5rem;
   }
+
+  .theVideoJP {
+    max-width: 70%;
+    padding-bottom: 39.375%;
+  }
+
+  .text-image-flexboxJP {
+    justify-content: space-around;
+  }
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+    width: 32.5vw;
+  }
+  .text-image-flexboxJP .image-columnJP img {
+    width: 32.5vw;
+  }
+
+  .large-image-caption-jp {
+    width: 70%;
+  }
 }
-@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1080px) and (max-device-width: 1080px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .quicklinkJP {
     padding: 0 10% 0 30%;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .defaultstyleJP {
-    padding: 0 20%;
-  }
-
-  .parts-headerJP,
-.section-headerJP {
-    padding: 40px 20% 0;
-  }
-
-  .essay-introJP {
+  .defaultstyleJP,
+.essay-introJP,
+.endnotesJP {
     padding: 0 20%;
   }
 
@@ -381,36 +405,148 @@ a[data-tool-tipJP]:hover::after {
     padding: 0;
   }
 
-  .quicklinkJP {
-    padding: 0 10% 0 20%;
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
   }
 
-  .endnotesJP {
-    padding: 0 25%;
+  .quicklinkJP {
+    padding: 0 10% 0 20%;
   }
 
   .read-more-or-lessJP {
     margin: 0.5rem 20% 1.5rem;
   }
+
+  .theVideoJP {
+    max-width: 70%;
+    padding-bottom: 39.375%;
+  }
+
+  .text-image-flexboxJP {
+    justify-content: space-around;
+  }
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+    width: 32.5vw;
+  }
+  .text-image-flexboxJP .image-columnJP img {
+    width: 32.5vw;
+  }
+
+  .large-image-caption-jp {
+    width: 70%;
+  }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .quicklinkJP {
     padding: 0 10% 0 30%;
   }
 }
-@media screen and (max-width: 567px) {
-  .title-styleJP {
-    font-size: 2rem;
+@media only screen and (max-width: 768px) {
+  .defaultstyleJP,
+.essay-introJP,
+.endnotesJP {
+    padding: 0 20%;
   }
 
-  .title-datesJP {
-    font-size: 12px;
-    margin-bottom: 40px;
+  .essay-intro-containerJP {
+    padding: 0;
+  }
+
+  .parts-headerJP,
+.section-headerJP {
+    padding: 40px 20% 0;
+  }
+
+  .quicklinkJP {
+    padding: 0 10% 0 20%;
+  }
+
+  .read-more-or-lessJP {
+    margin: 0.5rem 20% 1.5rem;
+  }
+
+  .theVideoJP {
+    max-width: 70%;
+    padding-bottom: 39.375%;
+  }
+
+  .text-image-flexboxJP {
+    justify-content: space-around;
+  }
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+    width: 32.5vw;
+  }
+  .text-image-flexboxJP .image-columnJP img {
+    width: 32.5vw;
+  }
+
+  .large-image-caption-jp {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .exhibition-titleJP {
+    margin-bottom: 3rem;
+  }
+  .exhibition-titleJP span {
+    font-size: 2.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .exhibition-titleJP p {
+    font-size: 0.9rem;
   }
 
   .defaultstyleJP {
     padding: 0 15%;
     letter-spacing: 0;
+    margin-bottom: 3rem;
+  }
+
+  .lessMaBo {
+    margin-bottom: 1rem;
+  }
+
+  .text-image-flexboxJP {
+    flex-direction: column;
+    padding: 0 15% 1rem;
+  }
+  .text-image-flexboxJP .text-columnJP {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .text-image-flexboxJP .image-columnJP {
+    width: 100%;
+  }
+  .text-image-flexboxJP .image-columnJP img {
+    width: 100%;
+  }
+  .text-image-flexboxJP .image-columnJP p {
+    color: #808080;
+    font-size: 13px;
+    padding-top: 5px;
+  }
+
+  .TRIL-mobileJP {
+    padding: 2rem 0;
+  }
+
+  .theVideoJP {
+    max-width: 94%;
+    padding-bottom: 52.875%;
+  }
+
+  .essay-introJP {
+    padding: 0 15%;
+  }
+
+  .endnotesJP {
+    padding: 0 15%;
+  }
+
+  .read-more-or-lessJP {
+    margin: 0 15% 3rem;
   }
 
   .video-responsive {
@@ -428,53 +564,20 @@ a[data-tool-tipJP]:hover::after {
     margin-bottom: 0;
   }
 
-  .text-left-flexboxJP {
-    flex-direction: column;
-    justify-content: center;
-    width: 70vw;
-    margin: 0 15%;
-  }
-
-  .text-left-containerJP,
-.text-right-containerJP {
-    width: 100vw;
-    margin-left: 30vw;
-  }
-
-  .text-left-imageJP {
-    width: 70vw;
-  }
-
-  .text-left-left-columnJP {
-    width: 70vw;
-    letter-spacing: 0;
-    margin-bottom: 2rem;
-  }
-
-  .text-right-left-columnJP {
-    width: 70vw;
-    letter-spacing: 0;
-    margin-bottom: 1rem;
-  }
-
-  .text-left-captionJP {
-    width: 70vw;
-    margin-bottom: 1.5rem;
-  }
-
   .parts-headerJP {
     margin-bottom: 2rem;
     padding: 40px 15% 10px;
     font-size: 1.4rem;
   }
 
+  .section-headerJP {
+    margin-bottom: 1rem;
+    padding: 40px 15% 0;
+  }
+
   .quicklinkJP {
     padding: 0 15%;
     flex-direction: column;
-  }
-
-  .quicklink-pJP {
-    margin-bottom: 0.2rem;
   }
 
   .not-mobileJP {
@@ -485,35 +588,10 @@ a[data-tool-tipJP]:hover::after {
     display: inline;
   }
 
-  .read-more-or-lessJP {
-    margin: 0 15% 3rem;
-  }
-
-  .endnotesJP {
-    padding: 0 15%;
-  }
-
-  .essay-intro-containerJP {
-    line-height: 1.6;
-    font-size: 13px;
-    color: grey;
-    padding: 0 15%;
-  }
-
-  .essay-introJP {
-    margin: 2rem 0 0;
-    padding: 0;
-  }
-
   .timeline-containerJP {
     width: 70vw;
     font-size: 12px;
     margin: 0 auto 2rem;
-  }
-
-  .section-headerJP {
-    margin-bottom: 1rem;
-    padding: 40px 15% 0;
   }
 
   .container {
