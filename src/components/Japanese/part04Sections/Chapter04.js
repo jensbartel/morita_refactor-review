@@ -22,7 +22,6 @@ import {
     morita14bJP,
     morita14cJP,
     morita14JP,
-    morita15JP,
     moritaEndnotesJP,
     sectionLabelJP,
 } from '../../../data/TextConstantsJP';

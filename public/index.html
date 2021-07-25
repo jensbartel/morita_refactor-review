@@ -145,7 +145,7 @@
                             <li class="s"><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
                             <li class="s"><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
                         </ul>
-                        <div class="lang"><a onclick="myFunction()" style="cursor: pointer">Jp</a></div>
+                        <div class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></div>
                         <!-- was <a href="/"> initially-->
                     </div>
                 </nav>
@@ -179,7 +179,7 @@
 
                             <li><a href="https://www.shibunkaku.co.jp/english/location/" class="has_sub">Location</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
-                            <li class="lang"><a onclick="myFunction()" style="cursor: pointer">Jp</a></li>
+                            <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></li>
                         </ul>
                         <div class="sub_pages">
                             <div class="sub_art sub_group">
@@ -327,9 +327,8 @@
 
     <!-- language switch -->
     <script>
-        function myFunction() {
+        function languageSwitch() {
             var currentURL = window.location.href;
-            // console.warn(currentURL);
             if (currentURL.includes("english")) {
                 currentURL = currentURL.replace("/english", "");
                 window.location.href = currentURL;
@@ -377,7 +376,7 @@
                             <li class="s"><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
                             <li class="s"><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
                         </ul>
-                        <div class="lang"><a onclick="myFunction()" style="cursor: pointer">Jp</a></div> <!-- was href="/" initially-->
+                        <div class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></div> <!-- was href="/" initially-->
                     </div>
                 </nav>`;
 
@@ -400,7 +399,7 @@
 
                             <li><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
-                            <li class="lang"><a onclick="myFunction()" style="cursor: pointer">Jp</a></li>
+                            <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></li>
                         </ul>
                         <div class="sub_pages">
                             <div class="sub_art sub_group ">
@@ -525,7 +524,7 @@
                             <li class="s"><a href="https://www.shibunkaku.co.jp/location/" class="">店舗</a></li>
                             <li class="s"><a href="https://www.shibunkaku.co.jp/biography/" class="">美術人名辞典</a></li>
                             </ul>
-                            <div class="lang"><a onclick="myFunction()" style="cursor: pointer">En</a></div>
+                            <div class="lang"><a onclick="languageSwitch()" style="cursor: pointer">En</a></div>
                             </div>
                             </nav>`;
                             
@@ -552,7 +551,7 @@
 
                             <li><a href="https://www.shibunkaku.co.jp/location/" class="has_sub ">店舗</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/biography/" class="">美術人名辞典</a></li>
-                            <li class="lang"><a onclick="myFunction()" style="cursor: pointer">En</a></li> 
+                            <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">En</a></li> 
                         </ul>
                         <div class="sub_pages">
                             <div class="sub_art sub_group ">

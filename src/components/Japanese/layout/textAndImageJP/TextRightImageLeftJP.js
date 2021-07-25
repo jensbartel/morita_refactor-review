@@ -9,7 +9,7 @@ const TextRightImageLeftJP = (props) => {
                 <img src={item.img} alt=""/>
                 <p><strong>{item.emphasisJP}</strong>{item.textJP}</p>
             </div>
-            <div className="text-columnJP">
+            <div className="text-column-TRIL-JP">
                 {html(text)}    
             </div>
         </div>

@@ -456,6 +456,7 @@ a.nextEng h2 {
   }
 
   .fullwidthWithText-container {
+    width: 100vw;
     margin-bottom: 0;
   }
   .fullwidthWithText-container div {

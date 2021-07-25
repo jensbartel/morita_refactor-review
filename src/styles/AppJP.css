@@ -68,7 +68,7 @@ a[data-tool-tipJP]:hover::after {
   padding: 2rem 5rem;
   margin-bottom: 2rem;
 }
-.text-image-flexboxJP .text-columnJP {
+.text-image-flexboxJP .text-columnJP, .text-image-flexboxJP .text-column-TRIL-JP {
   width: 30vw;
   font-size: 14px;
   line-height: 1.6;
@@ -330,7 +330,7 @@ a[data-tool-tipJP]:hover::after {
   .text-image-flexboxJP {
     justify-content: space-around;
   }
-  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP, .text-image-flexboxJP .text-column-TRIL-JP {
     width: 32.5vw;
   }
   .text-image-flexboxJP .image-columnJP img {
@@ -378,7 +378,7 @@ a[data-tool-tipJP]:hover::after {
   .text-image-flexboxJP {
     justify-content: space-around;
   }
-  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP, .text-image-flexboxJP .text-column-TRIL-JP {
     width: 32.5vw;
   }
   .text-image-flexboxJP .image-columnJP img {
@@ -426,7 +426,7 @@ a[data-tool-tipJP]:hover::after {
   .text-image-flexboxJP {
     justify-content: space-around;
   }
-  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP, .text-image-flexboxJP .text-column-TRIL-JP {
     width: 32.5vw;
   }
   .text-image-flexboxJP .image-columnJP img {
@@ -474,7 +474,7 @@ a[data-tool-tipJP]:hover::after {
   .text-image-flexboxJP {
     justify-content: space-around;
   }
-  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP {
+  .text-image-flexboxJP .image-columnJP, .text-image-flexboxJP .text-columnJP, .text-image-flexboxJP .text-column-TRIL-JP {
     width: 32.5vw;
   }
   .text-image-flexboxJP .image-columnJP img {
@@ -515,6 +515,9 @@ a[data-tool-tipJP]:hover::after {
   .text-image-flexboxJP .text-columnJP {
     width: 100%;
     margin-bottom: 2rem;
+  }
+  .text-image-flexboxJP .text-column-TRIL-JP {
+    width: 100%;
   }
   .text-image-flexboxJP .image-columnJP {
     width: 100%;
