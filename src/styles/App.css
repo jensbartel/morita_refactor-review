@@ -223,7 +223,7 @@ a[data-tool-tip]:hover::after {
   width: 55%;
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
-  margin: 4rem auto 8rem;
+  margin: 4rem auto 6rem;
   padding: 0;
   color: #000;
   line-height: 1.6;
@@ -348,7 +348,7 @@ a[data-tool-tip]:hover::after {
   color: #000;
   line-height: 1;
   letter-spacing: 0;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 .pullquote p {
   opacity: 0;

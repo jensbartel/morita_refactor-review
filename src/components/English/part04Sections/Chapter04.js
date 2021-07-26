@@ -52,10 +52,9 @@ const Chapter04 = () => {
                 }}
             >
                 {btnText}
-            </button>
-
-                            <LargeImage item={essay27} />
-                            <LargeImage item={essay28} />
+            </button>                    
+                            <LargeImage item={essay27} fade='none'/>
+                            <LargeImage item={essay28} fade='none'/>
                             <div id='endnotes'></div>
                             <DefaultTextBlock text={html(acknowledgments)} />
                             <br /><br /><br /><br /> 

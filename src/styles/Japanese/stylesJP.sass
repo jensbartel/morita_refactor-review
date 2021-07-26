@@ -143,28 +143,55 @@ a[data-tool-tipJP]
 
     
 // pullquote
-=pullquoteJP-base
+.pullquoteJP
+    +standard-text(3.4rem, 1.2, 10rem 0 4rem -5rem, 0 30%)
     p
         opacity: 0
         white-space: nowrap
         line-height: 0.05
         letter-spacing: 12
+        position: relative
         &:nth-child(3)
             animation-delay: 0.25s
+            left: 2rem
         &:nth-child(5)
             animation-delay: 0.5s
+            left: -2.5rem
+            top: -0.5rem
+            font-size: 3rem
         &:nth-child(7)
             animation-delay: 0.75s
+            left: 4rem
+            top: -0.75rem
         &:nth-child(9)
             animation-delay: 1s
-
-.pullquoteJP
-    +pullquoteJP-base
-    +standard-text(3.4rem, 1.2, 8rem 0 8rem -5rem, 0 30%)
+            left: 1rem
+            top: -0.75rem
 
 .pullquoteJP2
-    +pullquoteJP-base
     +standard-text(3.4rem, 1.2, 8rem 0 8rem 0, 0 20% 0 40%)
+    p
+        opacity: 0
+        white-space: nowrap
+        line-height: 0.05
+        letter-spacing: 12
+        position: relative
+        &:nth-child(3)
+            animation-delay: 0.25s
+            left: -4rem
+        &:nth-child(5)
+            animation-delay: 0.5s
+            font-size: 3rem
+            left: -1.5rem
+        &:nth-child(7)
+            animation-delay: 0.75s
+            left: 2rem
+            font-size: 3rem
+        &:nth-child(9)
+            animation-delay: 1s
+            font-size: 3.6rem
+            top: 0.25rem
+            left: -2rem
 
 .pullquoteJP-animation
     p

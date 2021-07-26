@@ -72,8 +72,8 @@ const Chapter04 = () => {
                 {btnText}
             </button>
 
-            <LargeImage item={essay27} lang='jp' />
-            <LargeImage item={essay28} lang='jp' />
+            <LargeImage item={essay27} lang='jp' fade='none'/>
+            <LargeImage item={essay28} lang='jp' fade='none'/>
             <DefaultTextBlockJP text={html(acknowledgmentsJP)} />
         </>
     );

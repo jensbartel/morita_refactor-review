@@ -196,7 +196,7 @@ a[data-tool-tipJP]:hover::after {
 .pullquoteJP {
   font-size: 3.4rem;
   line-height: 1.2;
-  margin: 8rem 0 8rem -5rem;
+  margin: 10rem 0 4rem -5rem;
   padding: 0 30%;
   color: #1f1f1f;
 }
@@ -205,18 +205,27 @@ a[data-tool-tipJP]:hover::after {
   white-space: nowrap;
   line-height: 0.05;
   letter-spacing: 12;
+  position: relative;
 }
 .pullquoteJP p:nth-child(3) {
   animation-delay: 0.25s;
+  left: 2rem;
 }
 .pullquoteJP p:nth-child(5) {
   animation-delay: 0.5s;
+  left: -2.5rem;
+  top: -0.5rem;
+  font-size: 3rem;
 }
 .pullquoteJP p:nth-child(7) {
   animation-delay: 0.75s;
+  left: 4rem;
+  top: -0.75rem;
 }
 .pullquoteJP p:nth-child(9) {
   animation-delay: 1s;
+  left: 1rem;
+  top: -0.75rem;
 }
 
 .pullquoteJP2 {
@@ -231,18 +240,27 @@ a[data-tool-tipJP]:hover::after {
   white-space: nowrap;
   line-height: 0.05;
   letter-spacing: 12;
+  position: relative;
 }
 .pullquoteJP2 p:nth-child(3) {
   animation-delay: 0.25s;
+  left: -4rem;
 }
 .pullquoteJP2 p:nth-child(5) {
   animation-delay: 0.5s;
+  font-size: 3rem;
+  left: -1.5rem;
 }
 .pullquoteJP2 p:nth-child(7) {
   animation-delay: 0.75s;
+  left: 2rem;
+  font-size: 3rem;
 }
 .pullquoteJP2 p:nth-child(9) {
   animation-delay: 1s;
+  font-size: 3.6rem;
+  top: 0.25rem;
+  left: -2rem;
 }
 
 .pullquoteJP-animation p {
@@ -340,6 +358,10 @@ a[data-tool-tipJP]:hover::after {
   .large-image-caption-jp {
     width: 70%;
   }
+
+  .timeline-containerJP {
+    width: 60vw;
+  }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .quicklinkJP {
@@ -387,6 +409,10 @@ a[data-tool-tipJP]:hover::after {
 
   .large-image-caption-jp {
     width: 70%;
+  }
+
+  .timeline-containerJP {
+    width: 60vw;
   }
 }
 @media only screen and (min-device-width: 1080px) and (max-device-width: 1080px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -436,6 +462,10 @@ a[data-tool-tipJP]:hover::after {
   .large-image-caption-jp {
     width: 70%;
   }
+
+  .timeline-containerJP {
+    width: 60vw;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .quicklinkJP {
@@ -484,6 +514,10 @@ a[data-tool-tipJP]:hover::after {
   .large-image-caption-jp {
     width: 70%;
   }
+
+  .timeline-containerJP {
+    width: 60vw;
+  }
 }
 @media screen and (max-width: 568px) {
   .exhibition-titleJP {
@@ -529,6 +563,55 @@ a[data-tool-tipJP]:hover::after {
     color: #808080;
     font-size: 13px;
     padding-top: 5px;
+  }
+
+  .pullquoteJP {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 6rem 0 2rem;
+    padding: 0 15%;
+    color: #1f1f1f;
+  }
+  .pullquoteJP p {
+    position: static;
+  }
+  .pullquoteJP p:nth-child(5) {
+    font-size: 1.4rem;
+  }
+
+  .pullquoteJP2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin: 6rem 0 6rem 0;
+    padding: 0 15%;
+    color: #1f1f1f;
+  }
+  .pullquoteJP2 p {
+    opacity: 0;
+    white-space: nowrap;
+    line-height: 0.05;
+    letter-spacing: 12;
+    position: static;
+  }
+  .pullquoteJP2 p:nth-child(3) {
+    animation-delay: 0.25s;
+    left: -4rem;
+  }
+  .pullquoteJP2 p:nth-child(5) {
+    animation-delay: 0.5s;
+    font-size: 1.8rem;
+    left: -1.5rem;
+  }
+  .pullquoteJP2 p:nth-child(7) {
+    animation-delay: 0.75s;
+    left: 2rem;
+    font-size: 1.8rem;
+  }
+  .pullquoteJP2 p:nth-child(9) {
+    animation-delay: 1s;
+    font-size: 1.8rem;
+    top: 0.25rem;
+    left: -2rem;
   }
 
   .TRIL-mobileJP {

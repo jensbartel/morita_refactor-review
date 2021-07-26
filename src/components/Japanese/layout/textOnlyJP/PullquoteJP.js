@@ -17,7 +17,7 @@ const PullquoteJP = () => {
           <p ref={ref}>ことを場として</p><br />
           <p ref={ref}>内のいのちの躍動が</p><br />
           <p ref={ref}>外におどり出て</p><br />
-          <p ref={ref}>形を結んだものである</p>
+          <p ref={ref}>形を結んだものである。</p>
       </div>
     )
 };

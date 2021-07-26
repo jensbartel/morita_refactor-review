@@ -36,6 +36,42 @@
                 font-size: 13px
                 padding-top: 5px
 
+
+    // pullquote
+    .pullquoteJP
+        +standard-text(1.4rem, 1.4, 6rem 0 2rem, 0 15%)
+        p
+            position: static
+            &:nth-child(5)
+                font-size: 1.4rem
+
+    .pullquoteJP2
+        +standard-text(1.8rem, 1.4, 6rem 0 6rem 0, 0 15%)
+        p
+            opacity: 0
+            white-space: nowrap
+            line-height: 0.05
+            letter-spacing: 12
+            position: static
+            &:nth-child(3)
+                animation-delay: 0.25s
+                left: -4rem
+            &:nth-child(5)
+                animation-delay: 0.5s
+                font-size: 1.8rem
+                left: -1.5rem
+            &:nth-child(7)
+                animation-delay: 0.75s
+                left: 2rem
+                font-size: 1.8rem
+            &:nth-child(9)
+                animation-delay: 1s
+                font-size: 1.8rem
+                top: 0.25rem
+                left: -2rem
+
+
+
     .TRIL-mobileJP
         padding: 2rem 0
 
