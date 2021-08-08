@@ -1,25 +1,5 @@
 <!doctype html>
-
-
 <html class="no-js en" id="change-language-class" lang="en" data-lang=en>
-
-<script>
-    const currentURL = window.location.href;
-    const htmlElement = document.getElementById("change-language-class");
-
-    if (currentURL.includes('/english')) {
-        // it's the english page
-        htmlElement.classList.remove("jp");
-        htmlElement.classList.add("en");
-    } else {
-        // it's the japanese page
-        htmlElement.classList.remove("en");
-        htmlElement.classList.add("jp");
-    }
-
-    // console.log("Class list of HTML tag: ", htmlElement.classList);
-
-</script>
 
 <head>
     <meta charset="UTF-8" />
@@ -72,9 +52,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
       rel="stylesheet">
 
-    <title>Morita Shiryu: Bokujin</title>
+      <title>Morita Shiryu: Bokujin</title>
       
-    <!-- FontPlus -->
+      <!-- FontPlus -->
     <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?G0GW-zj~pSQ%3D&box=u3FagqAO0TU%3D&aa=1&ab=2" charset="utf-8"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics for moritashiryu.bokujin@gmail.com -->
@@ -114,6 +94,28 @@
 
 
 <body id="top" class=" ">
+
+    <div id="fb-root"></div>
+
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-26482262-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
     <div id="container">
 
         <header class="header">
@@ -148,12 +150,13 @@
                     </div>
                 </nav>
             </div>
+
             
+            <!-- mobile navigation menu -->
             <div class="menu_button">
                 <a href='#'></a>
             </div>
-            
-            <!-- mobile navigation menu -->
+
             <div id="language_switch2">
             <nav id="m_nav">
                 <div class="m_header">
@@ -169,12 +172,12 @@
                 <div class="inner">
                     <div class="top">
                         <ul class="">
-                            <li><a href="/art/" class="has_sub">Art</a></li>
-                            <li><a href="/exhibition/" class="has_sub">Exhibition</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/art/" class="has_sub">Art</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" class="has_sub">Exhibition</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/kosho/" class="">Antiquarian Books</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/publishing/" class="">Publishing</a></li>
 
-                            <li><a href="/location/" class="has_sub">Location</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/location/" class="has_sub">Location</a></li>
                             <li><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
                             <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></li>
                         </ul>
@@ -214,7 +217,7 @@
                                     <div class="inner">
                                         <div class="r_h_inner">
                                             <ul>
-                                                <li><a class="" href="https://www.shibunkaku.co.jp/english/location/">Kyoto</a></li>
+                                                <li><a class="current" href="https://www.shibunkaku.co.jp/english/location/">Kyoto</a></li>
                                                 <li><a class="" href="https://www.shibunkaku.co.jp/english/location/ginza/">Ginza</a></li>
                                             </ul>
                                         </div>
@@ -238,7 +241,7 @@
                     <div class="footer">
                         <div class="inner">
                             <ul>
-                                <li><a class="has_sub" href="/company/">Company</a></li>
+                                <li><a class="has_sub" href="https://www.shibunkaku.co.jp/english/company/">Company</a></li>
                                 <li><a class="" href="https://www.shibunkaku.co.jp/english/news/">News</a></li>
                                 <li><a class="" href="https://www.shibunkaku.co.jp/english/contact/">Contact</a></li>
                             </ul>
@@ -258,14 +261,11 @@
 
 
         <!-- i need this div of id="content", otherwise the menu collapse is lost -->
-        <div id="content">
-            <div class="content_inner">
-                <!-- REACT -->
-                <div id="root"></div>
-            </div>
-        </div>
+        <div id="content"></div>
 
 
+        <!-- REACT -->
+        <div id="root"></div>
 
 
 
@@ -329,14 +329,14 @@
     <script>
         function languageSwitch() {
             var currentURL = window.location.href;
-            if (currentURL.includes("/english")) {
+            if (currentURL.includes("english")) {
                 currentURL = currentURL.replace("/english", "");
                 window.location.href = currentURL;
             } else {
                 if (currentURL.includes("/vip2")) {
                     currentURL = currentURL.replace("/vip2", "/english/vip2")
                     window.location.href = currentURL;
-                } else if (currentURL.includes("/vip")) {
+                } else if (currentURL.includes("vip")) {
                     currentURL = currentURL.replace("/vip", "/english/vip");
                     window.location.href = currentURL;
                 } else {window.location.href = "/english"}  
@@ -345,21 +345,172 @@
     </script>
 
     <script>
-
         function docReady(fn) {
             if (document.readyState === "complete" || document.readyState === "interactive") {
                 setTimeout(fn, 1);
             } else {
                 document.addEventListener("DOMContentLoaded", fn);
             }
+
         }
 
         docReady(function () {
-            const currentURL = window.location.href;
-            // console.log('dom is ready at:', currentURL);
+            // console.log('dom is ready at:', window.location.href);
+            var currentURL = window.location.href;
 
-            if (currentURL.indexOf("/english") === -1) {
+            if (currentURL.includes('/english')) {
+                // it's the english page
+
+                var htmlElement = document.getElementById("change-language-class");
+                htmlElement.classList.remove("jp");
+                htmlElement.classList.add("en");
+
+                document.getElementById("language_switch").innerHTML = `
+                <nav id="p_nav"> 
+                    <div class="r_mn_inner">
+                        <ul >
+                            <li class="art"><a href="https://www.shibunkaku.co.jp/english/art/" id="art">Art</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" >Exhibition</a></li>
+                            <li class="kosho"><a href="https://www.shibunkaku.co.jp/english/kosho/" class="">Antiquarian Books</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/publishing/" class="">Publishing</a></li>
+                            <li class="s"><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
+                            <li class="s"><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
+                        </ul>
+                        <div class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></div> <!-- was href="/" initially-->
+                    </div>
+                </nav>`;
+
+                document.getElementById("language_switch2").innerHTML = `
+                <nav id="m_nav">
+                <div class="m_header">
+                    <a class="close" href=""><img
+                            src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/menu_close.svg"></a>
+                    <div class="title"><a href="https://www.shibunkaku.co.jp/english/"><img
+                                src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/shibunkaku.svg"
+                                alt="SHIBUNKAKU 思文閣"></a></div>
+                </div>
+                <div class="inner">
+                    <div class="top">
+                        <ul class="">
+                            <li><a href="https://www.shibunkaku.co.jp/english/art/" class="">Art</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/exhibition/" class="">Exhibition</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/kosho/" class="">Antiquarian Books</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/publishing/" class="">Publishing</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/location/" class="">Location</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/english/biography/" class="">Biography</a></li>
+                            <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">Jp</a></li>
+                        </ul>
+                        <div class="sub_pages">
+                            <div class="sub_art sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/english/art/">Artist</a></li>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/english/art/wanobi/">Wanobi</a></li>
+                                                <li><a class="" href="https://shop.shibunkaku.co.jp/english/shop/"
+                                                        target="_blank">Online Shop</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_exhibition sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/english/exhibition/">Exhibition</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/english/exhibition/list/">List</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_location sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li><a class="current" href="https://www.shibunkaku.co.jp/english/location/">Kyoto</a></li>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/english/location/ginza/">Ginza</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_company sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/english/company/">Company</a></li>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/english/recruit/">Recruit</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="inner">
+                            <ul>
+                                <li><a class="has_sub " href="https://www.shibunkaku.co.jp/english/company/">Company</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/english/news/">News</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/english/contact/">Contact</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/english/links/">Links</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/english/sitepolicy/">Site Policy</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/english/privacypolicy/">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+                `;
+
+            document.getElementById("shibun-footer").innerHTML = `
+                <div class="nav">
+                    <ul class="left">
+                        <li><a class="" href="https://www.shibunkaku.co.jp/english/company/">Company</a></li>
+                        <li><a class="" href="https://www.shibunkaku.co.jp/english/news/">News</a></li>
+                        <li><a class="" href="https://www.shibunkaku.co.jp/english/contact/">Contact</a></li>
+                        <li><a class="" href="https://www.shibunkaku.co.jp/english/links/">Links</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a class="" href="https://www.shibunkaku.co.jp/english/sitepolicy/">Site Policy</a></li>
+                        <li><a class="" href="https://www.shibunkaku.co.jp/english/privacypolicy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <div class="copy">
+                        <div class="site_name">思文閣</div>
+                        <p class="copyright">(C) 2016 SHIBUNKAKU CO., LTD. All Rights Reserved.</p>
+                    </div>
+                    <ul class="sns">
+                        <li><a href="https://www.facebook.com/Shibunkaku-%E6%80%9D%E6%96%87%E9%96%A3-300176220101381/"
+                                target="_blank">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/shibunkakupublishing/"
+                                target="_blank">Facebook(Publishing)</a></li>
+                        <li><a href="https://www.instagram.com/shibunkaku/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            `
+
+
+                
+            } else {
                 // it's the japanese page
+
+                var htmlElement = document.getElementById("change-language-class");
+                htmlElement.classList.remove("en");
+                htmlElement.classList.add("jp");
 
                 document.getElementById("language_switch").innerHTML = `
                 <nav id="p_nav">
@@ -378,142 +529,141 @@
                             
                 document.getElementById("language_switch2").innerHTML = `
                 <nav id="m_nav">
-                    <div class="m_header">
-                        <a class="close" href=""><img
-                                src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/menu_close.svg"></a>
-                        <div class="title"><a href="/"><img
-                                    src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/shibunkaku.svg"
-                                    alt="SHIBUNKAKU 思文閣"></a></div>
+                <div class="m_header">
+                    <a class="close" href=""><img
+                            src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/menu_close.svg"></a>
+                    <div class="title"><a href="/"><img
+                                src="https://www.shibunkaku.co.jp/wp/wp-content/themes/shibunkaku/assets/images/shibunkaku.svg"
+                                alt="SHIBUNKAKU 思文閣"></a></div>
+                </div>
+                <div class="inner">
+                    <div class="top">
+                        <ul class="">
+                            <li><a href="https://www.shibunkaku.co.jp/art/" class="has_sub ">美術</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/exhibition/" class="has_sub ">展示</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/kosho/" class="has_sub ">古典籍</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/publishing/" class="has_sub ">出版</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/location/" class="has_sub ">店舗</a></li>
+                            <li><a href="https://www.shibunkaku.co.jp/biography/" class="">美術人名辞典</a></li>
+                            <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">En</a></li> 
+                        </ul>
+                        <div class="sub_pages">
+                            <div class="sub_art sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/art/">作家</a></li>
+                                                <li><a class="" href="https://shop.shibunkaku.co.jp/shop/"
+                                                        target="_blank">オンラインショップ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_exhibition sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/exhibition/">展示会</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/exhibition/list/">展示一覧</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_location sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li><a class="current" href="https://www.shibunkaku.co.jp/location/">京都</a></li>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/location/ginza/">銀座</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_kosho sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/kosho/">古典籍</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/kosho/list/">古書一覧</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/kosho/catalog/">目録のご案内</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_publishing sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/publishing/">出版トップ</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/publishing/list/">書籍一覧</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/publishing/prmagazine/">広報誌</a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="https://www.shibunkaku.co.jp/publishing/catalog/">注文一覧表・目録</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub_company sub_group ">
+                                <div class="page_header">
+                                    <div class="inner">
+                                        <div class="r_h_inner">
+                                            <ul>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/company/">企業情報</a></li>
+                                                <li><a class="" href="https://www.shibunkaku.co.jp/recruit/">採用情報</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="inner">
-                        <div class="top">
-
-                            <ul class="">
-                                <li><a href="https://www.shibunkaku.co.jp/art/" class="has_sub ">美術</a></li>
-                                <li><a href="https://www.shibunkaku.co.jp/exhibition/" class="has_sub ">展示</a></li>
-                                <li><a href="https://www.shibunkaku.co.jp/kosho/" class="has_sub ">古典籍</a></li>
-                                <li><a href="https://www.shibunkaku.co.jp/publishing/" class="has_sub ">出版</a></li>
-                                <li><a href="https://www.shibunkaku.co.jp/location/" class="has_sub ">店舗</a></li>
-                                <li><a href="https://www.shibunkaku.co.jp/biography/" class="">美術人名辞典</a></li>
-                                <li class="lang"><a onclick="languageSwitch()" style="cursor: pointer">En</a></li> 
+                    <div class="footer">
+                        <div class="inner">
+                            <ul>
+                                <li><a class="has_sub " href="https://www.shibunkaku.co.jp/company/">企業情報</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/news/">ニュース</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/contact/">お問い合わせ</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/mailmagazine/">メールマガジン</a></li>
                             </ul>
-                            <div class="sub_pages">
-                                <div class="sub_art sub_group ">
-                                    <div class="page_header">
-                                        <div class="inner">
-                                            <div class="r_h_inner">
-                                                <ul>
-                                                    <li><a class="" href="https://www.shibunkaku.co.jp/art/">作家</a></li>
-                                                    <li><a class="" href="https://shop.shibunkaku.co.jp/shop/"
-                                                            target="_blank">オンラインショップ</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub_exhibition sub_group ">
-                                    <div class="page_header">
-                                        <div class="inner">
-                                            <div class="r_h_inner">
-                                                <ul>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/exhibition/">展示会</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/exhibition/list/">展示一覧</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub_location sub_group ">
-                                    <div class="page_header">
-                                        <div class="inner">
-                                            <div class="r_h_inner">
-                                                <ul>
-                                                    <li><a class="current" href="https://www.shibunkaku.co.jp/location/">京都</a></li>
-                                                    <li><a class="" href="https://www.shibunkaku.co.jp/location/ginza/">銀座</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub_kosho sub_group ">
-                                    <div class="page_header">
-                                        <div class="inner">
-                                            <div class="r_h_inner">
-                                                <ul>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/kosho/">古典籍</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/kosho/list/">古書一覧</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/kosho/catalog/">目録のご案内</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub_publishing sub_group ">
-                                    <div class="page_header">
-                                        <div class="inner">
-                                            <div class="r_h_inner">
-                                                <ul>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/publishing/">出版トップ</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/publishing/list/">書籍一覧</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/publishing/prmagazine/">広報誌</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="" href="https://www.shibunkaku.co.jp/publishing/catalog/">注文一覧表・目録</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub_company sub_group ">
-                                    <div class="page_header">
-                                        <div class="inner">
-                                            <div class="r_h_inner">
-                                                <ul>
-                                                    <li><a class="" href="https://www.shibunkaku.co.jp/company/">企業情報</a></li>
-                                                    <li><a class="" href="https://www.shibunkaku.co.jp/recruit/">採用情報</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer">
-                            <div class="inner">
-                                <ul>
-                                    <li><a class="has_sub " href="/company/">企業情報</a></li>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/news/">ニュース</a></li>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/contact/">お問い合わせ</a></li>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/mailmagazine/">メールマガジン</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/links/">リンク</a></li>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/sitepolicy/">サイトポリシー</a></li>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/privacypolicy/">プライバシーポリシー</a></li>
-                                    <li><a class="" href="https://www.shibunkaku.co.jp/jika/">時価評価サービス</a></li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/links/">リンク</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/sitepolicy/">サイトポリシー</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/privacypolicy/">プライバシーポリシー</a></li>
+                                <li><a class="" href="https://www.shibunkaku.co.jp/jika/">時価評価サービス</a></li>
+                            </ul>
                         </div>
                     </div>
-                </nav>`;
+                </div>
+            </nav>`;
 
-                document.getElementById("shibun-footer").innerHTML = `
+            document.getElementById("shibun-footer").innerHTML = `
                 <div class="nav">
                     <ul class="left">
                         <li><a class="" href="https://www.shibunkaku.co.jp/company/">企業情報</a></li>
@@ -541,9 +691,8 @@
                     </ul>
                 </div>
             `
-            }            
+            }
         });
-
     </script>
 
 
